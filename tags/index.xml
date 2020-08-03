@@ -6,10 +6,28 @@
     <description>Recent content in Tags on codingriver blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 18 Dec 2019 21:55:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2020 20:31:46 +0800</lastBuildDate>
     
 	<atom:link href="https://codingriver.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>hello</title>
+      <link>https://codingriver.github.io/tags/hello/</link>
+      <pubDate>Fri, 31 Jul 2020 20:31:46 +0800</pubDate>
+      
+      <guid>https://codingriver.github.io/tags/hello/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>测试</title>
+      <link>https://codingriver.github.io/tags/%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Fri, 31 Jul 2020 20:31:46 +0800</pubDate>
+      
+      <guid>https://codingriver.github.io/tags/%E6%B5%8B%E8%AF%95/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>golang</title>

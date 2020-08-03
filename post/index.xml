@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>Test</title>
+      <title>test</title>
       <link>https://codingriver.github.io/post/test/</link>
       <pubDate>Fri, 31 Jul 2020 20:31:46 +0800</pubDate>
       
       <guid>https://codingriver.github.io/post/test/</guid>
-      <description>Syntax highlighted code block Header 1 Header 2 Header 3 Bulleted List Numbered List Bold and Italic and Code text hellopic</description>
+      <description>Syntax highlighted code block Header 1 Header 2 Header 3 Bulleted List Numbered List Bold and Italic and Code text</description>
     </item>
     
     <item>
@@ -26,9 +26,7 @@
       <pubDate>Fri, 31 Jul 2020 19:50:06 +0800</pubDate>
       
       <guid>https://codingriver.github.io/post/myfirst/</guid>
-      <description>Syntax highlighted code block
-Header 1 Header 2 Header 3  Bulleted List   Numbered List  Bold and Italic and Code text
-Link and </description>
+      <description>Syntax highlighted code block Header 1 Header 2 Header 3 Bulleted List Numbered List Bold and Italic and Code text Link and</description>
     </item>
     
     <item>
