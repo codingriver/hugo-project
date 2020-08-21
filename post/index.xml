@@ -1,75 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on codingriver blog</title>
-    <link>https://codingriver.github.io/post/</link>
-    <description>Recent content in Posts on codingriver blog</description>
+    <title>Posts on codingriver</title>
+    <link>https://example.com/post/</link>
+    <description>Recent content in Posts on codingriver</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Fri, 31 Jul 2020 20:31:46 +0800</lastBuildDate>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://codingriver.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>test</title>
-      <link>https://codingriver.github.io/post/test/</link>
-      <pubDate>Fri, 31 Jul 2020 20:31:46 +0800</pubDate>
+      <title>Markdown Syntax Guide</title>
+      <link>https://example.com/post/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://codingriver.github.io/post/test/</guid>
-      <description>Syntax highlighted code block Header 1 Header 2 Header 3 Bulleted List Numbered List Bold and Italic and Code text</description>
+      <guid>https://example.com/post/markdown-syntax/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Myfirst</title>
-      <link>https://codingriver.github.io/post/myfirst/</link>
-      <pubDate>Fri, 31 Jul 2020 19:50:06 +0800</pubDate>
+      <title>Rich Content</title>
+      <link>https://example.com/post/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://codingriver.github.io/post/myfirst/</guid>
-      <description>Syntax highlighted code block Header 1 Header 2 Header 3 Bulleted List Numbered List Bold and Italic and Code text Link and</description>
+      <guid>https://example.com/post/rich-content/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Links</title>
-      <link>https://codingriver.github.io/post/links/</link>
-      <pubDate>Fri, 31 Jul 2020 19:49:56 +0800</pubDate>
+      <title>Placeholder Text</title>
+      <link>https://example.com/post/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://codingriver.github.io/post/links/</guid>
-      <description>codingriver.github.io View On GitHub Welcome to GitHub Pages You can use the editor on GitHub to maintain and preview the content for your website in Markdown files.
-Whenever you commit to this repository, GitHub Pages will run Jekyll to rebuild the pages in your site, from the content in your Markdown files.
-Markdown Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-Syntax highlighted code block
-Header 1 Header 2 Header 3  Bulleted List   Numbered List  Bold and Italic and Code text
-Link and For more details see GitHub Flavored Markdown.
-Jekyll Themes Your Pages site will use the layout and styles from the Jekyll theme you have selected in your repository settings. The name of this theme is saved in the Jekyll _config.yml configuration file.
-Support or Contact Having trouble with Pages?</description>
+      <guid>https://example.com/post/placeholder-text/</guid>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Golang Gin 实战（五）| 接收数组和 Map</title>
-      <link>https://codingriver.github.io/2019/12/18/golang-gin-query-parameters-array-map.html</link>
-      <pubDate>Wed, 18 Dec 2019 21:55:00 +0800</pubDate>
+      <title>Math Typesetting</title>
+      <link>https://example.com/post/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://codingriver.github.io/2019/12/18/golang-gin-query-parameters-array-map.html</guid>
-      <description>标题 段落内容 标题 段落内容 标题 段落内容 标题 段落内容 标题 段落内容</description>
+      <guid>https://example.com/post/math-typesetting/</guid>
+      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Golang Gin 实战（三）| 路由参数</title>
-      <link>https://codingriver.github.io/post/2019-12-13-golang-gin-parameters-in-path/</link>
-      <pubDate>Fri, 13 Dec 2019 21:00:00 +0800</pubDate>
+      <title>Emoji Support</title>
+      <link>https://example.com/post/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://codingriver.github.io/post/2019-12-13-golang-gin-parameters-in-path/</guid>
-      <description>标题 段落内容 标题 段落内容 标题 段落内容 标题 段落内容 标题 段落内容</description>
-    </item>
-    
-    <item>
-      <title>Golang Gin 实战（三）| 路由参数</title>
-      <link>https://codingriver.github.io/post/2019-12-15-golang-gin-query-parameters-source-code-analysis/</link>
-      <pubDate>Fri, 13 Dec 2019 21:00:00 +0800</pubDate>
-      
-      <guid>https://codingriver.github.io/post/2019-12-15-golang-gin-query-parameters-source-code-analysis/</guid>
-      <description>标题 段落内容 标题 段落内容 标题 段落内容 标题 段落内容 标题 段落内容</description>
+      <guid>https://example.com/post/emoji-support/</guid>
+      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
     
   </channel>
