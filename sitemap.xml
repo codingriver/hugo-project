@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://codingriver.github.io/technology/</loc>
+    <loc>https://codingriver.github.io/life/</loc>
     <lastmod>2020-08-20T18:21:23+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -19,7 +19,7 @@
   </url>
   
   <url>
-    <loc>https://codingriver.github.io/technology/ha/</loc>
+    <loc>https://codingriver.github.io/life/ha/</loc>
     <lastmod>2020-08-20T18:21:23+08:00</lastmod>
   </url>
   
@@ -41,16 +41,6 @@
   <url>
     <loc>https://codingriver.github.io/tags/</loc>
     <lastmod>2020-08-20T18:21:23+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://codingriver.github.io/tool/</loc>
-    <lastmod>2020-08-20T18:21:19+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://codingriver.github.io/tool/unitytool/</loc>
-    <lastmod>2020-08-20T18:21:19+08:00</lastmod>
   </url>
   
   <url>
@@ -79,12 +69,7 @@
   </url>
   
   <url>
-    <loc>https://codingriver.github.io/post/unity3d/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://codingriver.github.io/post/</loc>
+    <loc>https://codingriver.github.io/life/markdown-syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -104,17 +89,12 @@
   </url>
   
   <url>
-    <loc>https://codingriver.github.io/post/csharp/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://codingriver.github.io/tags/privacy/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://codingriver.github.io/post/csharp/rich-content/</loc>
+    <loc>https://codingriver.github.io/life/rich-content/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -124,7 +104,7 @@
   </url>
   
   <url>
-    <loc>https://codingriver.github.io/post/csharp/placeholder-text/</loc>
+    <loc>https://codingriver.github.io/life/placeholder-text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url>
   
@@ -134,7 +114,7 @@
   </url>
   
   <url>
-    <loc>https://codingriver.github.io/post/csharp/math-typesetting/</loc>
+    <loc>https://codingriver.github.io/life/math-typesetting/</loc>
     <lastmod>2019-03-08T00:00:00+00:00</lastmod>
   </url>
   
@@ -144,13 +124,26 @@
   </url>
   
   <url>
-    <loc>https://codingriver.github.io/post/unity3d/emoji-support/</loc>
+    <loc>https://codingriver.github.io/life/emoji-support/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://codingriver.github.io/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codingriver.github.io/csharp/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://codingriver.github.io/post/other/</loc>
+  </url>
+  
+  <url>
+    <loc>https://codingriver.github.io/post/</loc>
   </url>
   
 </urlset>

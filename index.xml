@@ -13,25 +13,11 @@
     
     <item>
       <title>Ha</title>
-      <link>https://codingriver.github.io/technology/ha/</link>
+      <link>https://codingriver.github.io/life/ha/</link>
       <pubDate>Thu, 20 Aug 2020 18:21:23 +0800</pubDate>
       
-      <guid>https://codingriver.github.io/technology/ha/</guid>
+      <guid>https://codingriver.github.io/life/ha/</guid>
       <description>Insert Lead paragraph here.</description>
-    </item>
-    
-    <item>
-      <title>Unitytool</title>
-      <link>https://codingriver.github.io/tool/unitytool/</link>
-      <pubDate>Thu, 20 Aug 2020 18:21:19 +0800</pubDate>
-      
-      <guid>https://codingriver.github.io/tool/unitytool/</guid>
-      <description>Insert Lead paragraph here. **Insert Lead paragraph here.**Insert Lead paragraph here. Insert Lead paragraph here.
-Insert Lead paragraph here.
-**Insert Lead paragraph here.****Insert Lead paragraph here.**Insert Lead paragraph here.
-Insert Lead paragraph here. valueInsert Lead paragraph here.
-**Insert Lead paragraph here.**Insert Lead paragraph here.
-Insert Lead paragraph here. Insert Lead paragraph here. v</description>
     </item>
     
     <item>
@@ -45,46 +31,46 @@ Insert Lead paragraph here. Insert Lead paragraph here. v</description>
     
     <item>
       <title>Markdown Syntax Guide</title>
-      <link>https://codingriver.github.io/post/unity3d/markdown-syntax/</link>
+      <link>https://codingriver.github.io/life/markdown-syntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://codingriver.github.io/post/unity3d/markdown-syntax/</guid>
+      <guid>https://codingriver.github.io/life/markdown-syntax/</guid>
       <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Rich Content</title>
-      <link>https://codingriver.github.io/post/csharp/rich-content/</link>
+      <link>https://codingriver.github.io/life/rich-content/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://codingriver.github.io/post/csharp/rich-content/</guid>
+      <guid>https://codingriver.github.io/life/rich-content/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Placeholder Text</title>
-      <link>https://codingriver.github.io/post/csharp/placeholder-text/</link>
+      <link>https://codingriver.github.io/life/placeholder-text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://codingriver.github.io/post/csharp/placeholder-text/</guid>
+      <guid>https://codingriver.github.io/life/placeholder-text/</guid>
       <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Math Typesetting</title>
-      <link>https://codingriver.github.io/post/csharp/math-typesetting/</link>
+      <link>https://codingriver.github.io/life/math-typesetting/</link>
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://codingriver.github.io/post/csharp/math-typesetting/</guid>
+      <guid>https://codingriver.github.io/life/math-typesetting/</guid>
       <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Emoji Support</title>
-      <link>https://codingriver.github.io/post/unity3d/emoji-support/</link>
+      <link>https://codingriver.github.io/life/emoji-support/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://codingriver.github.io/post/unity3d/emoji-support/</guid>
+      <guid>https://codingriver.github.io/life/emoji-support/</guid>
       <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
     
