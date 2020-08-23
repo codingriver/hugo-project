@@ -3,18 +3,59 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://codingriver.github.io/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <loc>https://codingriver.github.io/technology/</loc>
+    <lastmod>2020-08-20T18:21:23+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://codingriver.github.io/categories/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-20T18:21:23+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://codingriver.github.io/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <lastmod>2020-08-20T18:21:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codingriver.github.io/technology/ha/</loc>
+    <lastmod>2020-08-20T18:21:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codingriver.github.io/categories/post/</loc>
+    <lastmod>2020-08-20T18:21:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codingriver.github.io/tags/tag_name1/</loc>
+    <lastmod>2020-08-20T18:21:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codingriver.github.io/tags/tag_name2/</loc>
+    <lastmod>2020-08-20T18:21:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codingriver.github.io/tags/</loc>
+    <lastmod>2020-08-20T18:21:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codingriver.github.io/tool/</loc>
+    <lastmod>2020-08-20T18:21:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codingriver.github.io/tool/unitytool/</loc>
+    <lastmod>2020-08-20T18:21:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codingriver.github.io/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -49,11 +90,6 @@
   
   <url>
     <loc>https://codingriver.github.io/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://codingriver.github.io/tags/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
   

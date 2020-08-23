@@ -6,10 +6,19 @@
     <description>Recent content in Categories on codingriver</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2020 18:21:23 +0800</lastBuildDate>
     
 	<atom:link href="https://codingriver.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>post</title>
+      <link>https://codingriver.github.io/categories/post/</link>
+      <pubDate>Thu, 20 Aug 2020 18:21:23 +0800</pubDate>
+      
+      <guid>https://codingriver.github.io/categories/post/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>syntax</title>
