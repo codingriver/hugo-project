@@ -49,6 +49,11 @@
   </url>
   
   <url>
+    <loc>https://codingriver.github.io/search/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://codingriver.github.io/tags/css/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
@@ -74,6 +79,11 @@
   </url>
   
   <url>
+    <loc>https://codingriver.github.io/series/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://codingriver.github.io/categories/syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
@@ -85,6 +95,11 @@
   
   <url>
     <loc>https://codingriver.github.io/categories/themes/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://codingriver.github.io/series/themes-guide/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -136,14 +151,6 @@
   <url>
     <loc>https://codingriver.github.io/csharp/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://codingriver.github.io/post/other/</loc>
-  </url>
-  
-  <url>
-    <loc>https://codingriver.github.io/post/</loc>
   </url>
   
 </urlset>
