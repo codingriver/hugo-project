@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>所有文章 - codingriver</title>
+        <title>所有文章 - codingriver blog</title>
         <link>https://codingriver.github.io/posts/</link>
-        <description>所有文章 | codingriver</description>
+        <description>所有文章 | codingriver blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>codingriver@163.com (codingriver)</managingEditor>
             <webMaster>codingriver@163.com (codingriver)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 06 Mar 2020 21:40:32 &#43;0800</lastBuildDate><atom:link href="https://codingriver.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>主题文档 - 基本概念</title>
