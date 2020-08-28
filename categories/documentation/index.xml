@@ -1,22 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Documentation on LoveIt</title>
-    <link>https://codingriver.github.io/categories/documentation/</link>
-    <description>Recent content in Documentation on LoveIt</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://codingriver.github.io/categories/documentation/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>主题文档 - 内容</title>
-      <link>https://codingriver.github.io/posts/theme-documentation-content/</link>
-      <pubDate>Thu, 05 Mar 2020 16:30:05 +0800</pubDate>
-      
-      <guid>https://codingriver.github.io/posts/theme-documentation-content/</guid>
-      <description>了解如何在 LoveIt 主题中快速, 直观地创建和组织内容. hello en</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Documentation - Category - LoveIt</title>
+        <link>https://codingriver.github.io/categories/documentation/</link>
+        <description>Documentation - Category - LoveIt</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><atom:link href="https://codingriver.github.io/categories/documentation/" rel="self" type="application/rss+xml" /><item>
+    <title>主题文档 - 内容</title>
+    <link>https://codingriver.github.io/theme-documentation-content/</link>
+    <pubDate>Thu, 05 Mar 2020 16:30:05 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://codingriver.github.io/theme-documentation-content/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/theme-documentation-content/featured-image.jpg" referrerpolicy="no-referrer">
+            </div>了解如何在 LoveIt 主题中快速, 直观地创建和组织内容. hello en]]></description>
+</item></channel>
 </rss>
