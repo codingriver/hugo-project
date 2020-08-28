@@ -1,17 +1,24 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>emoji - 标签 - codingriver blog</title>
-        <link>https://codingriver.github.io/tags/emoji/</link>
-        <description>emoji - 标签 - codingriver blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>codingriver@163.com (codingriver)</managingEditor>
-            <webMaster>codingriver@163.com (codingriver)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</lastBuildDate><atom:link href="https://codingriver.github.io/tags/emoji/" rel="self" type="application/rss+xml" /><item>
-    <title>Emoji 支持</title>
-    <link>https://codingriver.github.io/emoji-support/</link>
-    <pubDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://codingriver.github.io/emoji-support/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/emoji-support/featured-image.jpg" referrerpolicy="no-referrer">
-            </div><p>Emoji 可以通过多种方式在 Hugo 项目中启用.</p>]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>emoji on codingriver</title>
+    <link>https://codingriver.github.io/tags/emoji/</link>
+    <description>Recent content in emoji on codingriver</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 05 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://codingriver.github.io/tags/emoji/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Emoji Support</title>
+      <link>https://codingriver.github.io/life/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingriver.github.io/life/emoji-support/</guid>
+      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
 </rss>

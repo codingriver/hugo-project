@@ -1,26 +1,24 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>shortcodes - 标签 - codingriver blog</title>
-        <link>https://codingriver.github.io/tags/shortcodes/</link>
-        <description>shortcodes - 标签 - codingriver blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>codingriver@163.com (codingriver)</managingEditor>
-            <webMaster>codingriver@163.com (codingriver)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 04 Mar 2020 16:29:59 &#43;0800</lastBuildDate><atom:link href="https://codingriver.github.io/tags/shortcodes/" rel="self" type="application/rss+xml" /><item>
-    <title>主题文档 - 内置 Shortcodes</title>
-    <link>https://codingriver.github.io/theme-documentation-built-in-shortcodes/</link>
-    <pubDate>Wed, 04 Mar 2020 16:29:59 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://codingriver.github.io/theme-documentation-built-in-shortcodes/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/theme-documentation-built-in-shortcodes/featured-image.png" referrerpolicy="no-referrer">
-            </div><p><strong>Hugo</strong> 提供了多个内置的 Shortcodes, 以方便作者保持 Markdown 内容的整洁.</p>]]></description>
-</item><item>
-    <title>主题文档 - 扩展 Shortcodes</title>
-    <link>https://codingriver.github.io/theme-documentation-extended-shortcodes/</link>
-    <pubDate>Tue, 03 Mar 2020 16:29:59 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://codingriver.github.io/theme-documentation-extended-shortcodes/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/images/theme-documentation-extended-shortcodes/featured-image.jpg" referrerpolicy="no-referrer">
-            </div><p><strong>LoveIt</strong> 主题在 Hugo 内置的 shortcode 的基础上提供多个扩展的 shortcode.</p>]]></description>
-</item></channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shortcodes on codingriver</title>
+    <link>https://codingriver.github.io/tags/shortcodes/</link>
+    <description>Recent content in shortcodes on codingriver</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://codingriver.github.io/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rich Content</title>
+      <link>https://codingriver.github.io/life/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingriver.github.io/life/rich-content/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
 </rss>
