@@ -1,24 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>shortcodes on codingriver</title>
-    <link>https://codingriver.github.io/tags/shortcodes/</link>
-    <description>Recent content in shortcodes on codingriver</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://codingriver.github.io/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Rich Content</title>
-      <link>https://codingriver.github.io/life/rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://codingriver.github.io/life/rich-content/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>shortcodes - Tag - LoveIt</title>
+        <link>https://example.com/tags/shortcodes/</link>
+        <description>shortcodes - Tag - LoveIt</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 03 Mar 2020 16:29:41 &#43;0800</lastBuildDate><atom:link href="https://example.com/tags/shortcodes/" rel="self" type="application/rss+xml" /><item>
+    <title>Theme Documentation - Extended Shortcodes</title>
+    <link>https://example.com/theme-documentation-extended-shortcodes/</link>
+    <pubDate>Tue, 03 Mar 2020 16:29:41 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>https://example.com/theme-documentation-extended-shortcodes/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/theme-documentation-extended-shortcodes/featured-image.jpg" referrerpolicy="no-referrer">
+            </div><p><strong>LoveIt</strong> theme provides multiple shortcodes on top of built-in ones in Hugo.</p>]]></description>
+</item></channel>
 </rss>
