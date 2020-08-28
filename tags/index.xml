@@ -1,40 +1,112 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on codingriver blog</title>
+    <title>Tags on codingriver</title>
     <link>https://codingriver.github.io/tags/</link>
-    <description>Recent content in Tags on codingriver blog</description>
+    <description>Recent content in Tags on codingriver</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Fri, 31 Jul 2020 20:31:46 +0800</lastBuildDate>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 20 Aug 2020 18:21:23 +0800</lastBuildDate>
     
 	<atom:link href="https://codingriver.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>hello</title>
-      <link>https://codingriver.github.io/tags/hello/</link>
-      <pubDate>Fri, 31 Jul 2020 20:31:46 +0800</pubDate>
+      <title>Tag_name1</title>
+      <link>https://codingriver.github.io/tags/tag_name1/</link>
+      <pubDate>Thu, 20 Aug 2020 18:21:23 +0800</pubDate>
       
-      <guid>https://codingriver.github.io/tags/hello/</guid>
+      <guid>https://codingriver.github.io/tags/tag_name1/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>测试</title>
-      <link>https://codingriver.github.io/tags/%E6%B5%8B%E8%AF%95/</link>
-      <pubDate>Fri, 31 Jul 2020 20:31:46 +0800</pubDate>
+      <title>Tag_name2</title>
+      <link>https://codingriver.github.io/tags/tag_name2/</link>
+      <pubDate>Thu, 20 Aug 2020 18:21:23 +0800</pubDate>
       
-      <guid>https://codingriver.github.io/tags/%E6%B5%8B%E8%AF%95/</guid>
+      <guid>https://codingriver.github.io/tags/tag_name2/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>golang</title>
-      <link>https://codingriver.github.io/tags/golang/</link>
-      <pubDate>Wed, 18 Dec 2019 21:55:00 +0800</pubDate>
+      <title>css</title>
+      <link>https://codingriver.github.io/tags/css/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://codingriver.github.io/tags/golang/</guid>
+      <guid>https://codingriver.github.io/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>featured</title>
+      <link>https://codingriver.github.io/tags/featured/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingriver.github.io/tags/featured/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>https://codingriver.github.io/tags/html/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingriver.github.io/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>https://codingriver.github.io/tags/markdown/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingriver.github.io/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>themes</title>
+      <link>https://codingriver.github.io/tags/themes/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingriver.github.io/tags/themes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>privacy</title>
+      <link>https://codingriver.github.io/tags/privacy/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingriver.github.io/tags/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shortcodes</title>
+      <link>https://codingriver.github.io/tags/shortcodes/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingriver.github.io/tags/shortcodes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>text</title>
+      <link>https://codingriver.github.io/tags/text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingriver.github.io/tags/text/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emoji</title>
+      <link>https://codingriver.github.io/tags/emoji/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingriver.github.io/tags/emoji/</guid>
       <description></description>
     </item>
     

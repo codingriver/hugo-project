@@ -1,7 +1,7 @@
-# Theme Documentation - Extended Shortcodes
+# 主题文档 - 扩展 Shortcodes
 
 
-**LoveIt** theme provides multiple shortcodes on top of built-in ones in Hugo.
+**LoveIt** 主题在 Hugo 内置的 shortcode 的基础上提供多个扩展的 shortcode.
 
 <!--more-->
 
@@ -10,20 +10,19 @@
 {{< version 0.2.0 changed >}}
 
 {{< admonition >}}
-Hugo **extended** version is necessary for `style` shortcode.
+Hugo **extended** 版本对于 `style` shortcode 是必需的.
 {{< /admonition >}}
 
-`style` is a shortcode to insert custom style in your post.
+`style` shortcode 用来在你的文章中插入自定义样式.
 
-The `style` shortcode has two positional parameters.
+`style` shortcode 有两个位置参数.
 
-The **first** one is the custom style content,
-which supports nesting syntax in [:(fab fa-sass fa-fw): SASS](https://sass-lang.com/documentation/style-rules/declarations#nesting)
-and `&` referring to this parent HTML element.
+第一个参数是自定义样式的内容. 它支持 [:(fab fa-sass fa-fw): SASS](https://sass-lang.com/documentation/style-rules/declarations#nesting) 中的嵌套语法,
+并且 `&` 指代这个父元素.
 
-And the **second** one is the tag name of the HTML element wrapping the content you want to change style, and whose default value is `div`.
+第二个参数是包裹你要更改样式的内容的 HTML 标签, 默认值是 `div`.
 
-Example `style` input:
+一个 `style` 示例:
 
 ```markdown
 {{</* style "text-align:right; strong{color:#00b1ff;}" */>}}
@@ -31,7 +30,7 @@ This is a **right-aligned** paragraph.
 {{</* /style */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< style "text-align:right; strong{color:#00b1ff;}" >}}
 This is a **right-aligned** paragraph.
@@ -41,63 +40,64 @@ This is a **right-aligned** paragraph.
 
 {{< version 0.2.0 >}}
 
-`link` shortcode is an alternative to [Markdown link syntax](../basic-markdown-syntax#links). `link` shortcode can provide some other features and can be used in code blocks.
+`link` shortcode 是 [Markdown 链接语法](../basic-markdown-syntax#links) 的替代.
+`link` shortcode 可以提供一些其它的功能并且可以在代码块中使用.
 
-The `link` shortcode has the following named parameters:
+`link` shortcode 有以下命名参数:
 
-* **href** *[required]* (**first** positional parameter)
+* **href** *[必需]* (**第一个**位置参数)
 
-    Destination of the link.
+    链接的目标.
 
-* **content** *[optional]* (**second** positional parameter)
+* **content** *[可选]* (**第二个**位置参数)
 
-    Content of the link, default value is the value of **href** parameter.
+    链接的内容, 默认值是 **href** 参数的值.
 
-    *Markdown or HTML format is supported.*
+    *支持 Markdown 或者 HTML 格式.*
 
-* **title** *[optional]* (**third** positional parameter)
+* **title** *[可选]* (**第三个**位置参数)
 
-    `title` attribute of the HTML `a` tag, which will be shown when hovering on the link.
+    HTML `a` 标签 的 `title` 属性, 当悬停在链接上会显示的提示.
 
-* **class** *[optional]*
+* **rel** *[可选]*
 
-    `class` attribute of the HTML `a` tag.
+    HTML `a` 标签 的 `rel` 补充属性.
 
-* **rel** *[optional]*
+* **class** *[可选]*
 
-    Additional `rel` attributes of the HTML `a` tag.
+    HTML `a` 标签 的 `class` 属性.
 
-Example `link` input:
+一个 `link` 示例:
 
 ```markdown
 {{</* link "https://assemble.io" */>}}
-Or
+或者
 {{</* link href="https://assemble.io" */>}}
 
 {{</* link "mailto:contact@revolunet.com" */>}}
-Or
+或者
 {{</* link href="mailto:contact@revolunet.com" */>}}
 
 {{</* link "https://assemble.io" Assemble */>}}
-Or
+或者
 {{</* link href="https://assemble.io" content=Assemble */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 * {{< link "https://assemble.io" >}}
 * {{< link "mailto:contact@revolunet.com" >}}
 * {{< link "https://assemble.io" Assemble >}}
 
-Example `link` input with a title:
+一个带有标题的 `link` 示例:
 
 ```markdown
 {{</* link "https://github.com/upstage/" Upstage "Visit Upstage!" */>}}
-Or
+或者
 {{</* link href="https://github.com/upstage/" content=Upstage title="Visit Upstage!" */>}}
 ```
 
-The rendered output looks like this (hover over the link, there should be a tooltip):
+呈现的输出效果如下 (将鼠标悬停在链接上，会有一行提示):
 
 {{< link "https://github.com/upstage/" Upstage "Visit Upstage!" >}}
 
@@ -105,167 +105,167 @@ The rendered output looks like this (hover over the link, there should be a tool
 
 {{< version 0.2.0 changed >}}
 
-`image` shortcode is an alternative to [`figure` shortcode](../theme-documentation-built-in-shortcodes#figure). `image` shortcode can take full advantage of the dependent libraries of [lazysizes](https://github.com/aFarkas/lazysizes) and [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js).
+`image` shortcode 是 [`figure` shortcode](../theme-documentation-built-in-shortcodes#figure) 的替代. `image` shortcode 可以充分利用 [lazysizes](https://github.com/aFarkas/lazysizes) 和 [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js) 两个依赖库.
 
-The `image` shortcode has the following named parameters:
+`image` shortcode 有以下命名参数:
 
-* **src** *[required]* (**first** positional parameter)
+* **src** *[必需]* (**第一个**位置参数)
 
-    URL of the image to be displayed.
+    图片的 URL.
 
-* **alt** *[optional]* (**second** positional parameter)
+* **alt** *[可选]* (**第二个**位置参数)
 
-    Alternate text for the image if the image cannot be displayed, default value is the value of **src** parameter.
+    图片无法显示时的替代文本, 默认值是 **src** 参数的值.
 
-    *Markdown or HTML format is supported.*
+    *支持 Markdown 或者 HTML 格式.*
 
-* **caption** *[optional]* (**third** positional parameter)
+* **caption** *[可选]* (**第三个**位置参数)
 
-    Image caption.
+    图片标题.
 
-    *Markdown or HTML format is supported.*
+    *支持 Markdown 或者 HTML 格式.*
 
-* **title** *[optional]*
+* **title** *[可选]*
 
-    Image title that will be shown when hovering on the image.
+    当悬停在图片上会显示的提示.
 
-* **class** *[optional]*
+* **class** *[可选]*
 
-    `class` attribute of the HTML `figure` tag.
+    HTML `figure` 标签的 `class` 属性.
 
-* **src_s** *[optional]*
+* **src_s** *[可选]*
 
-    URL of the image thumbnail, used for lightgallery, default value is the value of **src** parameter.
+    图片缩略图的 URL, 用在画廊模式中, 默认值是 **src** 参数的值.
 
-* **src_l** *[optional]*
+* **src_l** *[可选]*
 
-    URL of the HD image, used for lightgallery, default value is the value of **src** parameter.
+    高清图片的 URL, 用在画廊模式中, 默认值是 **src** 参数的值.
 
-* **height** *[optional]*
+* **height** *[可选]*
 
-    `height` attribute of the image.
+    图片的 `height` 属性.
 
-* **width** *[optional]*
+* **width** *[可选]*
 
-    `width` attribute of the image.
+    图片的 `width` 属性.
 
-* **linked** *[optional]*
+* **linked** *[可选]*
 
-    Whether the image needs to be hyperlinked, default value is `true`.
+    图片是否需要被链接, 默认值是 `true`.
 
-* **rel** *[optional]*
+* **rel** *[可选]*
 
-    Additional `rel` attributes of the HTML `a` tag, if **linked** parameter is set to `true`.
+    HTML `a` 标签 的 `rel` 补充属性, 仅在 **linked** 属性设置成 `true` 时有效.
 
-* **large** *[optional]*
+* **large** *[可选]*
 
-    Whether the image is large used for loading animation, if **linked** parameter is set to `false`.
+    图片是否是大尺寸的, 用来加载动画, 仅在 **linked** 属性设置成 `false` 时有效.
 
-Example `image` input:
+一个 `image` 示例:
 
 ```markdown
 {{</* image src="/images/theme-documentation-extended-shortcodes/lighthouse.jpg" caption="Lighthouse (`image`)" src-s="/images/theme-documentation-extended-shortcodes/lighthouse-small.jpg" src-l="/images/theme-documentation-extended-shortcodes/lighthouse-large.jpg" */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< image src="/images/theme-documentation-extended-shortcodes/lighthouse.jpg" caption="Lighthouse (`image`)" src-s="/images/theme-documentation-extended-shortcodes/lighthouse-small.jpg" src-l="/images/theme-documentation-extended-shortcodes/lighthouse-large.jpg" >}}
 
 ## 4 admonition
 
-The `admonition` shortcode supports **12** types of banners to help you put notice in your page.
+`admonition` shortcode 支持 **12** 种 帮助你在页面中插入提示的横幅.
 
-*Markdown or HTML format in the content is supported.*
+*支持 Markdown 或者 HTML 格式.*
 
 {{< admonition >}}
-A **note** banner
+一个 **注意** 横幅
 {{< /admonition >}}
 
 {{< admonition abstract >}}
-An **abstract** banner
+一个 **摘要** 横幅
 {{< /admonition >}}
 
 {{< admonition info >}}
-A **info** banner
+一个 **信息** 横幅
 {{< /admonition >}}
 
 {{< admonition tip >}}
-A **tip** banner
+一个 **技巧** 横幅
 {{< /admonition >}}
 
 {{< admonition success >}}
-A **success** banner
+一个 **成功** 横幅
 {{< /admonition >}}
 
 {{< admonition question >}}
-A **question** banner
+一个 **问题** 横幅
 {{< /admonition >}}
 
 {{< admonition warning >}}
-A **warning** banner
+一个 **警告** 横幅
 {{< /admonition >}}
 
 {{< admonition failure >}}
-A **failure** banner
+一个 **失败** 横幅
 {{< /admonition >}}
 
 {{< admonition danger >}}
-A **danger** banner
+一个 **危险** 横幅
 {{< /admonition >}}
 
 {{< admonition bug >}}
-A **bug** banner
+一个 **Bug** 横幅
 {{< /admonition >}}
 
 {{< admonition example >}}
-An **example** banner
+一个 **示例** 横幅
 {{< /admonition >}}
 
 {{< admonition quote >}}
-A **quote** banner
+一个 **引用** 横幅
 {{< /admonition >}}
 
-The `admonition` shortcode has the following named parameters:
+`admonition` shortcode 有以下命名参数:
 
-* **type** *[optional]* (**first** positional parameter)
+* **type** *[必需]* (**第一个**位置参数)
 
-    Type of the `admonition` banner, default value is `note`.
+    `admonition` 横幅的类型, 默认值是 `note`.
 
-* **title** *[optional]* (**second** positional parameter)
+* **title** *[可选]* (**第二个**位置参数)
 
-    Title of the `admonition` banner, default value is the value of **type** parameter.
+    `admonition` 横幅的标题, 默认值是 **type** 参数的值.
 
-* **open** *[optional]* (**third** positional parameter) {{< version 0.2.0 changed >}}
+* **open** *[可选]* (**第三个**位置参数) {{< version 0.2.0 changed >}}
 
-    Whether the content will be expandable by default, default value is `true`.
+    横幅内容是否默认展开, 默认值是 `true`.
 
-Example `admonition` input:
+一个 `admonition` 示例:
 
 ```markdown
 {{</* admonition type=tip title="This is a tip" open=false */>}}
-A **tip** banner
+一个 **技巧** 横幅
 {{</* /admonition */>}}
-Or
+或者
 {{</* admonition tip "This is a tip" false */>}}
-A **tip** banner
+一个 **技巧** 横幅
 {{</* /admonition */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< admonition tip "This is a tip" false >}}
-A **tip** banner
+一个 **技巧** 横幅
 {{< /admonition >}}
 
 ## 5 mermaid
 
-[mermaid](https://mermaidjs.github.io/) is a library helping you to generate diagram and flowcharts from text, in a similar manner as Markdown.
+[mermaid](https://mermaidjs.github.io/) 是一个可以帮助你在文章中生成图表和流程图的库, 类似 Markdown 的语法.
 
-Just insert your mermaid code in the `mermaid` shortcode and that’s it.
+只需将你的 mermaid 代码插入 `mermaid` shortcode 中即可.
 
-### 5.1 Flowchart {#flowchart}
+### 5.1 流程图 {#flowchart}
 
-Example **flowchart** `mermaid` input:
+一个 **流程图** `mermaid` 示例:
 
 ```markdown
 {{</* mermaid */>}}
@@ -277,7 +277,7 @@ graph LR;
 {{</* /mermaid */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< mermaid >}}
 graph LR;
@@ -287,9 +287,9 @@ graph LR;
     C -->|Two| E[Result two]
 {{< /mermaid >}}
 
-### 5.2 Sequence Diagram {#sequence-diagram}
+### 5.2 时序图 {#sequence-diagram}
 
-Example **sequence diagram** `mermaid` input:
+一个 **时序图** `mermaid` 示例:
 
 ```markdown
 {{</* mermaid */>}}
@@ -307,7 +307,7 @@ sequenceDiagram
 {{</* /mermaid */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< mermaid >}}
 sequenceDiagram
@@ -323,9 +323,9 @@ sequenceDiagram
     Bob-->John: Jolly good!
 {{< /mermaid >}}
 
-### 5.3 GANTT {#gantt}
+### 5.3 甘特图 {#gantt}
 
-Example **GANTT** `mermaid` input:
+一个 **甘特图** `mermaid` 示例:
 
 ```markdown
 {{</* mermaid */>}}
@@ -347,7 +347,7 @@ gantt
 {{</* /mermaid */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< mermaid >}}
 gantt
@@ -367,9 +367,9 @@ gantt
     Add to mermaid                      :1d
 {{< /mermaid >}}
 
-### 5.4 Class Diagram {#class-diagram}
+### 5.4 类图 {#class-diagram}
 
-Example **class diagram** `mermaid` input:
+一个 **类图** `mermaid` 示例:
 
 ```markdown
 {{</* mermaid */>}}
@@ -390,7 +390,7 @@ classDiagram
 {{</* /mermaid */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< mermaid >}}
 classDiagram
@@ -409,9 +409,9 @@ classDiagram
     Class08 <--> C2: Cool label
 {{< /mermaid >}}
 
-### 5.5 State Diagram {#state-diagram}
+### 5.5 状态图 {#state-diagram}
 
-Example **state diagram** `mermaid` input:
+一个 **状态图** `mermaid` 示例:
 
 ```markdown
 {{</* mermaid */>}}
@@ -425,7 +425,7 @@ stateDiagram
 {{</* /mermaid */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< mermaid >}}
 stateDiagram
@@ -437,9 +437,9 @@ stateDiagram
     Crash --> [*]
 {{< /mermaid >}}
 
-### 5.6 Git Graph {#git-graph}
+### 5.6 Git 图 {#git-graph}
 
-Example **git graph** `mermaid` input:
+一个 **Git 图** `mermaid` 示例:
 
 ```markdown
 {{</* mermaid */>}}
@@ -462,7 +462,7 @@ end
 {{</* /mermaid */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< mermaid >}}
 gitGraph:
@@ -483,9 +483,9 @@ end
     merge newbranch
 {{< /mermaid >}}
 
-### 5.7 Pie {#pie}
+### 5.7 饼图 {#pie}
 
-Example **pie** `mermaid` input:
+一个 **饼图** `mermaid` 示例:
 
 ```markdown
 {{</* mermaid */>}}
@@ -496,7 +496,7 @@ pie
 {{</* /mermaid */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< mermaid >}}
 pie
@@ -507,19 +507,19 @@ pie
 
 ## 6 echarts
 
-[ECharts](https://echarts.apache.org/) is a library helping you to generate interactive data visualization.
+[ECharts](https://echarts.apache.org/) 是一个帮助你生成交互式数据可视化的库.
 
-The basic chart types ECharts supports include [line series](https://echarts.apache.org/en/option.html#series-line), [bar series](https://echarts.apache.org/en/option.html#series-line), [scatter series](https://echarts.apache.org/en/option.html#series-scatter), [pie charts](https://echarts.apache.org/en/option.html#series-pie), [candle-stick series](https://echarts.apache.org/en/option.html#series-candlestick), [boxplot series](https://echarts.apache.org/en/option.html#series-boxplot) for statistics, [map series](https://echarts.apache.org/en/option.html#series-map), [heatmap series](https://echarts.apache.org/en/option.html#series-heatmap), [lines series](https://echarts.apache.org/en/option.html#series-lines) for directional information, [graph series](https://echarts.apache.org/en/option.html#series-graph) for relationships, [treemap series](https://echarts.apache.org/en/option.html#series-treemap), [sunburst series](https://echarts.apache.org/en/option.html#series-sunburst), [parallel series](https://echarts.apache.org/en/option.html#series-parallel) for multi-dimensional data, [funnel series](https://echarts.apache.org/en/option.html#series-funnel), [gauge series](https://echarts.apache.org/en/option.html#series-gauge). And it's extremely easy to create a combinition of them with ECharts.
+ECharts 提供了常规的 [折线图](https://echarts.apache.org/zh/option.html#series-line), [柱状图](https://echarts.apache.org/zh/option.html#series-line), [散点图](https://echarts.apache.org/zh/option.html#series-scatter), [饼图](https://echarts.apache.org/zh/option.html#series-pie), [K线图](https://echarts.apache.org/zh/option.html#series-candlestick), 用于统计的 [盒形图](https://echarts.apache.org/zh/option.html#series-boxplot), 用于地理数据可视化的 [地图](https://echarts.apache.org/zh/option.html#series-map), [热力图](https://echarts.apache.org/zh/option.html#series-heatmap), [线图](https://echarts.apache.org/zh/option.html#series-lines), 用于关系数据可视化的 [关系图](https://echarts.apache.org/zh/option.html#series-graph), [treemap](https://echarts.apache.org/zh/option.html#series-treemap), [旭日图](https://echarts.apache.org/zh/option.html#series-sunburst), 多维数据可视化的 [平行坐标](https://echarts.apache.org/zh/option.html#series-parallel), 还有用于 BI 的 [漏斗图](https://echarts.apache.org/zh/option.html#series-funnel), [仪表盘](https://echarts.apache.org/zh/option.html#series-gauge), 并且支持图与图之间的混搭.
 
-Just insert your ECharts option in `JSON`/`YAML`/`TOML` format in the `echarts` shortcode and that’s it.
+只需在 `echarts` shortcode 中以 `JSON`/`YAML`/`TOML`格式插入 ECharts 选项即可.
 
-Example `echarts` input in `JSON` format:
+一个 `JSON` 格式的 `echarts` 示例:
 
 ```json
 {{</* echarts */>}}
 {
   "title": {
-    "text": "Summary Line Chart",
+    "text": "折线统计图",
     "top": "2%",
     "left": "center"
   },
@@ -527,7 +527,7 @@ Example `echarts` input in `JSON` format:
     "trigger": "axis"
   },
   "legend": {
-    "data": ["Email Marketing", "Affiliate Advertising", "Video Advertising", "Direct View", "Search Engine"],
+    "data": ["邮件营销", "联盟广告", "视频广告", "直接访问", "搜索引擎"],
     "top": "10%"
   },
   "grid": {
@@ -540,47 +540,47 @@ Example `echarts` input in `JSON` format:
   "toolbox": {
     "feature": {
       "saveAsImage": {
-        "title": "Save as Image"
+        "title": "保存为图片"
       }
     }
   },
   "xAxis": {
     "type": "category",
     "boundaryGap": false,
-    "data": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    "data": ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
   },
   "yAxis": {
     "type": "value"
   },
   "series": [
     {
-      "name": "Email Marketing",
+      "name": "邮件营销",
       "type": "line",
-      "stack": "Total",
+      "stack": "总量",
       "data": [120, 132, 101, 134, 90, 230, 210]
     },
     {
-      "name": "Affiliate Advertising",
+      "name": "联盟广告",
       "type": "line",
-      "stack": "Total",
+      "stack": "总量",
       "data": [220, 182, 191, 234, 290, 330, 310]
     },
     {
-      "name": "Video Advertising",
+      "name": "视频广告",
       "type": "line",
-      "stack": "Total",
+      "stack": "总量",
       "data": [150, 232, 201, 154, 190, 330, 410]
     },
     {
-      "name": "Direct View",
+      "name": "直接访问",
       "type": "line",
-      "stack": "Total",
+      "stack": "总量",
       "data": [320, 332, 301, 334, 390, 330, 320]
     },
     {
-      "name": "Search Engine",
+      "name": "搜索引擎",
       "type": "line",
-      "stack": "Total",
+      "stack": "总量",
       "data": [820, 932, 901, 934, 1290, 1330, 1320]
     }
   ]
@@ -588,23 +588,23 @@ Example `echarts` input in `JSON` format:
 {{</* /echarts */>}}
 ```
 
-The same in `YAML` format:
+一个 `YAML` 格式的 `echarts` 示例:
 
 ```yaml
 {{</* echarts */>}}
 title:
-    text: Summary Line Chart
+    text: 折线统计图
     top: 2%
     left: center
 tooltip:
     trigger: axis
 legend:
     data:
-        - Email Marketing
-        - Affiliate Advertising
-        - Video Advertising
-        - Direct View
-        - Search Engine
+        - 邮件营销
+        - 联盟广告
+        - 视频广告
+        - 直接访问
+        - 搜索引擎
     top: 10%
 grid:
     left: 5%
@@ -615,24 +615,24 @@ grid:
 toolbox:
     feature:
         saveAsImage:
-            title: Save as Image
+            title: 保存为图片
 xAxis:
     type: category
     boundaryGap: false
     data:
-        - Monday
-        - Tuesday
-        - Wednesday
-        - Thursday
-        - Friday
-        - Saturday
-        - Sunday
+        - 周一
+        - 周二
+        - 周三
+        - 周四
+        - 周五
+        - 周六
+        - 周日
 yAxis:
     type: value
 series:
-    - name: Email Marketing
+    - name: 邮件营销
       type: line
-      stack: Total
+      stack: 总量
       data:
           - 120
           - 132
@@ -641,9 +641,9 @@ series:
           - 90
           - 230
           - 210
-    - name: Affiliate Advertising
+    - name: 联盟广告
       type: line
-      stack: Total
+      stack: 总量
       data:
           - 220
           - 182
@@ -652,9 +652,9 @@ series:
           - 290
           - 330
           - 310
-    - name: Video Advertising
+    - name: 视频广告
       type: line
-      stack: Total
+      stack: 总量
       data:
           - 150
           - 232
@@ -663,9 +663,9 @@ series:
           - 190
           - 330
           - 410
-    - name: Direct View
+    - name: 直接访问
       type: line
-      stack: Total
+      stack: 总量
       data:
           - 320
           - 332
@@ -674,9 +674,9 @@ series:
           - 390
           - 330
           - 320
-    - name: Search Engine
+    - name: 搜索引擎
       type: line
-      stack: Total
+      stack: 总量
       data:
           - 820
           - 932
@@ -688,12 +688,12 @@ series:
 {{</* /echarts */>}}
 ```
 
-The same in `TOML` format:
+一个 `TOML` 格式的 `echarts` 示例:
 
 ```toml
 {{</* echarts */>}}
 [title]
-text = "Summary Line Chart"
+text = "折线统计图"
 top = "2%"
 left = "center"
 
@@ -702,11 +702,11 @@ trigger = "axis"
 
 [legend]
 data = [
-  "Email Marketing",
-  "Affiliate Advertising",
-  "Video Advertising",
-  "Direct View",
-  "Search Engine"
+  "邮件营销",
+  "联盟广告",
+  "视频广告",
+  "直接访问",
+  "搜索引擎"
 ]
 top = "10%"
 
@@ -720,28 +720,28 @@ containLabel = true
 [toolbox]
 [toolbox.feature]
 [toolbox.feature.saveAsImage]
-title = "Save as Image"
+title = "保存为图片"
 
 [xAxis]
 type = "category"
 boundaryGap = false
 data = [
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-  "Sunday"
+  "周一",
+  "周二",
+  "周三",
+  "周四",
+  "周五",
+  "周六",
+  "周日"
 ]
 
 [yAxis]
 type = "value"
 
 [[series]]
-name = "Email Marketing"
+name = "邮件营销"
 type = "line"
-stack = "Total"
+stack = "总量"
 data = [
   120.0,
   132.0,
@@ -753,9 +753,9 @@ data = [
 ]
 
 [[series]]
-name = "Affiliate Advertising"
+name = "联盟广告"
 type = "line"
-stack = "Total"
+stack = "总量"
 data = [
   220.0,
   182.0,
@@ -767,9 +767,9 @@ data = [
 ]
 
 [[series]]
-name = "Video Advertising"
+name = "视频广告"
 type = "line"
-stack = "Total"
+stack = "总量"
 data = [
   150.0,
   232.0,
@@ -781,9 +781,9 @@ data = [
 ]
 
 [[series]]
-name = "Direct View"
+name = "直接访问"
 type = "line"
-stack = "Total"
+stack = "总量"
 data = [
   320.0,
   332.0,
@@ -795,9 +795,9 @@ data = [
 ]
 
 [[series]]
-name = "Search Engine"
+name = "搜索引擎"
 type = "line"
-stack = "Total"
+stack = "总量"
 data = [
   820.0,
   932.0,
@@ -810,12 +810,12 @@ data = [
 {{</* /echarts */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< echarts >}}
 {
   "title": {
-    "text": "Summary Line Chart",
+    "text": "折线统计图",
     "top": "2%",
     "left": "center"
   },
@@ -823,7 +823,7 @@ The rendered output looks like this:
     "trigger": "axis"
   },
   "legend": {
-    "data": ["Email Marketing", "Affiliate Advertising", "Video Advertising", "Direct View", "Search Engine"],
+    "data": ["邮件营销", "联盟广告", "视频广告", "直接访问", "搜索引擎"],
     "top": "10%"
   },
   "grid": {
@@ -836,370 +836,368 @@ The rendered output looks like this:
   "toolbox": {
     "feature": {
       "saveAsImage": {
-        "title": "Save as Image"
+        "title": "保存为图片"
       }
     }
   },
   "xAxis": {
     "type": "category",
     "boundaryGap": false,
-    "data": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    "data": ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
   },
   "yAxis": {
     "type": "value"
   },
   "series": [
     {
-      "name": "Email Marketing",
+      "name": "邮件营销",
       "type": "line",
-      "stack": "Total",
+      "stack": "总量",
       "data": [120, 132, 101, 134, 90, 230, 210]
     },
     {
-      "name": "Affiliate Advertising",
+      "name": "联盟广告",
       "type": "line",
-      "stack": "Total",
+      "stack": "总量",
       "data": [220, 182, 191, 234, 290, 330, 310]
     },
     {
-      "name": "Video Advertising",
+      "name": "视频广告",
       "type": "line",
-      "stack": "Total",
+      "stack": "总量",
       "data": [150, 232, 201, 154, 190, 330, 410]
     },
     {
-      "name": "Direct View",
+      "name": "直接访问",
       "type": "line",
-      "stack": "Total",
+      "stack": "总量",
       "data": [320, 332, 301, 334, 390, 330, 320]
     },
     {
-      "name": "Search Engine",
+      "name": "搜索引擎",
       "type": "line",
-      "stack": "Total",
+      "stack": "总量",
       "data": [820, 932, 901, 934, 1290, 1330, 1320]
     }
   ]
 }
 {{< /echarts >}}
 
-The `echarts` shortcode has also the following named parameters:
+`echarts` shortcode 还有以下命名参数:
 
-* **width** *[optional]* (**first** positional parameter)
+* **width** *[可选]* (**第一个**位置参数)
 
-    {{< version 0.2.0 >}} Width of the data visualization, default value is `100%`.
+    {{< version 0.2.0 >}} 数据可视化的宽度, 默认值是 `100%`.
 
-* **height** *[optional]* (**second** positional parameter)
+* **height** *[可选]* (**第二个**位置参数)
 
-    {{< version 0.2.0 >}} Height of the data visualization, default value is `30rem`.
+    {{< version 0.2.0 >}} 数据可视化的高度, 默认值是 `30rem`.
 
 ## 7 mapbox
 
 {{< version 0.2.0 >}}
 
-[Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js) is a JavaScript library that uses WebGL to render interactive maps from [vector tiles](https://docs.mapbox.com/help/glossary/vector-tiles/) and [Mapbox styles](https://docs.mapbox.com/mapbox-gl-js/style-spec/).
+[Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js) 是一个 JavaScript 库，它使用 WebGL, 以 [vector tiles](https://docs.mapbox.com/help/glossary/vector-tiles/) 和 [Mapbox styles](https://docs.mapbox.com/mapbox-gl-js/style-spec/) 为来源, 将它们渲染成互动式地图.
 
-The `mapbox` shortcode has the following named parameters to use Mapbox GL JS:
+`mapbox` shortcode 有以下命名参数来使用 Mapbox GL JS:
 
-* **lng** *[required]* (**first** positional parameter)
+* **lng** *[必需]* (**第一个**位置参数)
 
-    Longitude of the inital centerpoint of the map, measured in degrees.
+    地图初始中心点的经度, 以度为单位.
 
-* **lat** *[required]* (**second** positional parameter)
+* **lat** *[必需]* (**第二个**位置参数)
 
-    Latitude of the inital centerpoint of the map, measured in degrees.
+    地图初始中心点的纬度, 以度为单位.
 
-* **zoom** *[optional]* (**third** positional parameter)
+* **zoom** *[可选]* (**第三个**位置参数)
 
-    The initial zoom level of the map, default value is `10`.
+    地图的初始缩放级别, 默认值是 `10`.
 
-* **marked** *[optional]* (**fourth** positional parameter)
+* **marked** *[可选]* (**第四个**位置参数)
 
-    Whether to add a marker at the inital centerpoint of the map, default value is `true`.
+    是否在地图的初始中心点添加图钉, 默认值是 `true`.
 
-* **light-style** *[optional]* (**fifth** positional parameter)
+* **light-style** *[可选]* (**第五个**位置参数)
 
-    Style for the light theme, default value is the value set in the [front matter](../theme-documentation-content#front-matter) or the [site configuration](../theme-documentation-basics#site-configuration).
+    浅色主题的地图样式, 默认值是[前置参数](../theme-documentation-content#front-matter)或者[网站配置](../theme-documentation-basics#site-configuration)中设置的值.
 
-* **dark-style** *[optional]* (**sixth** positional parameter)
+* **dark-style** *[可选]* (**第六个**位置参数)
 
-    Style for the dark theme, default value is the value set in the [front matter](../theme-documentation-content#front-matter) or the [site configuration](../theme-documentation-basics#site-configuration).
+    深色主题的地图样式, 默认值是[前置参数](../theme-documentation-content#front-matter)或者[网站配置](../theme-documentation-basics#site-configuration)中设置的值.
 
-* **navigation** *[optional]*
+* **navigation** *[可选]*
 
-    Whether to add [NavigationControl](https://docs.mapbox.com/mapbox-gl-js/api#navigationcontrol), default value is the value set in the [front matter](../theme-documentation-content#front-matter) or the [site configuration](../theme-documentation-basics#site-configuration).
+    是否添加 [NavigationControl](https://docs.mapbox.com/mapbox-gl-js/api#navigationcontrol), 默认值是[前置参数](../theme-documentation-content#front-matter)或者[网站配置](../theme-documentation-basics#site-configuration)中设置的值.
 
-* **geolocate** *[optional]*
+* **geolocate** *[可选]*
 
-    Whether to add [GeolocateControl](https://docs.mapbox.com/mapbox-gl-js/api#geolocatecontrol), default value is the value set in the [front matter](../theme-documentation-content#front-matter) or the [site configuration](../theme-documentation-basics#site-configuration).
+    是否添加 [GeolocateControl](https://docs.mapbox.com/mapbox-gl-js/api#geolocatecontrol), 默认值是[前置参数](../theme-documentation-content#front-matter)或者[网站配置](../theme-documentation-basics#site-configuration)中设置的值.
 
-* **scale** *[optional]*
+* **scale** *[可选]*
 
-    Whether to add [ScaleControl](https://docs.mapbox.com/mapbox-gl-js/api#scalecontrol), default value is the value set in the [front matter](../theme-documentation-content#front-matter) or the [site configuration](../theme-documentation-basics#site-configuration).
+    是否添加 [ScaleControl](https://docs.mapbox.com/mapbox-gl-js/api#scalecontrol), 默认值是[前置参数](../theme-documentation-content#front-matter)或者[网站配置](../theme-documentation-basics#site-configuration)中设置的值.
 
-* **fullscreen** *[optional]*
+* **fullscreen** *[可选]*
 
-    Whether to add [FullscreenControl](https://docs.mapbox.com/mapbox-gl-js/api#fullscreencontrol), default value is the value set in the [front matter](../theme-documentation-content#front-matter) or the [site configuration](../theme-documentation-basics#site-configuration).
+   是否添加 [FullscreenControl](https://docs.mapbox.com/mapbox-gl-js/api#fullscreencontrol), 默认值是[前置参数](../theme-documentation-content#front-matter)或者[网站配置](../theme-documentation-basics#site-configuration)中设置的值.
 
-* **width** *[optional]*
+* **width** *[可选]*
 
-    Width of the map, default value is `100%`.
+    地图的宽度, 默认值是 `100%`.
 
-* **height** *[optional]*
+* **height** *[可选]*
 
-    Height of the map, default value is `20rem`.
+    地图的高度, 默认值是 `20rem`.
 
-Example simple `mapbox` input:
+一个简单的 `mapbox` 示例:
 
 ```markdown
 {{</* mapbox 121.485 31.233 12 */>}}
-Or
+或者
 {{</* mapbox lng=121.485 lat=31.233 zoom=12 */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< mapbox 121.485 31.233 12 >}}
 
-Example `mapbox` input with the custom style:
+一个带有自定义样式的 `mapbox` 示例:
 
 ```markdown
-{{</* mapbox -122.252 37.453 10 false "mapbox://styles/mapbox/navigation-preview-day-v4" "mapbox://styles/mapbox/navigation-preview-night-v4" */>}}
-Or
-{{</* mapbox lng=-122.252 lat=37.453 zoom=10 marked=false light-style="mapbox://styles/mapbox/navigation-preview-day-v4" dark-style="mapbox://styles/mapbox/navigation-preview-night-v4" */>}}
+{{</* mapbox -122.252 37.453 10 false "mapbox://styles/mapbox/streets-zh-v1" */>}}
+或者
+{{</* mapbox lng=-122.252 lat=37.453 zoom=10 marked=false light-style="mapbox://styles/mapbox/streets-zh-v1" */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
-{{< mapbox -122.252 37.453 10 false "mapbox://styles/mapbox/navigation-preview-day-v4?optimize=true" "mapbox://styles/mapbox/navigation-preview-night-v4?optimize=true" >}}
+{{< mapbox -122.252 37.453 10 false "mapbox://styles/mapbox/streets-zh-v1?optimize=true" >}}
 
 ## 8 music
 
-The `music` shortcode embeds a responsive music player based on [APlayer](https://github.com/MoePlayer/APlayer) and [MetingJS](https://github.com/metowolf/MetingJS).
+`music` shortcode 基于 [APlayer](https://github.com/MoePlayer/APlayer) 和 [MetingJS](https://github.com/metowolf/MetingJS) 提供了一个内嵌的响应式音乐播放器.
 
-There are three ways to use it the `music` shortcode.
+有三种方式使用 `music` shortcode.
 
-### 8.1 Custom Music URL {#custom-music-url}
+### 8.1 自定义音乐 URL {#custom-music-url}
 
-The `music` shortcode has the following named parameters by custom music URL:
+`music` shortcode 有以下命名参数来使用自定义音乐 URL:
 
-* **server** *[required]*
+* **server** *[必需]*
 
-    URL of the custom music.
+    音乐的链接.
 
-* **name** *[optional]*
+* **type** *[可选]*
 
-    Name of the custom music.
+    音乐的名称.
 
-* **artist** *[optional]*
+* **artist** *[可选]*
 
-    Artist of the custom music.
+    音乐的创作者.
 
-* **cover** *[required]*
+* **cover** *[可选]*
 
-    URL of the custom music cover.
+    音乐的封面链接.
 
-Example `music` input by custom music URL:
+一个使用自定义音乐 URL 的 `music` 示例:
 
 ```markdown
 {{</* music url="/music/Wavelength.mp3" name=Wavelength artist=oldmanyoung cover="/images/theme-documentation-extended-shortcodes/Wavelength.jpg" */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< music url="/music/Wavelength.mp3" name=Wavelength artist=oldmanyoung cover="/images/theme-documentation-extended-shortcodes/Wavelength.jpg" >}}
 
-### 8.2 Music Platform URL Automatic Identification {#automatic-identification}
+### 8.2 音乐平台 URL 的自动识别 {#automatic-identification}
 
-The `music` shortcode has one named parameter by music platform URL automatic identification:
+`music` shortcode 有一个命名参数来使用音乐平台 URL 的自动识别:
 
-* **auto** *[required]* (**first** positional parameter)
+* **auto** *[必需]]* (**第一个**位置参数)
 
-    URL of the music platform URL for automatic identification,
-    which supports `netease`, `tencent` and `xiami` music platform.
+    用来自动识别的音乐平台 URL, 支持 `netease`, `tencent` 和 `xiami` 平台.
 
-Example `music` input by music platform URL automatic identification:
+一个使用音乐平台 URL 的自动识别的 `music` 示例:
 
 ```markdown
 {{</* music auto="https://music.163.com/#/playlist?id=60198" */>}}
-Or
+或者
 {{</* music "https://music.163.com/#/playlist?id=60198" */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< music auto="https://music.163.com/#/playlist?id=60198" >}}
 
-### 8.3 Custom Server, Type and ID {#custom-server}
+### 8.3 自定义音乐平台, 类型和 ID {#custom-server}
 
-The `music` shortcode has the following named parameters by custom music platform:
+`music` shortcode 有以下命名参数来使用自定义音乐平台:
 
-* **server** *[required]* (**first** positional parameter)
+* **server** *[必需]* (**第一个**位置参数)
 
     [`netease`, `tencent`, `kugou`, `xiami`, `baidu`]
 
-    Music platform.
+    音乐平台.
 
-* **type** *[required]* (**second** positional parameter)
+* **type** *[必需]* (**第二个**位置参数)
 
     [`song`, `playlist`, `album`, `search`, `artist`]
 
-    Type of the music.
+    音乐类型.
 
-* **id** *[required]* (**third** positional parameter)
+* **id** *[必需]* (**第三个**位置参数)
 
-    Song ID, or playlist ID, or album ID, or search keyword, or artist ID.
+    歌曲 ID, 或者播放列表 ID, 或者专辑 ID, 或者搜索关键词, 或者创作者 ID.
 
-Example `music` input by custom music platform:
+一个使用自定义音乐平台的 `music` 示例:
 
 ```markdown
 {{</* music server="netease" type="song" id="1868553" */>}}
-Or
+或者
 {{</* music netease song 1868553 */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< music netease song 1868553 >}}
 
-### 8.4 Other Parameters {#other-parameters}
+### 8.4 其它参数 {#other-parameters}
 
-The `music` shortcode has other named parameters applying to the above three ways:
+`music` shortcode 有一些可以应用于以上三种方式的其它命名参数:
 
-* **theme** *[optional]*
+* **theme** *[可选]*
 
-    {{< version 0.2.0 changed >}} Main color of the music player, default value is `#448aff`.
+    {{< version 0.2.0 changed >}} 音乐播放器的主题色, 默认值是 `#448aff`.
 
-* **fixed** *[optional]*
+* **fixed** *[可选]*
 
-    Whether to enable fixed mode, default value is `false`.
+    是否开启固定模式, 默认值是 `false`.
 
-* **mini** *[optional]*
+* **mini** *[可选]*
 
-    Whether to enable mini mode, default value is `false`.
+    是否开启迷你模式, 默认值是 `false`.
 
-* **autoplay** *[optional]*
+* **autoplay** *[可选]*
 
-    Whether to autoplay music, default value is `false`.
+    是否自动播放音乐, 默认值是 `false`.
 
-* **volume** *[optional]*
+* **volume** *[可选]*
 
-    Default volume when the player is first opened, which will be remembered in the browser, default value is `0.7`.
+    第一次打开播放器时的默认音量, 会被保存在浏览器缓存中, 默认值是 `0.7`.
 
-* **mutex** *[optional]*
+* **mutex** *[可选]*
 
-    Whether to pause other players when this player starts playing, default value is `true`.
+    是否自动暂停其它播放器, 默认值是 `true`.
 
-The `music` shortcode has the following named parameters only applying to the type of music list:
+`music` shortcode 还有一些只适用于音乐列表方式的其它命名参数:
 
-* **loop** *[optional]*
+* **loop** *[可选]*
 
     [`all`, `one`, `none`]
 
-    Loop mode of the music list, default value is `none`.
+    音乐列表的循环模式, 默认值是 `none`.
 
-* **order** *[optional]*
+* **order** *[可选]*
 
     [`list`, `random`]
 
-    Play order of the music list, default value is `list`.
+    音乐列表的播放顺序, 默认值是 `list`.
 
-* **list-folded** *[optional]*
+* **list-folded** *[可选]*
 
-    Whether the music list should be folded at first, default value is `false`.
+    初次打开的时候音乐列表是否折叠, 默认值是 `false`.
 
-* **list-max-height** *[optional]*
+* **list-max-height** *[可选]*
 
-    Max height of the music list, default value is `340px`.
+    音乐列表的最大高度, 默认值是 `340px`.
 
 ## 9 bilibili
 
 {{< version 0.2.0 changed >}}
 
-The `bilibili` shortcode embeds a responsive video player for bilibili videos.
+`bilibili` shortcode 提供了一个内嵌的用来播放 bilibili 视频的响应式播放器.
 
-When the video only has one part, only the BV `id` of the video is required, e.g.:
+如果视频只有一个部分, 则仅需要视频的 BV `id`, 例如:
 
 ```code
 https://www.bilibili.com/video/BV1Sx411T7QQ
 ```
 
-Example `bilibili` input:
+一个 `bilibili` 示例:
 
 ```markdown
 {{</* bilibili BV1Sx411T7QQ */>}}
-Or
+或者
 {{</* bilibili id=BV1Sx411T7QQ */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< bilibili id=BV1Sx411T7QQ >}}
 
-When the video has multiple parts, in addition to the BV `id` of the video,
-`p` is also required, whose default value is `1`, e.g.:
+如果视频包含多个部分, 则除了视频的 BV `id` 之外, 还需要 `p`, 默认值为 `1`, 例如:
 
 ```code
 https://www.bilibili.com/video/BV1TJ411C7An?p=3
 ```
 
-Example `bilibili` input with `p`:
+一个带有 `p` 参数的 `bilibili` 示例:
 
 ```markdown
 {{</* bilibili BV1TJ411C7An 3 */>}}
-Or
+或者
 {{</* bilibili id=BV1TJ411C7An p=3 */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< bilibili id=BV1TJ411C7An p=3 >}}
 
 ## 10 typeit
 
-The `typeit` shortcode provides typing animation based on [TypeIt](https://typeitjs.com/).
+`typeit` shortcode 基于 [TypeIt](https://typeitjs.com/) 提供了打字动画.
 
-Just insert your content in the `typeit` shortcode and that’s it.
+只需将你需要打字动画的内容插入 `typeit` shortcode 中即可.
 
-### 10.1 Simple Content {#simple-content}
+### 10.1 简单内容 {#simple-content}
 
-Simple content is allowed in `Markdown` format and **without** rich block content such as images and more...
+允许使用 `Markdown` 格式的简单内容, 并且 **不包含** 富文本的块内容, 例如图像等等...
 
-Example `typeit` input:
+一个 `typeit` 示例:
 
 ```markdown
 {{</* typeit */>}}
-This is a *paragraph* with **typing animation** based on [TypeIt](https://typeitjs.com/)...
+这一个带有基于 [TypeIt](https://typeitjs.com/) 的 **打字动画** 的 *段落*...
 {{</* /typeit */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< typeit >}}
-This is a *paragraph* with **typing animation** based on [TypeIt](https://typeitjs.com/)...
+这一个带有基于 [TypeIt](https://typeitjs.com/) 的 **打字动画** 的 *段落*...
 {{< /typeit >}}
 
-Alternatively, you can use custom **HTML tags**.
+另外, 你也可以自定义 **HTML 标签**.
 
-Example `typeit` input with `h4` tag:
+一个带有 `h4` 标签的 `typeit` 示例:
 
 ```markdown
 {{</* typeit tag=h4 */>}}
-This is a *paragraph* with **typing animation** based on [TypeIt](https://typeitjs.com/)...
+这一个带有基于 [TypeIt](https://typeitjs.com/) 的 **打字动画** 的 *段落*...
 {{</* /typeit */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< typeit tag=h4 >}}
-This is a *paragraph* with **typing animation** based on [TypeIt](https://typeitjs.com/)...
+这一个带有基于 [TypeIt](https://typeitjs.com/) 的 **打字动画** 的 *段落*...
 {{< /typeit >}}
 
-### 10.2 Code Content {#code-content}
+### 10.2 代码内容 {#code-content}
 
-Code content is allowed and will be highlighted by named parameter `code` for the type of code language.
+代码内容也是允许的, 并且通过使用参数 `code` 指定语言类型可以实习语法高亮.
 
-Example `typeit` input with `code`:
+一个带有 `code` 参数的 `typeit` 示例:
 
 ```markdown
 {{</* typeit code=java */>}}
@@ -1211,7 +1209,7 @@ public class HelloWorld {
 {{</* /typeit */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< typeit code=java >}}
 public class HelloWorld {
@@ -1221,46 +1219,47 @@ public class HelloWorld {
 }
 {{< /typeit >}}
 
-### 10.3 Group Content {#group-content}
+### 10.3 分组内容 {#code-content}
 
-All typing animations start at the same time by default.
-But sometimes you may want to start a set of `typeit` contents in order.
+默认情况下, 所有打字动画都是同时开始的.
+但是有时你可能需要按顺序开始一组 `typeit` 内容的打字动画.
 
-A set of `typeit` contents with the same value of named parameter `group` will start typing animation in sequence.
+一组具有相同 `group` 参数值的 `typeit` 内容将按顺序开始打字动画.
 
-Example `typeit` input with `group`:
+一个带有 `group` 参数的 `typeit` 示例:
 
 ```markdown
 {{</* typeit group=paragraph */>}}
-**First** this paragraph begins
+**首先**, 这个段落开始
 {{</* /typeit */>}}
 
 {{</* typeit group=paragraph */>}}
-**Then** this paragraph begins
+**然后**, 这个段落开始
 {{</* /typeit */>}}
 ```
 
-The rendered output looks like this:
+呈现的输出效果如下:
 
 {{< typeit group=paragraph >}}
-**First** this paragraph begins
+**首先**, 这个段落开始
 {{< /typeit >}}
 
 {{< typeit group=paragraph >}}
-**Then** this paragraph begins
+**然后**, 这个段落开始
 {{< /typeit >}}
 
 ## 11 script
 
 {{< version 0.2.8 >}}
 
-`script` is a shortcode to insert custom **:(fab fa-js fa-fw): Javascript** in your post.
+`script` shortcode 用来在你的文章中插入 **:(fab fa-js fa-fw): Javascript** 脚本.
 
 {{< admonition >}}
-The script content can be guaranteed to be executed in order after all third-party libraries are loaded. So you are free to use third-party libraries.
+脚本内容可以保证在所有的第三方库加载之后按顺序执行.
+所以你可以自由地使用第三方库.
 {{< /admonition >}}
 
-Example `script` input:
+一个 `script` 示例:
 
 ```markdown
 {{</* script */>}}
@@ -1268,7 +1267,7 @@ console.log('Hello LoveIt!');
 {{</* /script */>}}
 ```
 
-You can see the output in the console of the developer tool.
+你可以在开发者工具的控制台中看到输出.
 
 {{< script >}}
 console.log('Hello LoveIt!');

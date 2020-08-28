@@ -1,22 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on codingriver blog</title>
+    <title>Categories on codingriver</title>
     <link>https://codingriver.github.io/categories/</link>
-    <description>Recent content in Categories on codingriver blog</description>
+    <description>Recent content in Categories on codingriver</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Wed, 18 Dec 2019 21:55:00 +0800</lastBuildDate>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 20 Aug 2020 18:21:23 +0800</lastBuildDate>
     
 	<atom:link href="https://codingriver.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Golang</title>
-      <link>https://codingriver.github.io/categories/Golang/</link>
-      <pubDate>Wed, 18 Dec 2019 21:55:00 +0800</pubDate>
+      <title>post</title>
+      <link>https://codingriver.github.io/categories/post/</link>
+      <pubDate>Thu, 20 Aug 2020 18:21:23 +0800</pubDate>
       
-      <guid>https://codingriver.github.io/categories/Golang/</guid>
+      <guid>https://codingriver.github.io/categories/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>syntax</title>
+      <link>https://codingriver.github.io/categories/syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingriver.github.io/categories/syntax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>themes</title>
+      <link>https://codingriver.github.io/categories/themes/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://codingriver.github.io/categories/themes/</guid>
       <description></description>
     </item>
     
