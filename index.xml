@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LoveIt</title>
-    <link>https://example.com/</link>
+    <link>https://codingriver.github.io/</link>
     <description>Recent content on LoveIt</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 05 Mar 2020 16:30:05 +0800</lastBuildDate>
     
-	<atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://codingriver.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>主题文档 - 内容</title>
-      <link>https://example.com/posts/theme-documentation-content/</link>
+      <link>https://codingriver.github.io/posts/theme-documentation-content/</link>
       <pubDate>Thu, 05 Mar 2020 16:30:05 +0800</pubDate>
       
-      <guid>https://example.com/posts/theme-documentation-content/</guid>
+      <guid>https://codingriver.github.io/posts/theme-documentation-content/</guid>
       <description>了解如何在 LoveIt 主题中快速, 直观地创建和组织内容. hello en</description>
     </item>
     
     <item>
       <title>contenu</title>
-      <link>https://example.com/tags/content/_index.fr/</link>
+      <link>https://codingriver.github.io/tags/content/_index.fr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/content/_index.fr/</guid>
+      <guid>https://codingriver.github.io/tags/content/_index.fr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>安装</title>
-      <link>https://example.com/tags/installation/_index.zh-cn/</link>
+      <link>https://codingriver.github.io/tags/installation/_index.zh-cn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/installation/_index.zh-cn/</guid>
+      <guid>https://codingriver.github.io/tags/installation/_index.zh-cn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>配置</title>
-      <link>https://example.com/tags/configuration/_index.zh-cn/</link>
+      <link>https://codingriver.github.io/tags/configuration/_index.zh-cn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/configuration/_index.zh-cn/</guid>
+      <guid>https://codingriver.github.io/tags/configuration/_index.zh-cn/</guid>
       <description></description>
     </item>
     

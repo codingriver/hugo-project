@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on LoveIt</title>
-    <link>https://example.com/posts/</link>
+    <link>https://codingriver.github.io/posts/</link>
     <description>Recent content in Posts on LoveIt</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 05 Mar 2020 16:30:05 +0800</lastBuildDate>
     
-	<atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://codingriver.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>主题文档 - 内容</title>
-      <link>https://example.com/posts/theme-documentation-content/</link>
+      <link>https://codingriver.github.io/posts/theme-documentation-content/</link>
       <pubDate>Thu, 05 Mar 2020 16:30:05 +0800</pubDate>
       
-      <guid>https://example.com/posts/theme-documentation-content/</guid>
+      <guid>https://codingriver.github.io/posts/theme-documentation-content/</guid>
       <description>了解如何在 LoveIt 主题中快速, 直观地创建和组织内容. hello en</description>
     </item>
     
