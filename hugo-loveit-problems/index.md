@@ -21,3 +21,8 @@
 ### 不支持tweet和instagram 的shortcode
 
 ### 关于转义字符 '\{\{??\}' 不支持 `\{\{??\}\X\} -> X`和'\{\{??\}:\}joy:'
+
+### 不支持 style 
+\{\{</* style "text-align:right; strong{color:#00b1ff;}" */>\}\}
+This is a **right-aligned** paragraph.
+\{\{</* /style */>\}\}
