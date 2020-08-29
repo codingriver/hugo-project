@@ -17,3 +17,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/dillonzq/LoveIt?style=social)](https://github.com/dillonzq/LoveIt/fork)
 
 \{\{< /style >\}\}-->
+
+### 不支持tweet和instagram 的shortcode
+
+### 关于转义字符 '\{\{??\}' 不支持 `\{\{??\}\X\} -> X`和'\{\{??\}:\}joy:'
