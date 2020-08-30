@@ -10,8 +10,9 @@ jobs:
       - name: checkout # 步骤的名称
         uses: actions/checkout@v2 #软件市场的名称
         with: # 参数
-          submodules: true
           ref: hugo-project
+          submodules: true
+          
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.2.2
         with:
@@ -20,7 +21,7 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v2.0.0
       - name: npm theme
-        run: cd themes/LoveIt&&pwd && npm install && cd ../../ &&pwd
+        run: git branch&&cd themes/LoveIt&&pwd && npm install && cd ../../ &&pwd
       - name: Build
         run: hugo 
       - name: Deploy
