@@ -1,0 +1,8 @@
+[submodule "themes/LoveIt"]
+	path = themes/LoveIt
+	url = https://gitee.com/codingriver/LoveIt.git
+	branch = master
+[submodule "public"]
+	path = public
+	url = https://gitee.com/codingriver/codingriver.git
+	branch = master
