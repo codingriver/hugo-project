@@ -5,4 +5,4 @@
 [submodule "public"]
 	path = public
 	url = https://gitee.com/codingriver/codingriver.git
-	branch = master
+	branch = gh-pages
