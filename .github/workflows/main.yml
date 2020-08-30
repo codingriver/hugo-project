@@ -21,7 +21,7 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v2.0.0
       - name: npm theme
-        run: git branch&&cd themes/LoveIt&&pwd && npm install && cd ../../ &&pwd
+        run: git branch&&ls -l&&cd themes/LoveIt&&pwd && npm install && cd ../../ &&pwd
       - name: Build
         run: hugo 
       - name: Deploy
