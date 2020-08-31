@@ -32,7 +32,6 @@ jobs:
           publish_dir: ./public
           user_name: 'github-actions[codingriver]'
           user_email: 'codingriver@163.com'
-          exclude_assets: '.github/workflows/mirror.yml'
       - name: npm install1
         run: npm install
       - name: upload algolia
