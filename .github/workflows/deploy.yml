@@ -24,7 +24,7 @@ jobs:
       - name: Build
         run: hugo 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@main
+        uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: codingriver/codingriver.github.io
@@ -32,6 +32,7 @@ jobs:
           publish_dir: ./public
           user_name: 'github-actions[codingriver]'
           user_email: 'codingriver@163.com'
+          keep_files: true
       - name: npm install1
         run: npm install
       - name: upload algolia
