@@ -31,8 +31,8 @@ jobs:
           publish_branch: master
           publish_dir: ./public
           user_name: 'github-actions[codingriver]'
-          user_email: 'github-actions[rob]codingriver@163.com'
-          exclude_assets: '.github,.gittest'
+          user_email: 'codingriver@163.com'
+          exclude_assets: '.github'
       - name: npm install1
         run: npm install
       - name: upload algolia
