@@ -24,7 +24,7 @@ jobs:
       - name: Build
         run: hugo 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@master
+        uses: peaceiris/actions-gh-pages@main
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: codingriver/codingriver.github.io
