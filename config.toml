@@ -237,8 +237,8 @@ enableEmoji = true
   # 哪种哈希函数用来 SRI, 为空时表示不使用 SRI ("sha256", "sha384", "sha512", "md5")
   fingerprint = ""
   # date format
-  # 日期格式 2006-01-02 15:15:15
-  dateFormat = "2006-01-02"
+  # 日期格式 2006-01-02 03:04:05
+  dateFormat = "2006-01-02 03:04"
   # website images for Open Graph and Twitter Cards
   # 网站图片, 用于 Open Graph 和 Twitter Cards
   images = ["/logo.png"]
