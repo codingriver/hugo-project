@@ -1,18 +1,15 @@
-name: sync gitee
+name: Sync_Gitee #自动化的名称
 on:
-# 如果需要PR触发把push前的#去掉
-# push:
-  schedule:
-    # 每天北京
-    - cron:  '*/10 * * * *'
+  schedule: # push的时候触发
+      cron:  '*/10 * * * *'
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # 镜像市场
     steps:
-    - name: Single repo mirror
-      uses: Yikun/hub-mirror-action@master
-      with:
-        src: gitee/codingriver
-        dst: github/codingriver
-        dst_key: ${{ secrets.ACTIONS_SYNC_GITEE }}
-        white_list: "hugo-project"
+      - name: Single repo mirror
+        uses: Yikun/hub-mirror-action@master
+        with: # 参数
+          src: gitee/codingriver
+          dst: github/codingriver
+          dst_key: ${{ secrets.ACTIONS_SYNC_GITEE }}
+          white_list: "hugo-project"
