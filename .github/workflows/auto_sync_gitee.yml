@@ -1,7 +1,7 @@
 name: Sync_Gitee #自动化的名称
 on:
   schedule: # push的时候触发
-      cron:  '*/10 * * * *'
+      - cron:  '*/10 * * * *'
 jobs:
   build:
     runs-on: ubuntu-latest # 镜像市场
