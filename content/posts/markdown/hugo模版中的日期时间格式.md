@@ -1,8 +1,6 @@
 ---
 title: "hugo / go 模版中的日期格式"
 date: 2020-09-01T21:08:09+08:00
-lastmod: 2020-09-01T21:08:09+08:00
-draft: true
 tags: ['markdown','hugo']
 categories: ['markdown']
 toc: false
