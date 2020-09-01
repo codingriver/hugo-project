@@ -13,4 +13,5 @@ jobs:
           src: gitee/codingriver
           dst: github/codingriver
           dst_key: ${{ secrets.ACTIONS_SYNC_GITEE }}
+          dst_token: ${{ secrets.ACTIONS_SYNC_GITEE_TOKEN }}
           white_list: "hugo-project"
