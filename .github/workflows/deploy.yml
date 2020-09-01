@@ -30,7 +30,7 @@ jobs:
           external_repository: codingriver/codingriver.github.io
           publish_branch: master
           publish_dir: ./public
-          user_name: 'github-actions[codingriver]'
+          user_name: 'codingriver'
           user_email: 'codingriver@163.com'
           keep_files: true
       - name: npm install1
