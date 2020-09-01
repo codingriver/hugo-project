@@ -1,7 +1,8 @@
 name: Sync_Gitee #自动化的名称
 on:
-  schedule: # push的时候触发
-      - cron:  '*/10 * * * *'
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '*/5 * * * *'
 jobs:
   build:
     runs-on: ubuntu-latest # 镜像市场
