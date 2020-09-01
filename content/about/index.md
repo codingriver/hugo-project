@@ -6,7 +6,8 @@ toc: false
 ## 关于 Codingriver
 
 个人博客：
-		< https://codingriver.github.io >
-		< https://codingriver.gitee.io >
+		github:	< https://codingriver.github.io >
+		gitee:	< https://codingriver.gitee.io >
+
 mail:
 		< codingriver@163.com >

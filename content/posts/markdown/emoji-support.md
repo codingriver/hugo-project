@@ -8,8 +8,8 @@ author: "Dillon"
 authorLink: "https://dillonzq.com"
 description: "Hugo 和 LoveIt 中的 Emoji 的用法指南."
 images: ["/images/emoji-support/featured-image.jpg"]
-tags: ["Markdown"]
-categories: ["Markdown-hugo"]
+tags: ["Markdown","hugo"]
+categories: ["Markdown"]
 featuredImage: "/images/emoji-support/featured-image.jpg"
 
 lightgallery: true
