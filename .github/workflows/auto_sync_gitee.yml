@@ -4,7 +4,7 @@ on:
 # push:
   schedule:
     # 每天北京
-    - cron:  '*/5 * * * *'
+    - cron:  '*/10 * * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,5 +15,4 @@ jobs:
         src: gitee/codingriver
         dst: github/codingriver
         dst_key: ${{ secrets.ACTIONS_SYNC_GITEE }}
-        dst_token: ${{ secrets.SYNC_TOKEN }}
         white_list: "hugo-project"
