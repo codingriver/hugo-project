@@ -1,11 +1,11 @@
 ---
-title: "关于 Codingriver" # Title of the blog post.
-date: 2020-09-01T19:59:41+08:00 # Date of post creation.
-toc: false
+title: "关于 Codingriver" 
+date: 2020-09-01T19:59:41+08:00 
 ---
 ## 关于 Codingriver
 
 个人博客：
+
 		github:	< https://codingriver.github.io >
 		gitee:	< https://codingriver.gitee.io >
 
