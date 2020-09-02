@@ -2,12 +2,12 @@
 title: "关于 Codingriver" 
 date: 2020-09-01T19:59:41+08:00 
 ---
-## 关于 Codingriver
+:smile: :smile: :grinning::see_no_evil::see_no_evil::see_no_evil::see_no_evil:  
 
-个人博客：
+:point_right::point_right::point_right::point_right::point_right::point_left::point_left::point_left::point_left::point_left:
 
-		github:	< https://codingriver.github.io >
-		gitee:	< https://codingriver.gitee.io >
+>个人博客：  
+>        :point_right::point_right: github:    < https://codingriver.github.io >  
+>        :point_right::point_right: gitee:     < https://codingriver.gitee.io >
 
-mail:
-		< codingriver@163.com >
+>:point_right::point_right: mail: < codingriver@163.com >
