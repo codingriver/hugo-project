@@ -14,7 +14,7 @@ categories: ["算法"]
 
 这里先放上A*算法的unity工程(unity2017.3.1) **[unity工程](https://github.com/codingriver/UnityProjectTest/tree/master/AStarTest)**（github）
 
-#### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X01 A*算法基本概念</u></b></font></td></tr></table>
+### 0X01 A*算法基本概念
 
 **启发式搜索：** 启发式搜索就是在状态空间中的搜索对每一个搜索的位置进行评估，得到最好的位置，再从这个位置进行搜索直到目标。这样可以省略大量无畏的搜索路径，提到了效率。在启发式搜索中，对位置的估价是十分重要的。采用了不同的估价可以有不同的效果。
 **IDA*算法：** 这种算法被称为迭代加深A*算法，可以有效的解决A*空间增长带来的问题，甚至可以不用到优先级队列。如果要知道详细：google一下。
@@ -26,7 +26,7 @@ categories: ["算法"]
 **父节点（parent）：** 在路径规划中用于回溯的节点。
 *A\*算法的特点：* A*算法在理论上是时间最优的，但是也有缺点：它的空间增长是指数级别的。
 
-#### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u>  0X02 A*算法寻路过程</u></b></font></td></tr></table>
+### 0X02 A*算法寻路过程
 1. 将起点A添加到open列表中（A没有计算花费F是因为当前open列表只有这一个节点）。
 2. 检查open列表，选取花费F最小的节点M（检查M如果为终点是则结束寻路，如果open列表没有则寻路失败，直接结束）。
 3.  对于与M相邻的每一节点N：（下面本来没有序号的，csdn markdown的bug）
@@ -38,7 +38,7 @@ categories: ["算法"]
 
 
 
-#### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X03 A*算法寻路详细描述</u></b></font></td></tr></table>
+### 0X03 A*算法寻路详细描述
 寻路关键代码：
 ```csharp
     /// <summary>
