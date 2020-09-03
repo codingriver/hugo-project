@@ -1,6 +1,6 @@
 ---
 weight: 5
-title: "Emoji 支持"
+title: "主题文档 - Emoji 支持"
 date: 2019-10-01T17:55:28+08:00
 lastmod: 2019-10-01T17:55:28+08:00
 draft: false
