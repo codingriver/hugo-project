@@ -134,7 +134,6 @@ categories: ["算法"]
   
 {{< image src ="https://img-blog.csdn.net/20181019163900234?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" >}}
 
-![](https://img-blog.csdn.net/20181019163900234?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
   
 圆点说明：黑色是障碍物体，红色是起点，绿色是终点，浅紫色是寻路路径
 红色数字：总花费F
