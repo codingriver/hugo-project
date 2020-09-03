@@ -143,7 +143,7 @@ categories: ["算法"]
 + 将起点（3，6）放到open列表中。
 + 选择open列表中花费最小的点M（3，6）,将M从open中移除，添加到closed列表中，后面检查时不再检查该点。
 + 计算（3，6）相邻的点，一共8个点，并且分别计算花费F（红色数字），都添加到open中
-+  
+  
  {{< image src ="https://img-blog.csdn.net/20181019172657745?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" >}}  
 + 选择open列表中花费最小的点M（4，6）,将M从open中移除，添加到closed列表中，后面检查时不再检查该点。
 + 计算（4，6）相邻的点，一共8个点，右侧是障碍物，其它5个点都在open中，分别计算当前路径花费和原来对比，都大，所以没有更新花费和父节点
