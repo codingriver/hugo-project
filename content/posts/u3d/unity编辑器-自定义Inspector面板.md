@@ -368,3 +368,21 @@ public class MyPlayerEditor : Editor
 ![20200902215841](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/unity编辑器-自定义Inspector面板/20200902215841.png)
 
 ![test2](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/unity编辑器-自定义Inspector面板/test2.gif)
+
+-----
+**GUILayoutOption**：基本每个控件方法都有一个可选参数是GUILayoutOption[] Options 这是一个可以控制组件大小之类的选项,在GUILayout类中共有8个。 看名字应该就知道是设置什么的了。
+
+**GUILayout.Height()**                **GUILayout.Width()**
+
+**GUILayout.MaxHeight()         GUILayout.MaxWidth()**
+
+**GUILayout.MinHeight()          GUILayout.MinWidth()**
+
+**GUILayout.ExpandHeight()   GUILayout.ExpandWidth()**
+
+-----
+
+> 参考文章：
+> [Unity编辑器扩展: GUILayout、EditorGUILayout 控件整理](https://blog.csdn.net/linxinfa/article/details/87863123)
+> [unity编辑器扩展#2 GUILayout、EditorGUILayout 控件整理](https://blog.csdn.net/qq_38275140/article/details/84778344)
+> [Unity---Inspector面板自定义](https://www.cnblogs.com/xiaoahui/p/10420626.html)
