@@ -5,7 +5,10 @@ tags: ["Unity编辑器","Unity Editor","自定义Inspector"]
 categories: ["Unity编辑器"]
 ---
 
+
+
 <!--more-->
+
 {{< admonition info "介绍自定义Inspector面板" true >}}
 
 
@@ -23,6 +26,9 @@ public class MyPlayerEditor : Editor
 ```
 实现OnInspectorGUI具体内容即可
 {{< /admonition >}}
+
+<!-- {{/*<codecontent src="https://cdn.jsdelivr.net/gh/codingriver/DataStructure/README.md">*/}} -->
+<!-- {{/*<codecontent src="https://cdn.jsdelivr.net/gh/codingriver/Project/UnityEditorProject/Assets/CustomInspector/MyPlayer.cs">*/}} -->
 
 
 ###  **写一个普通类**

@@ -337,7 +337,7 @@ enableEmoji = true
     twemoji = true
     # whether to enable lightgallery
     # 是否使用 lightgallery
-    lightgallery = true
+    lightgallery = false
     # whether to enable the ruby extended syntax
     # 是否使用 ruby 扩展语法
     ruby = true
