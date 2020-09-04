@@ -17,7 +17,9 @@ before_install:
 - chmod 600 ~/.ssh/id_rsa
 # install - install any dependencies required
 install:
-- go get github.com/gohugoio/hugo
+# - go get github.com/gohugoio/hugo
+- wget https://github.com/gohugoio/hugo/releases/download/v0.51/hugo_0.51_Linux-64bit.deb
+- sudo dpkg -i hugo*.deb
 before_script:
 - mkdir -p public_github 2> /dev/null
 - mkdir -p public_gitee 2> /dev/null
