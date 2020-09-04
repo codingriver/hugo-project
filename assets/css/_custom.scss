@@ -2,3 +2,14 @@
 // Custom style
 // 自定义样式
 // ==============================
+// 顶部阅读进度条
+.top-scroll-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+    width: 0;
+    height: 3px;
+    background: #ef3982;
+}

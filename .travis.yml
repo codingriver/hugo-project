@@ -18,14 +18,14 @@ install:
 
 script:
   # 运行hugo命令
-  - hugo
+  - hugo --baseURL="https://codingriver.gitee.io/"
 
 after_script:
   # 部署
   - cd ./public
   - git init
-  - git config user.name "[你的名字]"
-  - git config user.email "[你的邮箱]"
+  - git config user.name "[codingriver]"
+  - git config user.email "[codingriver@163.com]"
   - git add .
   - git commit -m "Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER"
   # Github Pages
@@ -36,7 +36,7 @@ after_script:
 env:
  global:
    # Github Pages
-   - GH_REF: [用来部署博客的 Git 地址]
+   - GH_REF: ["gitee.com/codingriver/codingriver"]
 
 deploy:
   provider: pages # 重要，指定这是一份github pages的部署配置
