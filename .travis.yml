@@ -1,61 +1,49 @@
+# https://docs.travis-ci.com/user/deployment/pages/
+# https://docs.travis-ci.com/user/reference/xenial/
+# https://docs.travis-ci.com/user/languages/go/
+# https://docs.travis-ci.com/user/customizing-the-build/
+dist: xenial
 language: go
-
 go:
-  - "1.8"  # 指定Golang 1.8
-
-# Specify which branches to build using a safelist
-# 分支白名单限制：只有 master 分支的提交才会触发构建
-# branches:
-#   only:
-#     - master
-
-install:
-  # 安装最新的hugo
-  - wget https://github.com/gohugoio/hugo/releases/download/v0.74.3/hugo_0.74.3_Linux-64bit.deb
-  - sudo dpkg -i hugo*.deb
-  
-before_script:
-  - npm -v
-  - npm install -g npm-upgrade
-  - npm version
-  - npm -v
-  - pwd
-  - cd ./themes/LoveIt
-  - pwd  
-  - npm update
-  - npm install 
-  - cd ../..
-  - pwd
-
-script:
-  # 运行hugo命令
-  - hugo --baseURL="https://codingriver.gitee.io/"
-
-after_script:
-  # 部署
-  - cd ./public
-  - git init
-  - git config user.name "[codingriver]"
-  - git config user.email "[codingriver@163.com]"
-  - git add .
-  - git commit -m "[ci skip] udpate gh-page"
-  # Github Pages
-  - git push --force --quiet "https://46625948ac1582be322e8dbbf76d3616@gitee.com/codingriver/codingriver.git" master:master
-  # Github Pages
-  - git push --quiet "https://46625948ac1582be322e8dbbf76d3616@gitee.com/codingriver/codingriver.git" master:master --tags
-
+  - 1.11.x
 env:
- global:
-   # Github Pages
-   - GH_REF: gitee.com/codingriver/codingriver
-
+  - GO111MODULE=on
+cache:
+  directories:
+  - "$HOME/.cache/go-build"
+  - "$HOME/gopath/pkg/mod"
+before_install:
+- openssl aes-256-cbc -K $encrypted_e5acc89010f1_key -in .travis/travis.key.enc -out ~/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
+# install - install any dependencies required
+install:
+- go get github.com/gohugoio/hugo
+before_script:
+- mkdir -p public_github 2> /dev/null
+- mkdir -p public_gitee 2> /dev/null
+# script - run the build script
+script:
+- hugo --baseURL https://codingriver.github.io/ -d public_github
+- hugo --baseURL https://codingriver.gitee.io/ -d public_gitee
 deploy:
-  provider: pages # 重要，指定这是一份github pages的部署配置
-  skip-cleanup: true # 重要，不能省略
-  local-dir: public # 静态站点文件所在目录
-  # target-branch: master # 要将静态站点文件发布到哪个分支
-  github-token: $GITHUB_TOKEN # 重要，$GITHUB_TOKEN是变量，需要在GitHub上申请、再到配置到Travis
-  # fqdn:  # 如果是自定义域名，此处要填
-  keep-history: false # 是否保持target-branch分支的提交记录
+- provider: pages
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN" # Set in travis-ci.org dashboard, marked secure
+  email: "codingriver@163.com" # Set in travis-ci.org dashboard, marked secure
+  name: "codingriver" # Set in travis-ci.org dashboard, marked secure
+  repo: "codingriver/codingriver.github.io"
+  target_branch: master
+  verbose: true
+  keep-history: false
+  local-dir: public_github
   on:
-    branch: master # 博客源码的分支
+    branch: master
+- provider: script
+  skip-cleanup: true
+  script: bash .travis/deploy_to_gitee.sh
+  on:
+    branch: master
+addons:
+  ssh_known_hosts:
+  - github.com
+  - gitee.com
