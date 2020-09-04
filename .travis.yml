@@ -22,6 +22,7 @@ before_script:
   - pwd
   - cd ./themes/LoveIt
   - pwd  
+  - npm update
   - npm install 
   - cd ../..
   - pwd
@@ -29,6 +30,22 @@ before_script:
 script:
   # 部署
   # - cd ./public
+  - git init
+  - git config user.name "[codingriver]"
+  - git config user.email "[codingriver@163.com]"
+  - git add .
+  - git commit -m "Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER"
+  # Github Pages
+  - git push --force --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master
+  # Github Pages
+  - git push --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master --tags
+script:
+  # 运行hugo命令
+  - hugo --baseURL="https://codingriver.gitee.io/"
+
+after_script:
+  # 部署
+  - cd ./public
   - git init
   - git config user.name "[codingriver]"
   - git config user.email "[codingriver@163.com]"
