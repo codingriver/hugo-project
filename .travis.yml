@@ -38,7 +38,7 @@ after_script:
   - git config user.name "[codingriver]"
   - git config user.email "[codingriver@163.com]"
   - git add .
-  - git commit -m "Update Blog By TravisCI With Build $TRAVIS_BUILD_NUMBER"
+  - git commit -m "Update Blog By TravisCI With Build"
   # Github Pages
   - git push --force --quiet "https://46625948ac1582be322e8dbbf76d3616@gitee.com/codingriver/codingriver.git" master:master
   # Github Pages
@@ -56,6 +56,6 @@ deploy:
   # target-branch: master # 要将静态站点文件发布到哪个分支
   github-token: $GITHUB_TOKEN # 重要，$GITHUB_TOKEN是变量，需要在GitHub上申请、再到配置到Travis
   # fqdn:  # 如果是自定义域名，此处要填
-  keep-history: true # 是否保持target-branch分支的提交记录
+  keep-history: false # 是否保持target-branch分支的提交记录
   on:
     branch: master # 博客源码的分支
