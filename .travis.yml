@@ -13,9 +13,7 @@ cache:
   - "$HOME/.cache/go-build"
   - "$HOME/gopath/pkg/mod"
 before_install:
-  weget https://github.com/openssl/openssl/archive/OpenSSL_1_1_1c.zip
-# - openssl aes-256-cbc -k CtbBnkohJFSW27ga -in .travis/travis.key.enc -out ~/.ssh/id_rsa -d
-mv .travis/private.bak ~/.ssh/id_rsa
+- mv .travis/private.bak ~/.ssh/id_rsa
 - chmod 600 ~/.ssh/id_rsa
 # install - install any dependencies required
 install:
