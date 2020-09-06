@@ -9,6 +9,7 @@ authorLink: "https://dillonzq.com"
 description: "这篇文章展示了基本的 Markdown 语法和格式."
 images: ["/images/basic-markdown-syntax/featured-image.png"]
 tags: ["Markdown","hugo"]
+ hiddenFromHomePage: true
 categories: ["Markdown"]
 featuredImage: "/images/basic-markdown-syntax/featured-image.png"
 

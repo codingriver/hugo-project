@@ -9,6 +9,7 @@ authorLink: "https://dillonzq.com"
 description: "Hugo 提供了多个内置的 Shortcodes, 以方便作者保持 Markdown 内容的整洁."
 images: ["/images/theme-documentation-built-in-shortcodes/featured-image.png"]
 tags: ["Markdown","hugo"]
+ hiddenFromHomePage: true
 categories: ["Markdown"]
 featuredImage: "/images/theme-documentation-built-in-shortcodes/featured-image.png"
 
