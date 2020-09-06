@@ -8,8 +8,9 @@ author: "Dillon"
 authorLink: "https://dillonzq.com"
 description: "LoveIt 主题在 Hugo 内置的 shortcode 的基础上提供多个扩展的 shortcode."
 images: ["/images/theme-documentation-extended-shortcodes/featured-image-preview.jpg"]
-tags: ["Markdown","hugo"]
-categories: ["Markdown"]
+tags: ["hugo"]
+hiddenFromHomePage: true
+categories: ["hugo"]
 featuredImage: "/images/theme-documentation-extended-shortcodes/featured-image.jpg"
 featuredImagePreview: "/images/theme-documentation-extended-shortcodes/featured-image-preview.jpg"
 

@@ -1,8 +1,9 @@
 ---
 title: "Loveit 使用中的问题" 
 date: 2020-08-29T15:58:08+08:00 
-tags: ["Markdown","hugo"]
-categories: ["Markdown"]
+tags: ["hugo"]
+hiddenFromHomePage: true
+categories: ["hugo"]
 toc: false
 ---
 

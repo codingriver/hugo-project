@@ -8,8 +8,9 @@ author: "Dillon"
 authorLink: "https://dillonzq.com"
 description: "探索 Hugo - LoveIt 主题的全部内容和背后的核心概念."
 images: ["/images/theme-documentation-basics/featured-image.jpg"]
-tags: ["Markdown","hugo"]
-categories: ["Markdown"]
+tags: ["hugo"]
+hiddenFromHomePage: true
+categories: ["hugo"]
 featuredImage: "/images/theme-documentation-basics/featured-image.jpg"
 
 lightgallery: true
