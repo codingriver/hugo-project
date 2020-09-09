@@ -1,0 +1,3 @@
+```
+Screen.sleepTimeout = SleepTimeout.NeverSleep;
+```
