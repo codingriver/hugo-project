@@ -1,8 +1,8 @@
 ---
 title: "UGUI Image 图片置灰"
 date: 2019-12-01T21:57:40+08:00
-tags: ["Unity3d"]
-categories: ["Unity3d"]
+tags: ["Unity"]
+categories: ["Unity"]
 ---
 
 <!--more-->

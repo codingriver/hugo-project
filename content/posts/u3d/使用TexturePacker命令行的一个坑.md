@@ -1,8 +1,8 @@
 ---
 title: "使用TexturePacker命令行的一个坑"
 date: 2019-12-01T21:57:40+08:00
-tags: ["Unity3d"]
-categories: ["Unity3d"]
+tags: ["Unity"]
+categories: ["Unity"]
 ---
 
 <!--more-->

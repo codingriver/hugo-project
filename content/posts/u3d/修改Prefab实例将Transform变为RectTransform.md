@@ -1,8 +1,8 @@
 ---
 title: "Unity 修改Prefab实例将Transform变为RectTransform"
 date: 2019-12-01T21:57:40+08:00
-tags: ["Unity3d","UnityEditor"]
-categories: ["Unity3d"]
+tags: ["Unity","UnityEditor"]
+categories: ["Unity"]
 ---
 
 <!--more-->

@@ -1,8 +1,8 @@
 ---
 title: "Unity Profiler 使用 Android 真机连接测试"
 date: 2019-12-01T21:57:40+08:00
-tags: ["Unity3d","Android"]
-categories: ["Unity3d"]
+tags: ["Unity","Android"]
+categories: ["Unity"]
 ---
 
 <!--more-->

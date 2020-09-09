@@ -1,8 +1,8 @@
 ---
 title: "xLua - 第三方扩展的添加和编译"
 date: 2019-12-01T21:57:40+08:00
-tags: ["Unity3d"]
-categories: ["Unity3d"]
+tags: ["Unity"]
+categories: ["Unity"]
 ---
 
 <!--more-->

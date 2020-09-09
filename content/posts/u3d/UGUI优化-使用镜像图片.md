@@ -1,7 +1,7 @@
 ---
 title: "UGUI优化：使用镜像图片"
 date: 2019-12-01T21:57:40+08:00
-tags: ["UGUI,unity3d优化"]
+tags: ["UGUI,unity优化"]
 categories: ["UGUI优化"]
 ---
 
