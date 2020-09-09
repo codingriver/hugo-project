@@ -14,20 +14,32 @@ categories: ["shader"]
 
 Phong和Blinn-Phong是计算镜面反射光的两种光照模型，两者仅仅有很小的不同之处。
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181014094604428?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181014094604428?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
  
 
 ### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X01 Phong光照模型(高光反射)</u></b></font></td></tr></table>	
 #### Phong模型公式：
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181014094619163?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181014094619163?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 Phone模型计算中的一个关键步骤就是反射向量R的计算：
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181014094630562?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181014094630562?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
  
 上图中的位于表面“下面”的向量 ‘I’ 是原始 ‘I’ 向量的拷贝，并且二者是一样的，现在我们的目标计算出向量 ‘R’ 。根据向量相加原则，向量 ‘R’ 等于 'I' + 'V'，‘I’ 是已知的，所以我们需要做的就是找出向量 ‘V’。注意法向量 ‘N’ 的负方向就是 ‘-N’，我们可以在 ‘I’ 和 ‘-N’ 之间使用一个点乘运算就能得到 ‘I’ 在 ‘-N’ 上面的投影的模。这个模正好是 ‘V’ 的模的一半，由于 ‘V’ 与 ‘N’ 有相同的方向，我们可以将这个模乘上 ‘N’ （其模为 1 ）再乘上 2 即可得到 ‘V’。总结一下就是下面的公式：
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181014094715453?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181014094715453?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 根据公式实现自己的myReflect函数，和unity shader自带的reflect一样
 ```c
 			//反射
@@ -223,7 +235,10 @@ Shader "Book/06.SpecularPhongPixel" {
 ### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X02 Blinn-Phong光照模型(高光反射)</u></b></font></td></tr></table>	
 #### Blinn-Phong模型公式：
  Phong模型中计算反射光线的向量是一件相对比较耗时的任务，因此Blinn-Phong对这一点进行了改进。
-![Blinn-Phong](https://img-blog.csdn.net/20181014094443466?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![Blinn-Phong](https://img-blog.csdn.net/20181014094443466?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 
 Ks：物体对于反射光线的衰减系数
 
@@ -324,7 +339,10 @@ Shader "Book/06.SpecularBlinnPhong" {
 ```
 所有效果：左边Phong逐顶点光照，中间Phong逐像素光照，右边Blinn-Phong光照
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181014095329302?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181014095329302?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 
 
 *关于法线从模型空间转换到世界空间o.worldNormal = mul(v.normal, (float3x3)unity_WorldToObject);后面补充为什么这么计算*

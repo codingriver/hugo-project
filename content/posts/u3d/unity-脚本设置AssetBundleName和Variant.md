@@ -11,7 +11,10 @@ categories: ["Unity3d"]
 
 unity现在的版本所有资源可以手动配置AssetBundle 的Name和Variant，这里用脚本设置下
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181112122730679.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181112122730679.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
 ```csharp
 
     [MenuItem("Tools/Test1")]
@@ -31,6 +34,11 @@ unity现在的版本所有资源可以手动配置AssetBundle 的Name和Variant�
 
 
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181112122805789.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2018111212281621.png)
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181112122805789.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
+  
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2018111212281621.png)  

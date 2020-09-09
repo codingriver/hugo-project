@@ -30,11 +30,20 @@ win系统打开cmd命令行，执行命令`adb forward tcp:34999 localabstract:U
 
 *执行该命令时必须打开unity且电脑连接android手机，手机处于调试模式*
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200817213544990.png#pic_center)
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200817214702727.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70#pic_center)
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200817213544990.png#pic_center)  
+
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020081721473018.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70#pic_center)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200817214702727.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70#pic_center)  
+
+  
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2020081721473018.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70#pic_center)  
+
 
 ### 使用wifi连接
 > - Disable mobile data on your Android device.
@@ -49,10 +58,16 @@ Build Settings 里，将 Development Build、Autoconnect Profiler、Script Debug
 - 用任务管理器 查看进程pid对应的进程，然后结束进程（打开任务管理器后右键勾选PID显示pid）
 
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200817213907858.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70#pic_center)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200817213907858.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70#pic_center)  
+
 
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200817214356745.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70#pic_center)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200817214356745.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70#pic_center)  
+
 
 
 > *如果进程有守护进程，干不掉，则参考文章 https://blog.csdn.net/aLLLiyyy/article/details/86555228，最后面会说怎么结束掉*

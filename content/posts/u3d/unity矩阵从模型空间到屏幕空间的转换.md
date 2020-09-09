@@ -80,7 +80,10 @@ $$
 这里着重讲下这个，吐槽下好多博客将旋转连旋转正方向都没有说 ，看的云里雾里
 ==**关于旋转的正方向，OpenGL与多数图形学书籍规定的正方向为逆时针方向（沿着坐标轴负方向向原点看）**==
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181012092900338?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181012092900338?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 参考这篇文章[旋转变换（一）旋转矩阵](https://blog.csdn.net/csxiaoshui/article/details/65446125)
 
 绕着z轴旋转$\theta$度的 矩阵
@@ -232,12 +235,21 @@ public class TestMatrix : MonoBehaviour {
 ```
 场景中配置两个物体 Root，Cube；Root的Transform代表世界空间对Cube模型空间的变换
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181013095156321?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181013095307949?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181013095156321?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
+  
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181013095307949?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 测试代码的结果：说明变换后的坐标和物体本身世界坐标相同
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181013104313560?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181013104313560?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 **来看世界空间到模型空间**
 继续增加测试代码
 ```
@@ -260,7 +272,10 @@ public class TestMatrix : MonoBehaviour {
 ```
 在Start方法中调用后的结果：
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181013100821727?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181013100821727?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 
 ## **模型空间到观察空间**
 继续增加测试代码
@@ -285,7 +300,10 @@ public class TestMatrix : MonoBehaviour {
 ```
 在Start方法中调用后的结果：
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181013101819939?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181013101819939?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 
 ## **观察空间到裁剪空间**
 继续增加测试代码
@@ -302,7 +320,10 @@ public class TestMatrix : MonoBehaviour {
 ```
 在Start方法中调用后的结果：
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181013102306526?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181013102306526?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 ## **模型空间到屏幕空间**
 这里直接测试从模型空间到世界空间到观察空间到屏幕空间变换
 ```csharp
@@ -332,7 +353,10 @@ public class TestMatrix : MonoBehaviour {
 在Start方法中调用后的结果：（如果想要一样的结果则需要设置分辨率为1280*720，并且相机配置一样）
 这里只验证屏幕坐标x和y，z值是世界坐标的z值，没有变换的，w值没有研究
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181013103949544?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181013103949544?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 
 
 **脚本`TransformationMatrixUtil.cs`**

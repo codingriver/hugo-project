@@ -124,7 +124,10 @@ public class MyPlayer : MonoBehaviour
 
 ```
 **默认展示Inspector面板**
-![20200902221623](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/unity编辑器-自定义Inspector面板/20200902221623.png)
+  
+
+![20200902221623](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/unity编辑器-自定义Inspector面板/20200902221623.png)  
+
 ### **添加Inspector的Editor类**
 
 ```csharp
@@ -369,10 +372,19 @@ public class MyPlayerEditor : Editor
 
 **最终效果unity的自定义Inspector面板**
 
-![20200902221438](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/unity编辑器-自定义Inspector面板/20200902221438.png)
-![20200902215841](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/unity编辑器-自定义Inspector面板/20200902215841.png)
+  
 
-![test2](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/unity编辑器-自定义Inspector面板/test2.gif)
+![20200902221438](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/unity编辑器-自定义Inspector面板/20200902221438.png)  
+
+  
+
+![20200902215841](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/unity编辑器-自定义Inspector面板/20200902215841.png)  
+
+
+  
+
+![test2](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/unity编辑器-自定义Inspector面板/test2.gif)  
+
 
 -----
 **GUILayoutOption**：基本每个控件方法都有一个可选参数是GUILayoutOption[] Options 这是一个可以控制组件大小之类的选项,在GUILayout类中共有8个。 看名字应该就知道是设置什么的了。

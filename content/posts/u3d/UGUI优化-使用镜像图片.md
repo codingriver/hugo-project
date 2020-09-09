@@ -15,13 +15,22 @@ ugui源码版本2018.2（这里在这个版本基础上修改的）
 使用的素材有1/2、1/4图片
 **下面1/2图片**
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211202506494.png)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211202506494.png)  
+
 **左边1/2图片**
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211202538148.png)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211202538148.png)  
+
 **左下1/4图片**
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211202555451.png)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211202555451.png)  
+
 
 **这里新建类`MirrorImage`继承Image，对Image功能进行扩展**
 根据ImageType 分为四种扩展：Simple，Sliced，Tiled，Filled；只处理了三种
@@ -76,7 +85,10 @@ ugui源码版本2018.2（这里在这个版本基础上修改的）
     }
 ```
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2018121210365169.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2018121210365169.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
 这个地方需要修改editor，下面有整个工程，可以看下
 2.重写`SetNativeSize`方法，实现自动扩展MirrorImage镜像的大小,根据素材的大小和镜像类型来自动配置image大小
 ```c
@@ -221,7 +233,10 @@ ugui源码版本2018.2（这里在这个版本基础上修改的）
 ```
 水平镜像后：
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211210600513.png)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211210600513.png)  
+
 #### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X02 Sliced类型</u></b></font></td></tr></table>
 修改上面的步骤
 3 重写OnPopulateMesh方法，这个方法会修改mesh信息，然后给Graphic；增加Sliced类型
@@ -255,7 +270,10 @@ ugui源码版本2018.2（这里在这个版本基础上修改的）
 ```
 4.Sliced类型支持九宫图，这里注意九宫图做的时候，水平镜像要注意保留九宫图中间无限拉伸的那部分，456区域会镜像并且和原始456区域组成九宫图中心部分进行拉伸，这里注意右侧border不要拉出来。
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211210110143.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211210110143.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
 ```c
     private void GenerateSlicedSprite(VertexHelper toFill)
     {
@@ -365,7 +383,10 @@ ugui源码版本2018.2（这里在这个版本基础上修改的）
 
 镜像后的效果：
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211210349466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211210349466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
 
 #### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X03 Tiled类型</u></b></font></td></tr></table>
 
@@ -404,7 +425,10 @@ ugui源码版本2018.2（这里在这个版本基础上修改的）
 假设是水平镜像类型：tiled平铺时会自动把右侧相邻的镜像补上
 **没有九宫的border线，一定要注意，要不然出错**
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2018121121110096.png)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2018121121110096.png)  
+
 
 
 ```c
@@ -744,16 +768,28 @@ ugui源码版本2018.2（这里在这个版本基础上修改的）
 
 镜像后：
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211211241904.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211211241904.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
 
 如果是左下1/4图片
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211211319238.png)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211211319238.png)  
+
 则4个tile组成一个完整的图
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211211407233.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211211509926.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211211407233.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
+  
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211211509926.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
 
 
 

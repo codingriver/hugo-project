@@ -18,37 +18,61 @@ categories: ["随笔"]
 放在文件夹`F:\Hugo\bin\`中，然后添加到环境变量中
 执行 `hugo -version`
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731180653107.png)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731180653107.png)  
+
 出现版本号，配置完成
 ### 2. 创建站点项目
 假设要创建站点存放在`F:\Hugo\Sites\`目录中
 在命令行切换到该目录下执行`hugo new site codingriver` 创建codingriver站点项目
 
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731181020763.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731181020763.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
 创建完成
 ### 3.添加主题
 命令行切换到新创建站点项目codingriver内
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020073118165314.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2020073118165314.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
 
  添加主题 [maupassant](https://github.com/flysnow-org/maupassant-hugo)执行`git clone https://github.com/JokerQyou/maupassant-hugo.git themes/maupassant`
    
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731181707703.png)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731181707703.png)  
+
  这样主题下载完成然后，在当前项目目录内打开`config.toml`配置文件，在最后添加一行`theme = "maupassant"`
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731181855310.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731181855310.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
 
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731181842321.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731181842321.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
 这样主题配置完成
 ### 4. 运行站点项目
 在站点项目内执行命令`hugo server -D`
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731181955198.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731181955198.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
 这里表示执行成功，打开网页`http://localhost:1313/`
   
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731182103643.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731182103643.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
 安装配置完成
 
 

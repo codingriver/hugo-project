@@ -221,7 +221,10 @@ print("b::"..log(b))
 ```
 结果：注意标红的a，是因为B实例化时执行了父类的ctor构造函数产生的，static:20和static:30,是因为  B.static=20,b.static=30代码通过__newindex实现的
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181011230250419?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181011230250419?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 
 
 # <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X03 lua简单的类的实现</u></b></font></td></tr></table>
@@ -283,4 +286,6 @@ end
 ```
 根据第二节的测试代码`test.lua`执行的结果：
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181011231837306?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181011231837306?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  

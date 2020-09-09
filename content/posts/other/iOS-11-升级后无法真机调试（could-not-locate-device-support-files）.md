@@ -8,7 +8,10 @@ categories: ["随笔"]
 <!--more-->
 
 
-![image.png](https://imgconvert.csdnimg.cn/aHR0cDovL3VwbG9hZC1pbWFnZXMuamlhbnNodS5pby91cGxvYWRfaW1hZ2VzLzEwOTU2NDMtYmI4ZGFlOWUzMjZkN2ZlMi5wbmc?x-oss-process=image/format,png)
+  
+
+![image.png](https://imgconvert.csdnimg.cn/aHR0cDovL3VwbG9hZC1pbWFnZXMuamlhbnNodS5pby91cGxvYWRfaW1hZ2VzLzEwOTU2NDMtYmI4ZGFlOWUzMjZkN2ZlMi5wbmc?x-oss-process=image/format,png)  
+
 
 **这个错误是因为Xcode缺少对应ios版本的supoort文件**
 
@@ -17,6 +20,9 @@ categories: ["随笔"]
 或者从新版的Xcode目录支持文件复制到自己的Xcode目录中
 文件路径：/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport
 打开这个路径，然后看到ios 系统列表
-![image.png](https://imgconvert.csdnimg.cn/aHR0cDovL3VwbG9hZC1pbWFnZXMuamlhbnNodS5pby91cGxvYWRfaW1hZ2VzLzEwOTU2NDMtZThjNTk0NjY1ZGUzYzA5Yi5wbmc?x-oss-process=image/format,png)
+  
+
+![image.png](https://imgconvert.csdnimg.cn/aHR0cDovL3VwbG9hZC1pbWFnZXMuamlhbnNodS5pby91cGxvYWRfaW1hZ2VzLzEwOTU2NDMtZThjNTk0NjY1ZGUzYzA5Yi5wbmc?x-oss-process=image/format,png)  
+
 
 找到自己需要的版本（我用的是11.1）将整个文件夹拷贝到自己的Xcode目录中

@@ -32,11 +32,17 @@ android ndk (android-ndk-r10e-Windows)
  配置Android_SDK，Android_NDK环境变量，然后编译就可以了
  
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181022120124521?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181022120124521?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 
 
  android sudio下载cmake后，自动配置到android sdk目录下（默认sdk是没有cmake的）：
    
-![在这里插入图片描述](https://img-blog.csdn.net/20181022120355540?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181022120355540?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 
 *mac和ios平台需要mac电脑，等后面补充吧*

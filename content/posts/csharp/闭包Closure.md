@@ -45,7 +45,10 @@ public Func<int> T1()
 ```
 返回结果：
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181011234652734?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181011234652734?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 **因为闭包的特性，这里匿名函数中所使用的变量就是实际T1中的变量，与之相反的是，匿名对象result里面的A只是初始化时被赋予了变量n的值，它并不是n，所以后面n改变之后A并未随之而改变。这正是闭包的魔力所在。**
 还有就是像T1方法带upvalue的返回函数其实IL中返回的是一个类，将变量n作为类的一个属性去处理的
 

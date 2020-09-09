@@ -109,7 +109,10 @@ Shader "Book/06.LambertVert"
 ```	
 效果：
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181013190336255?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181013190336255?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 #### 逐像素光照(兰伯特漫反射)
 ```c
 // Lambert(兰伯特)光照模型 逐像素 
@@ -184,7 +187,10 @@ Shader "Book/06.LambertPixel"
 ```
 效果：
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181013190733167?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181013190733167?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 
 ### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X02 半兰伯特光照模型(HalfLambert)</u></b></font></td></tr></table>
 ```c
@@ -263,7 +269,10 @@ Shader "Book/06.HalfLambert"
 
 效果：右边是半兰伯特光照效果，左边是兰伯特逐顶点光照，中间是兰伯特逐像素光照
 **半兰伯特光照比兰伯特光照要亮，但没有任何物理依据，只是提高视觉效果**
-![右边是半兰伯特光照效果，左边是兰伯特逐顶点光照，中间是兰伯特逐像素光照](https://img-blog.csdn.net/20181013191313788?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![右边是半兰伯特光照效果，左边是兰伯特逐顶点光照，中间是兰伯特逐像素光照](https://img-blog.csdn.net/20181013191313788?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 
 *关于法线从模型空间转换到世界空间`o.worldNormal = mul(v.normal, (float3x3)unity_WorldToObject);`后面补充为什么这么计算*
 

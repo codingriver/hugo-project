@@ -73,7 +73,10 @@ void main()
 ```
 结果：
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181013114611972?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181013114611972?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 
 **A**
 A的大小如果不考虑数据对齐的话为13，假设a变量起始位0X00,a.a是第一个变量，所以a.a的地址位0X00，a.a的地址对齐值是1，共分配7个字节；a.b的地址对齐值是2 ，所以a.b起始地址必须满足被2整除，所以a.b的地址是0X08（(7+1)%2=0），分配2个字节；a.c的地址对齐值是4，前面占用10个字节了，所以地址是0X0C（(10+2)%4=0）,分配4个字节，当前A的大小是16个字节，A的对齐值是4，16%4=0，所以A的大小是16字节
@@ -122,7 +125,10 @@ void main()
 ```
 结果：
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181013121547845?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181013121547845?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 **A**
 A 三个变量占用字节最大的值是a,7个字节，A的对齐值是4，所以A的大小是7+1=8（（7+1）%4=0）
 **B**

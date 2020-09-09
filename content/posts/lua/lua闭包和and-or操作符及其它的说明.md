@@ -44,7 +44,10 @@ print("a:"..a.." b:"..b.." c:"..c.." d:"..d.." e:"..e)
 
 结果：
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181011195056786?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181011195056786?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 
 ~~关于闭包的应用场景，这里没有过多的去注意，很尴尬，至今为止可能用过没有注意，~~ 
 这里有个例子：
@@ -143,7 +146,10 @@ end
 
 ```
 结果：
-![结果](https://img-blog.csdn.net/20181011202238228?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![结果](https://img-blog.csdn.net/20181011202238228?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 >参考文章：
 >[Lua中and、or的一些特殊用法](https://blog.csdn.net/gzy252050968/article/details/50513100/)
 
@@ -160,7 +166,10 @@ world
 print(text)
 ```
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181011203321427?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181011203321427?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 
 #### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X04 lua递归函数</u></b></font></td></tr></table>
 
@@ -193,5 +202,8 @@ print(fact1(5))
 ```
 结果：
   
-![在这里插入图片描述](https://img-blog.csdn.net/20181011203830657?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+  
+
+![在这里插入图片描述](https://img-blog.csdn.net/20181011203830657?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 
