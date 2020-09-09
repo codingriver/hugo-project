@@ -20,9 +20,15 @@ unsupported class file version 52.0
 ```
 上面的错误说明是编辑器版本不兼容
 untiy版本：5.6.0f3
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-1bef29c214b41f89.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![image.png](http://upload-images.jianshu.io/upload_images/1095643-1bef29c214b41f89.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 将编译器的版本改成1.7就可以了
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-9f9af38a7209c145.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![image.png](http://upload-images.jianshu.io/upload_images/1095643-9f9af38a7209c145.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 
 完整错误:
 ```
@@ -121,4 +127,7 @@ UnityEditor.Android.AndroidSDKTools.RunCommandSafe (System.String javaExe, Syste
 UnityEditor.HostView:OnGUI()
 
 ```
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-629fdca9c10779fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![image.png](http://upload-images.jianshu.io/upload_images/1095643-629fdca9c10779fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+

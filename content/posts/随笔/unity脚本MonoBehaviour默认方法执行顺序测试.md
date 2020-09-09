@@ -17,11 +17,23 @@ categories: ["]
 >>+ ######4.在执行gameObject.AddComponent<TestPrefab>().Init();时会先执行TestPrefab中的Awake和OnEnable后才执行Init
 
 这里先上工程截图
-![场景test2.png](http://upload-images.jianshu.io/upload_images/1095643-2e4fb7b1860a8626.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![场景test1.png](http://upload-images.jianshu.io/upload_images/1095643-343d06bf491ff0eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![TestPrefab.png](http://upload-images.jianshu.io/upload_images/1095643-0e2e0397560d1425.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![场景test2.png](http://upload-images.jianshu.io/upload_images/1095643-2e4fb7b1860a8626.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
+
+
+![场景test1.png](http://upload-images.jianshu.io/upload_images/1095643-343d06bf491ff0eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
+
+
+![TestPrefab.png](http://upload-images.jianshu.io/upload_images/1095643-0e2e0397560d1425.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 *这里在TestPrefab上只挂TestPrefab一个脚本*
-![TestPrefab2.png](http://upload-images.jianshu.io/upload_images/1095643-c09e6dde3a4864cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![TestPrefab2.png](http://upload-images.jianshu.io/upload_images/1095643-c09e6dde3a4864cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 *这里在TestPrefab2上只挂TestPrefab2一个脚本*
 **测试是在test2场景中运行，脚本加载切换到test1场景**
 
@@ -426,12 +438,21 @@ public class TestPrefab2 : MonoBehaviour
 
 ```
 **在test2场景中直接运行后的结果**
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-ba534b3ea7ecffcb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![image.png](http://upload-images.jianshu.io/upload_images/1095643-ba534b3ea7ecffcb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 
 **将TestLoading在Awake方法和Start方法修改成如下**
-![修改代码.png](http://upload-images.jianshu.io/upload_images/1095643-6db091ad42a9701e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![修改代码.png](http://upload-images.jianshu.io/upload_images/1095643-6db091ad42a9701e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 **在test2场景中直接运行上面修改后的结果**
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-6a9805fec957e746.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![image.png](http://upload-images.jianshu.io/upload_images/1095643-6a9805fec957e746.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 
 **结果表明：**
 + ######1.通过Instantiate加载Prefab时Awake和OnEnable会先后执行，并且在Instantiate执行过程中执行的；
@@ -441,7 +462,13 @@ public class TestPrefab2 : MonoBehaviour
 ***
 ***
 **当添加脚本组件时如下代码**
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-b68e47ea9010a6ef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![image.png](http://upload-images.jianshu.io/upload_images/1095643-b68e47ea9010a6ef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 执行结果为
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-98ae4ead391bbc13.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![image.png](http://upload-images.jianshu.io/upload_images/1095643-98ae4ead391bbc13.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 + ######4.在执行gameObject.AddComponent<TestPrefab>().Init();时会先执行TestPrefab中的Awake和OnEnable后才执行Init

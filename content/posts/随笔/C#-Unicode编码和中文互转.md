@@ -168,5 +168,8 @@ class UnicodeTools
             Console.WriteLine(UnicodeTools.DecodeString1(UnicodeTools.EncodeString2(s)));
 ```
 **结果**
-![结果.png](http://upload-images.jianshu.io/upload_images/1095643-0b66f358f0fa5f41.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![结果.png](http://upload-images.jianshu.io/upload_images/1095643-0b66f358f0fa5f41.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 

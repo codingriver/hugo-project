@@ -83,7 +83,10 @@ public class TestCallSequence : MonoBehaviour
 执行结果
 
 
-![执行结果](http://upload-images.jianshu.io/upload_images/1095643-fedff950d9562364.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![执行结果](http://upload-images.jianshu.io/upload_images/1095643-fedff950d9562364.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 *先运行脚本然后将将脚本组件改为非激活状态（active=false），然后停止运行。*
 **上面的执行结果说明方法的调用顺序一部分是不固定的（FixedUpdate）。**
 

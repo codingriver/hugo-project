@@ -19,17 +19,26 @@ categories: ["]
 
 **创建IPV6 wifi热点**
 点击桌面左上角小苹果--->系统偏好设置---->共享（要按住option键）
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-6d923750c7d3d08b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-a844a61e7155848b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](http://upload-images.jianshu.io/upload_images/1095643-6d923750c7d3d08b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
+
+
+
+
+![image.png](http://upload-images.jianshu.io/upload_images/1095643-a844a61e7155848b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 
 **共享一下来源的连接：**这里使用USB(如果有以太网就选择以太网)
 **共享给电脑：**选择Wi-Fi
 **创建NAT64网络选项：**一定要勾上，就靠它来共享NAT64网络
 wifi选项---频段 ---- 我这里选择的11
 勾上互联网共享就可以了
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-2d8ebfda4a1d6952.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![image.png](http://upload-images.jianshu.io/upload_images/1095643-2d8ebfda4a1d6952.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 
 **打开共享如果不按住option，则打开的共享面板没有【创建NAT64网络选项】**
 

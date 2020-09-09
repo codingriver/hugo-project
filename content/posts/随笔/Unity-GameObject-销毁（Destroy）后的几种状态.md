@@ -15,7 +15,10 @@ categories: ["]
 >>#####特别注意GameObject被销毁时当前帧 根据它的Parent获取childCount时是包含销毁的GameObject，所以这里计数不是想象的那样，如果使用childCount则在Destory前将父子关系解除
 
 场景内未运行截图
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-a00bbae7f1473952.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![image.png](http://upload-images.jianshu.io/upload_images/1095643-a00bbae7f1473952.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 Test.cs代码
 ```cs
 //=====================================================
@@ -73,11 +76,17 @@ public class Test : MonoBehaviour {
 
 运行结果
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-d32dc1f6884f558e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![image.png](http://upload-images.jianshu.io/upload_images/1095643-d32dc1f6884f558e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 
 
 将go=null这行代码注释放开后的运行结果：
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-f0dbd41b641893c3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![image.png](http://upload-images.jianshu.io/upload_images/1095643-f0dbd41b641893c3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 
 
 根据结果说明：
