@@ -3,7 +3,7 @@
 title: "SVN-trunk(主线)-branch(分支)-创建和合并教程"
 date: 2019-12-01T21:57:40+08:00
 tags: ["SVN"]
-categories: [""]
+categories: ["随笔"]
 ---
 
 <!--more-->

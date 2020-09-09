@@ -2,8 +2,8 @@
 ---
 title: "Xcode查看真机app沙盒内容，查看app缓存（Cache）文件"
 date: 2019-12-01T21:57:40+08:00
-tags: ["Unity","IOS","Xcode"]
-categories: ["Unity"]
+tags: ["IOS","Xcode"]
+categories: ["IOS"]
 ---
 
 <!--more-->
