@@ -1,3 +1,14 @@
+﻿
+---
+title: "unity和android交互bug"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 ``` java
     public String ApplinkUrl=null;
     public void BroadcastApplinkUrl(String linkUrl)

@@ -1,3 +1,14 @@
+﻿
+---
+title: "unity创建新脚本自动添加版权声明，文件名，作者，创建时间等"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 - ####1.修改81-C# Script-NewBehaviourScript.cs.txt文件
 打开unity安装目录对应.\Unity\Editor\Data\Resources\ScriptTemplates\81-C# Script-NewBehaviourScript.cs.txt文件
 我的目录：C:\Program Files\Unity\Editor\Data\Resources\ScriptTemplates\81-C# Script-NewBehaviourScript.cs.txt

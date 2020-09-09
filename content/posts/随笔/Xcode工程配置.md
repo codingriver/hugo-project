@@ -1,3 +1,14 @@
+﻿
+---
+title: "Xcode工程配置"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 ##0X01导出Xcode工程
 #####1.检查热更新配置
 project_base.json等所有以project_开头的文件的配置信息；

@@ -1,3 +1,14 @@
+﻿
+---
+title: "Unity脚本执行顺序"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 > 进阶测试参考[[unity脚本MonoBehaviour默认方法执行顺序测试](http://www.jianshu.com/p/574910aa3f52)
 ](http://www.jianshu.com/p/574910aa3f52)
 

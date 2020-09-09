@@ -1,3 +1,14 @@
+﻿
+---
+title: "Unity-GameObject-销毁（Destroy）后的几种状态"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 >直接上测试结果，方便后面使用:
 >>#####GameObject被销毁时当前帧可以继续使用属性（gameObject,parent,transform等等）。
 >>#####GameObject被销毁的下一帧判定null是相等的但是物体类型还是GameObject。

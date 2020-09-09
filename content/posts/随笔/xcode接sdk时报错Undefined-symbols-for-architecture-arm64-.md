@@ -1,3 +1,14 @@
+﻿
+---
+title: "xcode接sdk时报错Undefined-symbols-for-architecture-arm64-"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 unity 导出xcode后接环信libHyphenateSDK时build报错Undefined symbols for architecture armv7:
 也有Undefined symbols for architecture arm64:
 ```

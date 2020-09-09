@@ -1,3 +1,14 @@
+﻿
+---
+title: "Xcode项目发布App-Store商品审核"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 > ios配置开发者证书及添加AppID 参考https://www.jianshu.com/p/ee83dc090b20
 > ios 配置ItunesConnect添加应用 参考https://www.jianshu.com/p/12ccfa566ae2
 >这里使用Xcode的版本为Version 9.2 (9C40b)

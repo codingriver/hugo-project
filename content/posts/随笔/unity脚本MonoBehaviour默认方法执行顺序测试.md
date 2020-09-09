@@ -1,3 +1,14 @@
+﻿
+---
+title: "unity脚本MonoBehaviour默认方法执行顺序测试"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 >基础的MonoBehaviour默认方法执行顺序参考上篇文章[Unity脚本执行顺序](https://www.jianshu.com/p/b69ef6ace840)
 >>测试结果：
 >>+ ######1.通过Instantiate加载Prefab时Awake和OnEnable会先后执行，并且在Instantiate执行过程中执行的；

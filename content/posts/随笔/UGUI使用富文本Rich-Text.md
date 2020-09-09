@@ -1,3 +1,14 @@
+﻿
+---
+title: "UGUI使用富文本Rich-Text"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 > + 参考文章：https://www.cnblogs.com/slysky/p/4301676.html
 > + 参考文章：https://docs.unity3d.com/Manual/StyledText.html
 > + [Unity Text 插入超链接](https://blog.csdn.net/akof1314/article/details/49077983)

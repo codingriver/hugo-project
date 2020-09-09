@@ -1,3 +1,14 @@
+﻿
+---
+title: "unity-响应Android返回键"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 >  android 通过java层重载返回键事件onBackPressed有bug，有时候不响应！！！
 ```
     @Override 

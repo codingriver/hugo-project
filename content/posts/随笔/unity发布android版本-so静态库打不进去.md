@@ -1,3 +1,14 @@
+﻿
+---
+title: "unity发布android版本-so静态库打不进去"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 发布android包时 armeabi文件夹下的so静态库打包不进去（unity版本：unity5.6.0f3）
 ![image.png](http://upload-images.jianshu.io/upload_images/1095643-9bf9d1be22a42b47.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 

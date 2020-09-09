@@ -1,3 +1,14 @@
+﻿
+---
+title: "unity-打包Android报错CommandInvokationFailure--Unable-to-convert-classes-i"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 >参考文章:<http://blog.csdn.net/qingyang8513/article/details/52544122>
 
 打包Android报错`CommandInvokationFailure: Unable to convert classes into dex format.`

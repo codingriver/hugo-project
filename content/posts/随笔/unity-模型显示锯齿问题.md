@@ -1,3 +1,14 @@
+﻿
+---
+title: "unity-模型显示锯齿问题"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 没有开抗锯齿的时候
 
 ![image.png](http://upload-images.jianshu.io/upload_images/1095643-fede161b8c259ae5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

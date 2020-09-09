@@ -1,3 +1,14 @@
+﻿
+---
+title: "Unity渲染顺序"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 Unity中的渲染顺序有三层：
 + **第一层：Camera的depth，值越大渲染越在前面**
 + **第二层：Sorting Layer，配置SortingLayer面板（越在下面的layer渲染越在前面），然后在Canvas上设置或者在Renderer组件上设置**

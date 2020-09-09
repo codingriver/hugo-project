@@ -1,3 +1,14 @@
+﻿
+---
+title: "Unity-使用Android-Splash"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 java代码
 ``` java
 	ImageView bgView=null;

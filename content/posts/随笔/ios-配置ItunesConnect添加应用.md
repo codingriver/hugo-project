@@ -1,3 +1,14 @@
+﻿
+---
+title: "ios-配置ItunesConnect添加应用"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 > 关于怎么配置开发者证书和添加AppID 参考 http://www.jianshu.com/writer#/notebooks/6185424/notes/23554406/preview
 
 ##01 在ItunesConnect中添加新的应用

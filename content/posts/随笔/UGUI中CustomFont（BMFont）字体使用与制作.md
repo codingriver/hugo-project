@@ -1,3 +1,14 @@
+﻿
+---
+title: "UGUI中CustomFont（BMFont）字体使用与制作"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 > 首先使用工具[Bitmap Font Generator](http://blog.csdn.net/wuming22222/article/details/51713350)生成.fnt和图集贴图,教程参考[Unity3D-使用Bitmap Font Generator自定义字体](http://blog.csdn.net/wuming22222/article/details/51713350)
  **这里主要介绍根据Text格式的.fnt和贴图 在unity中自定义字体**
 

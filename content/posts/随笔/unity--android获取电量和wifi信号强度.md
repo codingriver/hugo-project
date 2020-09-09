@@ -1,3 +1,14 @@
+﻿
+---
+title: "unity--android获取电量和wifi信号强度"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 ```
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;

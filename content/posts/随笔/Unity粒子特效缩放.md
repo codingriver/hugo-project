@@ -1,3 +1,14 @@
+﻿
+---
+title: "Unity粒子特效缩放"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 Editor下缩放脚本(非运行情况下)（Unity5.3.6）
 ```cs
 //This script will only work in editor mode. You cannot adjust the scale dynamically in-game!

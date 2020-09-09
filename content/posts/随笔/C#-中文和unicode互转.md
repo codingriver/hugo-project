@@ -1,3 +1,14 @@
+﻿
+---
+title: "C#-中文和unicode互转"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 ->引用：http://blog.csdn.net/u011511086/article/details/72865006
 
 ```

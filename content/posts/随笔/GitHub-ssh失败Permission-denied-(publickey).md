@@ -1,3 +1,14 @@
+﻿
+---
+title: "GitHub-ssh失败Permission-denied-(publickey)"
+date: 2019-12-01T21:57:40+08:00
+tags: ["]
+categories: ["]
+---
+
+<!--more-->
+
+
 
 在执行命令时报错`ssh -T git@github.com`
 ```
