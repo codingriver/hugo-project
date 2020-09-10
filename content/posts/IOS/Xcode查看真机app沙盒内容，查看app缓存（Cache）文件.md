@@ -2,7 +2,9 @@
 ---
 title: "Xcode查看真机app沙盒内容，查看app缓存（Cache）文件"
 date: 2019-12-01T21:57:40+08:00
-tags: ["IOS","Xcode"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: ["IOS","Xcode"]
 categories: ["IOS"]
 ---
 

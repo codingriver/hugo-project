@@ -2,7 +2,9 @@
 ---
 title: "Android，iOS-通过浏览器打开app"
 date: 2019-12-01T21:57:40+08:00
-tags: ["Android","Unity","IOS"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: ["Android","Unity","IOS"]
 categories: ["Unity"]
 ---
 

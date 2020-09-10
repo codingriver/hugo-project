@@ -2,7 +2,9 @@
 ---
 title: "Unity切入后台，切入前台，获取焦点，失去焦点等"
 date: 2019-12-01T21:57:40+08:00
-tags: ["Unity"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: ["Unity"]
 categories: ["Unity"]
 ---
 

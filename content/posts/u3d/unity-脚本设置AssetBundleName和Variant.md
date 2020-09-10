@@ -1,7 +1,9 @@
 ---
 title: "unity3d 脚本设置AssetBundle Name和Variant"
 date: 2019-12-01T21:57:40+08:00
-tags: ["Unity"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: ["Unity"]
 categories: ["Unity"]
 ---
 

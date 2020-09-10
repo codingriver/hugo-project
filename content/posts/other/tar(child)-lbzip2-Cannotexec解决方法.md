@@ -1,7 +1,9 @@
 ---
 title: "tar (child): lbzip2: Cannot exec: No such file or directory 解决方法"
 date: 2019-12-01T21:57:40+08:00
-tags: [""]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: [""]
 categories: ["随笔"]
 ---
 

@@ -2,7 +2,9 @@
 title: "unity GPU Instancing"
 date: 2019-12-01T21:57:40+08:00
 draft: true
-tags: [""]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: [""]
 categories: [""]
 ---
 

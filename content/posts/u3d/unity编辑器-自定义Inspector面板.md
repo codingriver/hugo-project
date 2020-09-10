@@ -1,7 +1,9 @@
 ---
 title: "【Unity编辑器】 自定义Inspector面板"
 date: 2020-09-02T17:38:56+08:00
-tags: ["Unity编辑器"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: ["Unity编辑器"]
 categories: ["Unity编辑器"]
 ---
 

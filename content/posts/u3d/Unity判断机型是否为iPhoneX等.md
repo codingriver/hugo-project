@@ -1,7 +1,9 @@
 ---
 title: "Unity判断机型是否为iPhoneX，iPhoneXS，iPhoneXR，以及iPhoneXS Max"
 date: 2019-12-01T21:57:40+08:00
-tags: ["Unity"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: ["Unity"]
 categories: ["Unity"]
 ---
 

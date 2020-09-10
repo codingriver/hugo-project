@@ -2,7 +2,9 @@
 ---
 title: "untiy-ios透明ui-的透明区域渲染错误"
 date: 2019-12-01T21:57:40+08:00
-tags: ["Unity","IOS"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: ["Unity","IOS"]
 categories: ["Unity"]
 ---
 

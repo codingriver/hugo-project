@@ -1,7 +1,9 @@
 ---
 title: "C# 特性详解（Attribute）"
 date: 2019-12-01T21:57:40+08:00
-tags: ["C#"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: ["C#"]
 categories: ["C#"]
 ---
 

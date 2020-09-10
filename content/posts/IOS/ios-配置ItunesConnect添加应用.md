@@ -2,7 +2,9 @@
 ---
 title: "ios-配置ItunesConnect添加应用"
 date: 2019-12-01T21:57:40+08:00
-tags: ["IOS"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: ["IOS"]
 categories: ["IOS"]
 ---
 

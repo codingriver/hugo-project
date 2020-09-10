@@ -1,7 +1,9 @@
 ---
 title: "【数据结构】 A* 算法理解(C#)"
 date: 2020-09-03T21:09:12+08:00
-tags: ["算法"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: ["算法"]
 categories: ["数据结构"]
 ---
 

@@ -2,7 +2,9 @@
 ---
 title: "Unity和IOS交互char-作为方法返回值到C#中bug"
 date: 2019-12-01T21:57:40+08:00
-tags: ["Unity","IOS"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: ["Unity","IOS"]
 categories: ["Unity"]
 ---
 

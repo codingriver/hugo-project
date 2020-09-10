@@ -1,7 +1,9 @@
 ---
 title: "Unity 编辑器扩展菜单项"
 date: 2019-12-01T21:57:40+08:00
-tags: ["Unity编辑器"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: ["Unity编辑器"]
 categories: ["Unity编辑器"]
 ---
 

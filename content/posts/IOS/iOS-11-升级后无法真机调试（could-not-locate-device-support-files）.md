@@ -1,7 +1,9 @@
 ---
 title: "iOS-11-升级后无法真机调试（could-not-locate-device-support-files）"
 date: 2019-12-01T21:57:40+08:00
-tags: ["IOS","Xcode"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: ["IOS","Xcode"]
 categories: ["IOS"]
 ---
 

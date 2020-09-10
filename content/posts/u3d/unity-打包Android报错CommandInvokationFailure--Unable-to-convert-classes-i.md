@@ -2,7 +2,9 @@
 ---
 title: "unity-打包Android报错CommandInvokationFailure--Unable-to-convert-classes-i"
 date: 2019-12-01T21:57:40+08:00
-tags: ["Android","Unity"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: ["Android","Unity"]
 categories: ["Unity"]
 ---
 

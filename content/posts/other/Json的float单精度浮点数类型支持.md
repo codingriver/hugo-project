@@ -1,7 +1,9 @@
 ---
 title: "Json的float单精度浮点数类型支持Can't assign value '11.88' (type System.Double) to type System.Single"
 date: 2019-12-01T21:57:40+08:00
-tags: [""]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: [""]
 categories: ["随笔"]
 ---
 

@@ -2,7 +2,9 @@
 ---
 title: "C#-Unicode编码和中文互转"
 date: 2019-12-01T21:57:40+08:00
-tags: ["Unicode编码"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: ["Unicode编码"]
 categories: ["计算机基础"]
 ---
 

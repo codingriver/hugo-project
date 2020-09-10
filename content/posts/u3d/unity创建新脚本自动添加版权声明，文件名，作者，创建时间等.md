@@ -2,7 +2,9 @@
 ---
 title: "unity创建新脚本自动添加版权声明，文件名，作者，创建时间等"
 date: 2019-12-01T21:57:40+08:00
-tags: ["Unity"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: ["Unity"]
 categories: ["Unity"]
 ---
 

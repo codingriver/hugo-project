@@ -1,7 +1,9 @@
 ---
 title: "用astash 画UML类图"
 date: 2019-12-01T21:57:40+08:00
-tags: [""]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: [""]
 categories: ["随笔"]
 ---
 

@@ -2,7 +2,9 @@
 ---
 title: "unity和android交互bug"
 date: 2019-12-01T21:57:40+08:00
-tags: ["Unity","Android"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: ["Unity","Android"]
 categories: ["Unity"]
 ---
 

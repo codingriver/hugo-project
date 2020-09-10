@@ -1,7 +1,9 @@
 ---
 title: "申请TexturePacker免费注册码(2018年11月份申请的)"
 date: 2019-12-01T21:57:40+08:00
-tags: [""]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+ tags: [""]
 categories: ["随笔"]
 ---
 
