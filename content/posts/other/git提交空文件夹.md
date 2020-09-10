@@ -13,9 +13,9 @@ categories: ["随笔"]
 **新建.gitignore文件**
 在空文件夹下新建.gitignore文件，文件内容：
 ```c
-# Ignore everything in this directory
+## Ignore everything in this directory
 *
-# Except this file
+## Except this file
 !.gitignore
 ```
 这样就能提交git仓库了

@@ -75,16 +75,16 @@ git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 
 ```toml
 baseURL = "http://example.org/"
-# [en, zh-cn, fr, ...] 设置默认的语言
+## [en, zh-cn, fr, ...] 设置默认的语言
 defaultContentLanguage = "zh-cn"
-# 网站语言, 仅在这里 CN 大写
+## 网站语言, 仅在这里 CN 大写
 languageCode = "zh-CN"
-# 是否包括中日韩文字
+## 是否包括中日韩文字
 hasCJKLanguage = true
-# 网站标题
+## 网站标题
 title = "我的全新 Hugo 网站"
 
-# 更改使用 Hugo 构建网站时使用的默认主题
+## 更改使用 Hugo 构建网站时使用的默认主题
 theme = "LoveIt"
 
 [params]
@@ -120,7 +120,7 @@ theme = "LoveIt"
     title = ""
     weight = 3
 
-# Hugo 解析文档的配置
+## Hugo 解析文档的配置
 [markup]
   # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
   [markup.highlight]
@@ -653,7 +653,7 @@ hugo
     # 是否使用 object-fit-images 来兼容旧式浏览器
     objectFit = false
 
-# Hugo 解析文档的配置
+## Hugo 解析文档的配置
 [markup]
   # {{< link "https://gohugo.io/content-management/syntax-highlighting" "语法高亮设置" >}}
   [markup.highlight]
@@ -682,24 +682,24 @@ hugo
     startLevel = 2
     endLevel = 6
 
-# 作者配置
+## 作者配置
 [author]
   name = "xxxx"
   email = ""
   link = ""
 
-# 网站地图配置
+## 网站地图配置
 [sitemap]
   changefreq = "weekly"
   filename = "sitemap.xml"
   priority = 0.5
 
-# {{< link "https://gohugo.io/content-management/urls#permalinks" "Permalinks 配置" >}}
+## {{< link "https://gohugo.io/content-management/urls#permalinks" "Permalinks 配置" >}}
 [Permalinks]
   # posts = ":year/:month/:filename"
   posts = ":filename"
 
-# {{< link "https://gohugo.io/about/hugo-and-gdpr/" "隐私信息配置" >}}
+## {{< link "https://gohugo.io/about/hugo-and-gdpr/" "隐私信息配置" >}}
 [privacy]
   # {{< version 0.2.0 deleted >}} Google Analytics 相关隐私 (被 params.analytics.google 替代)
   [privacy.googleAnalytics]
@@ -709,18 +709,18 @@ hugo
   [privacy.youtube]
     privacyEnhanced = true
 
-# 用于输出 Markdown 格式文档的设置
+## 用于输出 Markdown 格式文档的设置
 [mediaTypes]
   [mediaTypes."text/plain"]
     suffixes = ["md"]
 
-# 用于输出 Markdown 格式文档的设置
+## 用于输出 Markdown 格式文档的设置
 [outputFormats.MarkDown]
   mediaType = "text/plain"
   isPlainText = true
   isHTML = false
 
-# 用于 Hugo 输出文档的设置
+## 用于 Hugo 输出文档的设置
 [outputs]
   # {{< version 0.2.0 changed >}}
   home = ["HTML", "RSS", "JSON"]
@@ -864,7 +864,7 @@ $code-font-family: Fira Mono, Source Code Pro, Menlo, Consolas, Monaco, monospac
 例如, 一个支持英语, 中文和法语的网站配置:
 
 ```toml
-# [en, zh-cn, fr, pl, ...] 设置默认的语言
+## [en, zh-cn, fr, pl, ...] 设置默认的语言
 defaultContentLanguage = "zh-cn"
 
 [languages]

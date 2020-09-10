@@ -11,7 +11,7 @@ categories: ["lua"]
 > 这里两年前研究过，没有做记录，今天提到了，发现忘干净了，今天借此机会复习下做下记录吧!
 > 第二节的代码已经找不到出处了
  
-#  0X01 lua元表和元方法
+##  0X01 lua元表和元方法
 元表设置：`    setmetatable(table, metatable)`
 元表读取：`    getmetatable(table)`
 元方法操作：
@@ -49,7 +49,7 @@ __newindex元方法用来对表更新，__index则用来对表访问。当你给
 >[Lua 元表与元方法](https://blog.csdn.net/jingangxin666/article/details/80382748 )
 >[lua元表以及元方法](https://www.cnblogs.com/Dong-Forward/p/6063365.html)
 
-#  0X02 lua类的实现
+##  0X02 lua类的实现
 lua类的实现直接上类的实现的代码,注释加好了,文件名 `class.lua`
 ```js
 --class.lua
@@ -227,7 +227,7 @@ print("b::"..log(b))
 
 
 
-#  0X03 lua简单的类的实现
+##  0X03 lua简单的类的实现
 lua类的实现，==简单版本==
 ```js
 
