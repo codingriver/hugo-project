@@ -11,7 +11,7 @@ categories: ["随笔"]
 >版本：2.5.5.0（windows）
 
 
-### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X01 Clone项目</u></b></font></td></tr></table>	
+###  0X01 Clone项目	
 打开sourcetree后是这样的，如果有项目了先点击+号
 **1.点击Clone**  
   
@@ -63,7 +63,7 @@ categories: ["随笔"]
 
 **5.完成**
 
-### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X02 提交和更新项目</u></b></font></td></tr></table>	
+###  0X02 提交和更新项目	
 **1.更新项目，选择拉取**
 *这里更新是整个项目更新，和svn不一样，不区分目录更新，用svn习惯的同学需要注意下*
   
@@ -87,7 +87,7 @@ categories: ["随笔"]
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120140006727.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
 
 ==注意每次提交前尽量先更新下==
-### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X03 解决冲突</u></b></font></td></tr></table>	
+###  0X03 解决冲突	
 
 冲突的原因是有同学修改一个文件并且提交了，你没有更新的情况下也修改了这个文件，这时候更新时提示冲突
 #### 第一种情况，提交后推送失败，更新后合并冲突
@@ -178,7 +178,7 @@ categories: ["随笔"]
 >这里注意下，文件冲突不管是不是同一行都会提示冲突，没有自动合并，应该和冲突比对工具有关，这里不做说明了，svn如果修改不是同一行自动合并
 >git不会去管理文件夹，unity的meta文件让这个问题很蛋疼
 
-### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X04 基本知识</u></b></font></td></tr></table>	
+###  0X04 基本知识	
 
 **1.当前项目所在文件夹目录**
 点击浏览器会打开项目所在的文件夹

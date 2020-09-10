@@ -20,7 +20,7 @@ Phong和Blinn-Phong是计算镜面反射光的两种光照模型，两者仅仅�
 
  
 
-### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X01 Phong光照模型(高光反射)</u></b></font></td></tr></table>	
+###  0X01 Phong光照模型(高光反射)	
 #### Phong模型公式：
   
   
@@ -232,7 +232,7 @@ Shader "Book/06.SpecularPhongPixel" {
 ```
 
 
-### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X02 Blinn-Phong光照模型(高光反射)</u></b></font></td></tr></table>	
+###  0X02 Blinn-Phong光照模型(高光反射)	
 #### Blinn-Phong模型公式：
  Phong模型中计算反射光线的向量是一件相对比较耗时的任务，因此Blinn-Phong对这一点进行了改进。
   

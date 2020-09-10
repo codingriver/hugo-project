@@ -9,7 +9,7 @@ categories: ["lua"]
 
 >今天发现学过的知识不常用的都忘了差不多了，这里重新整理下，做下记录吧
 
-#### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X01 闭包</u></b></font></td></tr></table>
+####  0X01 闭包
 
 >在Lua中，闭包（closure）是由一个函数和该函数会访问到的非局部变量（或者是upvalue）组成的，其中非局部变量（non-local variable）是指不是在局部作用范围内定义的一个变量，但同时又不是一个全局变量，主要应用在嵌套函数和匿名函数里，因此若一个闭包没有会访问的非局部变量，那么它就是通常说的函数。也就是说，在Lua中，函数是闭包一种特殊情况。简而言之，闭包就是一个函数加一个upvalue。那么接下来看下upvalue是啥。
 >
@@ -106,7 +106,7 @@ end
 ~~[深入理解Lua的闭包一：概念、应用和实现原理](https://blog.csdn.net/maximuszhou/article/details/44280109)，关于应用还是不要参考这篇文章了，感觉不对，文章说的table.sort方法我觉得不是闭包~~ 
 > [lua闭包全面解析](https://blog.csdn.net/peter_teng/article/details/52750022) 这篇有详细说明
 
-#### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X02 and/or操作符</u></b></font></td></tr></table>
+####  0X02 and/or操作符
 
 *操作符这里有坑，之前以为和c语言类似，但今天发现不对*
 Lua中的逻辑运算符：与(and)、或(or)和非(not)，与其他语言的逻辑运算符功能一致，这里不做赘述。只说一点，==所有的逻辑运算符将false和nil视为假，其他任何东西视为真，0也视为真。==
@@ -153,7 +153,7 @@ end
 >参考文章：
 >[Lua中and、or的一些特殊用法](https://blog.csdn.net/gzy252050968/article/details/50513100/)
 
-#### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X03 多行字符串</u></b></font></td></tr></table>
+####  0X03 多行字符串
 
 一个字符串带换行的怎么处理这里说明下,使用`[[   ]]`来处理
 ```c
@@ -171,7 +171,7 @@ print(text)
 ![在这里插入图片描述](https://img-blog.csdn.net/20181011203321427?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 
 
-#### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X04 lua递归函数</u></b></font></td></tr></table>
+####  0X04 lua递归函数
 
 c语言允许函数内部调用函数本身，==但lua不允许函数内部调用函数本身==
 **递归调用需要先定义一个函数变量，这样在函数内部调用本身的时候后能访问到定义的函数变量地址**

@@ -12,7 +12,7 @@ categories: ["shader"]
 
  漫反射光照模型分为**兰伯特模型**和**半兰伯特模型**，而光照实现方式又分为逐像素光照和逐顶点光照
 
-### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X01 兰伯特光照模型(Lambert)</u></b></font></td></tr></table>	
+###  0X01 兰伯特光照模型(Lambert)	
 #### 逐顶点光照(兰伯特漫反射)
 ```c
 // Lambert(兰伯特)光照模型 逐顶点 
@@ -192,7 +192,7 @@ Shader "Book/06.LambertPixel"
 ![在这里插入图片描述](https://img-blog.csdn.net/20181013190733167?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 
 
-### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X02 半兰伯特光照模型(HalfLambert)</u></b></font></td></tr></table>
+###  0X02 半兰伯特光照模型(HalfLambert)
 ```c
 // HalfLambert(半兰伯特)光照模型 逐像素 
 Shader "Book/06.HalfLambert"

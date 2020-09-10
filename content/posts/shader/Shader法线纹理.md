@@ -19,7 +19,7 @@ x轴：tangent切线方向；y轴：副切线方向（或者副法线）；z轴�
 副切线的获取：`float3 binormal = cross(v.normal,v.tangent.xyz)*v.tangent.w;` 根据x轴和z轴做叉乘获取垂直这两个轴所在平面的向量，有两个方向，根据v.tangent.w 来确定最后的方向；
 然后构建空间变换矩阵`float3x3 rotation = float3x3(v.tangent.xyz,binormal,v.normal);`
 
-### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X01 切线空间下的实现</u></b></font></td></tr></table>	
+###  0X01 切线空间下的实现	
 ```c
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
@@ -143,7 +143,7 @@ Shader "Book/07.TangentNormal"
 
 
 
-### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X02 世界空间下的实现</u></b></font></td></tr></table>	
+###  0X02 世界空间下的实现	
 ```c
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 

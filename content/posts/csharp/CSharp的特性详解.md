@@ -11,7 +11,7 @@ categories: ["C#"]
 >参考《C#高级编程》第10版 
 
 
-#### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X01 特性（Attribute）</u></b></font></td></tr></table>
+####  0X01 特性（Attribute）
 
 ### 特性定义
 *特性不会影响编译过程，因为编译器不能识别它们，但这些特性在应用于程序元素时，可以在编译好的程序集中用作元数据*
@@ -249,7 +249,7 @@ namespace AttributeTest
 如上面例子的flag和isInner用法
 
 
-#### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X02 特性例子</u></b></font></td></tr></table>
+####  0X02 特性例子
 直接上代码
 ```csharp
 using AttributeTest;

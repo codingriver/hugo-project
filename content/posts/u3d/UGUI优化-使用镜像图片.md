@@ -35,7 +35,7 @@ ugui源码版本2018.2（这里在这个版本基础上修改的）
 **这里新建类`MirrorImage`继承Image，对Image功能进行扩展**
 根据ImageType 分为四种扩展：Simple，Sliced，Tiled，Filled；只处理了三种
 
-#### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X01 Simple类型</u></b></font></td></tr></table>
+####  0X01 Simple类型
 
 1.先在MirrorImage中增加变量`mirrorType`来定义当前原始素材是是要用什么镜像类型
 ```c
@@ -237,7 +237,7 @@ ugui源码版本2018.2（这里在这个版本基础上修改的）
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211210600513.png)  
 
-#### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X02 Sliced类型</u></b></font></td></tr></table>
+####  0X02 Sliced类型
 修改上面的步骤
 3 重写OnPopulateMesh方法，这个方法会修改mesh信息，然后给Graphic；增加Sliced类型
 ```c
@@ -388,7 +388,7 @@ ugui源码版本2018.2（这里在这个版本基础上修改的）
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211210349466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
 
 
-#### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X03 Tiled类型</u></b></font></td></tr></table>
+####  0X03 Tiled类型
 
 修改上面的步骤
 3 重写OnPopulateMesh方法，这个方法会修改mesh信息，然后给Graphic；增加Tiled类型

@@ -9,7 +9,7 @@ categories: ["随笔"]
 
 >给美术同学和策划同学提供安装git管理软件教程
 
-### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X01 安装Git</u></b></font></td></tr></table>	
+###  0X01 安装Git	
 ****
 这里安装的git版本是2.15.0
 ****
@@ -91,7 +91,7 @@ categories: ["随笔"]
 
 到这里git软件安装完成。
 *这一步是为了防止sourcetree安装后要下载git软件*
-### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X02 安装Sourcetree</u></b></font></td></tr></table>	
+###  0X02 安装Sourcetree	
 ==这里安装的版本是2.5.5，不需要翻墙，不需要登陆账户==
 **1.双击sourceTree**
   

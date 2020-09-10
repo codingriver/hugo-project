@@ -10,7 +10,7 @@ categories: ["shader"]
 > ###### 参考 《unity shader 入门精要》
 
 
-### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X01 序列帧动画</u></b></font></td></tr></table>	
+###  0X01 序列帧动画	
 ### 爆炸的动画
 ```c
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
@@ -232,7 +232,7 @@ Shader "Book/11.ScrollingBackground"
 ![在这里插入图片描述](https://img-blog.csdn.net/20181014110538846?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 
 
-### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X02 顶点动画</u></b></font></td></tr></table>	
+###  0X02 顶点动画	
 
 ### 流动的河流
 ```c

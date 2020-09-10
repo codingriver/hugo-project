@@ -19,7 +19,7 @@ async 用在方法定义前面，await只能写在带有async标记的方法中�
 ==注意await异步等待的地方，await后面的代码和前面的代码执行的线程可能不一样==
 ==async关键字创建了一个状态机，类似yield return 语句；await会解除当前线程的阻塞，完成其他任务==
 
-#### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X01 简单用法</u></b></font></td></tr></table>
+####  0X01 简单用法
 **测试代码**
 ```csharp
 using System;
@@ -160,7 +160,7 @@ namespace AsyncAndAwait_Test
 **如果执行到await时TaskCompletionSource没有设置SetResult、SetCanceled、SetException中的一个则await后面的线程可能出现变化（异步操作）**
 **如果执行到await时TaskCompletionSource有设置SetResult、SetCanceled、SetException中的一个则await后面的线程不变化（同步操作）**
 
-#### <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X02 深入用法</u></b></font></td></tr></table>
+####  0X02 深入用法
 ```csharp
 using System;
 using System.Collections.Generic;

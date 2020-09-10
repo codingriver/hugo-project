@@ -11,7 +11,7 @@ categories: ["Math"]
 >[深入探索透视投影变换](https://blog.csdn.net/cbbbc/article/details/51296804)
 >
 
-# <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X01 变换</u></b></font></td></tr></table>
+#  0X01 变换
 
 *变换这里粗略的讲解下，为了后面的空间转换做铺垫，不是重点，如果看不 明白则看考其他文章*
 这里讲解的变换有三种：**平移变换**，**缩放变换**，**旋转变换**
@@ -127,7 +127,7 @@ $$
 
 ==**unity中旋转的顺序是首先绕Z轴进行旋转，然后绕X轴进行旋转，最后绕Y轴进行旋转。**==
 
-# <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X02 坐标空间变换</u></b></font></td></tr></table>
+#  0X02 坐标空间变换
 已知子坐标空间C的三个坐标轴在父坐标空间P下的表示x~c~、y~c~、z~c~，以及其原点位置O~c~，当给定一个子坐标空间中的点A~c~=(a,b,c)，求A点用父坐标空间的表示A~p~
 x~c~设为(x~cx~,x~cy~,x~cz~),y~c~设为(y~cx~,y~cy~,y~cz~),z~c~设为(z~cx~,z~cy~,z~cz~),O~c~设为(o~cx~,o~cy~,o~cz~)
 这里写结论不写推导过程了
@@ -184,7 +184,7 @@ M_{p->c} =
   \right]   
 $$
 
-# <table ><tr ><td align="left" bgcolor=DeepSkyBlue ><font size="5"><b><u> 0X03 空间变换过程</u></b></font></td></tr></table>
+#  0X03 空间变换过程
 空间变换经历这几个过程：==模型空间(model  space)==--->==世界空间(world space)==-->==观察空间(view space)==`（右手坐标系）`-->==裁剪空间(clip space)==-->==屏幕空间(screen space)== 
 *除了观察空间是右手坐标系外其他的全是左手坐标系*
 屏幕空间 的转换需要经过NDC变换 然后视口坐标变换（只关注x,y；z不关注）再到屏幕坐标
