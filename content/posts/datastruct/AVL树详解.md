@@ -3,7 +3,7 @@ title: "【数据结构】 AVL树详解（可视化工具）"
 date: 2020-09-03T21:09:12+08:00
 author: "codingriver"
 authorLink: "https://codingriver.github.io"
- tags: ["数据结构"]
+tags: ["数据结构"]
 categories: ["数据结构"]
 ---
 

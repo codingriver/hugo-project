@@ -4,7 +4,7 @@ title: "ios配置开发者证书及添加AppID"
 date: 2019-12-01T21:57:40+08:00
 author: "codingriver"
 authorLink: "https://codingriver.github.io"
- tags: ["IOS"]
+tags: ["IOS"]
 categories: ["IOS"]
 ---
 

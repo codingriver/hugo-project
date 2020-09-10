@@ -4,7 +4,7 @@ title: "unity脚本MonoBehaviour默认方法执行顺序测试"
 date: 2019-12-01T21:57:40+08:00
 author: "codingriver"
 authorLink: "https://codingriver.github.io"
- tags: ["Unity"]
+tags: ["Unity"]
 categories: ["Unity"]
 ---
 
