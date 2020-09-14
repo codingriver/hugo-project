@@ -1,5 +1,5 @@
 ---
-title: "UnityShader常用函数（UnityShader内置函数、CG和GLSL内置函数等）"
+title: "【Shader】 常用函数（UnityShader内置函数、CG和GLSL内置函数等）"
 date: 2020-09-14T13:15:46+08:00
 author: "codingriver"
 authorLink: "https://codingriver.github.io"
