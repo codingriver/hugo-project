@@ -10,3 +10,9 @@ git commit -m "deploy page"
 git remote add origin git@gitee.com:codingriver/codingriver.git
 git push --force origin master:master
 cd ..
+
+npm install
+
+npm run algolia
+
+echo "finish"
