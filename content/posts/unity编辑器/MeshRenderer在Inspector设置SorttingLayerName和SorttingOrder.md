@@ -1,5 +1,5 @@
 ---
-title: "MeshRenderer和SkinnedMeshRenderer在Inspector增加sortingLayerName和sortingOrder选项"
+title: "【Unity编辑器】MeshRenderer和SkinnedMeshRenderer在Inspector增加sortingLayer选项"
 date: 2020-09-14T20:55:09+08:00
 author: "codingriver"
 authorLink: "https://codingriver.github.io"
@@ -10,6 +10,7 @@ categories: ["Unity编辑器"]
 
 <!--more-->
 
+>MeshRenderer和SkinnedMeshRenderer在Inspector增加sortingLayerName和sortingOrder选项。  
 > Unity的SortingLayer在MeshRenderer和SkinnedMeshRendererEditor中的Inspector面板不可以配置，而想要调整SortingLayer或者sortingOrder则需要在脚本中设置比如脚本的Awake或者Start，这样非常不灵活。  
 > 通过Hooker钩子修改Inspector的MeshRendererEditor和SkinnedMeshRendererEditor而达到SortingLayer参数暴露在编辑器中，这样可以直接修改了在物体的MeshRenderer和SkinnedMeshRenderer组件上。  
 > 这里使用了一个Githubh的插件 [MonoHook](https://github.com/Misaka-Mikoto-Tech/MonoHook)，请自行下载，然后导入到工程中。
