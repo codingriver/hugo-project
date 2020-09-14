@@ -5,7 +5,7 @@ author: "codingriver"
 authorLink: "https://codingriver.github.io"
 hiddenFromAllPage: true
 tags: []
-categories: ["记录"]
+categories: ["个人记录"]
 ---
 
 <!--more-->
