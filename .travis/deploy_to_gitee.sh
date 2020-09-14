@@ -1,4 +1,5 @@
 #!/bin/bash
+# travis-ci.org
 cd public_gitee
 git config user.name "codingriver"
 git config user.email "codingriver@163.com"
