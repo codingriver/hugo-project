@@ -12,7 +12,7 @@ categories: ["Unity编辑器"]
 
 >MeshRenderer和SkinnedMeshRenderer在Inspector增加sortingLayerName和sortingOrder选项。  
 > Unity的SortingLayer在MeshRenderer和SkinnedMeshRendererEditor中的Inspector面板不可以配置，而想要调整SortingLayer或者sortingOrder则需要在脚本中设置比如脚本的Awake或者Start，这样非常不灵活。  
-> 通过Hooker钩子修改Inspector的MeshRendererEditor和SkinnedMeshRendererEditor而达到SortingLayer参数暴露在编辑器中，这样可以直接修改了在物体的MeshRenderer和SkinnedMeshRenderer组件上。  
+> 通过Hooker钩子修改Inspector的MeshRendererEditor和SkinnedMeshRendererEditor而达到SortingLayer参数暴露在编辑器中，这样可以直接修改了在物体的MeshRenderer和SkinnedMeshRenderer组件上，修改后的值自动存储在序列化数据里。  
 > 这里使用了一个Githubh的插件 [MonoHook](https://github.com/Misaka-Mikoto-Tech/MonoHook)，请自行下载，然后导入到工程中。
 
 
@@ -109,6 +109,10 @@ public class RendererLayerEditor
 }
 
 ```
+**MonoHook插件需要打开unsafe宏定义，`Build Setting`-->`Player Setting`--> 勾选 `Allow unsafe Code` 如图：**
+
+![20200914222927](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/MeshRenderer在Inspector设置SorttingLayerName和SorttingOrder/20200914222927.png)
+
  
 `InitializeOnLoadTool.cs`文件：
 ```csharp
@@ -148,3 +152,4 @@ public class InitializeOnLoadTool
 `SkinnedMeshRenderer`  
 ![20200914211053](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/MeshRenderer在Inspector设置SorttingLayerName和SorttingOrder/20200914211053.png)
 
+> [Githuh工程](https://github.com/codingriver/Project/tree/master/UnityEditorProject/Assets/Editor/Tools)
