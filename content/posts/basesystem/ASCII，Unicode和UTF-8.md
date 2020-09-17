@@ -224,9 +224,14 @@ Unicode 规范定义，每一个文件的最前面分别加入一个表示编码
 
 4）`UTF-8`：编码是六个字节`EF BB BF E4 B8 A5`，前三个字节`EF BB BF`表示这是UTF-8编码，后三个`E4B8A5`就是`严`的具体编码，它的存储顺序与编码顺序是一致的。
 
-
-
+>附
+>
+>[StringHelper编码辅助工具]({{<ref "StringHelper编码辅助工具.md" >}})
+>
+>[URL编码与解码原理]({{<ref "URL编码与解码原理.md" >}})
+>
 >参考文章
 >
 >[字符编码笔记：ASCII，Unicode 和 UTF-8](http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html)  
+>
 >[UNICODE,GBK,UTF-8区别](https://www.cnblogs.com/gavin-num1/p/5170247.html)

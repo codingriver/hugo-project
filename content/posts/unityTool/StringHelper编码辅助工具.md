@@ -9,9 +9,13 @@ categories: ["Unity Tool"]
 
 <!--more-->
 
->StringHelper编码辅助工具 (C#)
->Unicode编码介绍参考文章：  
->这里处理了Unicode编码相关操作，以及增加String类辅助方法
+>StringHelper编码辅助工具 (C#)  
+>
+>Unicode编码介绍参考文章：  [ASCII，Unicode，UTF-16 和 UTF-8编码等字符编码]({{< ref "ASCII，Unicode和UTF-8.md" >}})
+>
+>[URL编码与解码原理]({{<ref "URL编码与解码原理.md" >}})
+>
+>这里处理了Unicode编码相关操作，以及增加String类辅助方法。
 
 
 **String转Unicode编码（中文转Unicode编码）**
@@ -335,3 +339,10 @@ public class StringHelperTest : MonoBehaviour
 测试结果：
 
 ![20200916214430](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/StringHelper编码辅助工具/20200916214430.png)
+
+>附：  
+>
+>中文转Unicode在线工具：<http://tool.chinaz.com/tools/unicode.aspx>  
+>
+>二进制与十六进制在线转换工具：<http://tool.oschina.net/hexconvert>  
+>
