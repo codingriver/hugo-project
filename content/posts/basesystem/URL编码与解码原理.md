@@ -15,7 +15,7 @@ categories: ["计算机基础"]
 >escape（69个）：`*/@+-._0-9a-zA-Z`  
 >encodeURI（82个）：`!#$&'()*+,/:;=?@-._~0-9a-zA-Z`  
 >encodeURIComponent：（71个）：`!'()*-._~0-9a-zA-Z`  
-
+> 代码实现：[URL编码解码工具]({{<ref "URLHelper-URL编码解码工具.md">}})
 
 
 ## 1、从escape和encodeURI讲起

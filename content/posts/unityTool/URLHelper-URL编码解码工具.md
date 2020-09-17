@@ -6,22 +6,22 @@ author: "codingriver"
 authorLink: "https://codingriver.github.io"
 tags: ["Unity Tool","Unicode编码","URL编码解码","encodeURI"]
 categories: ["Unity Tool"]
+toc: false
 ---
 
 <!--more-->
 >C#实现URL编码解码
 > URL编码解码原理参考 [URL编码与解码原理]({{<ref "URL编码与解码原理.md" >}})
 
-`URLHelper`实现三种URL编码和三种URL解码：
+`URLHelper`实现URL编码和URL解码 ( *这些解码编码不支持`空格`和字符`+`转换* ) ：
 - `Escape` 和 `Unescape`
 - `EncodeURI` 和 `DecodeURI`
 - `EncodeURIComponent` 和 `DecodeURIComponent`
-这些解码编码不支持`空格`和字符`+`转换
+  
+还有 `UrlEncode`和`UrlDecode`方法支持支持`空格`和字符`+`转换
 
-`UrlEncode`和`UrlDecode`方法支持支持`空格`和字符`+`转换
 
-
-`URLHelper.cs`代码
+###### `URLHelper.cs`代码:point_down::point_down::point_down:
 
 ```csharp
 using System;
