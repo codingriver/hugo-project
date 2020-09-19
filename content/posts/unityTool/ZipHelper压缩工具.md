@@ -13,7 +13,8 @@ categories: ["Unity Tool"]
 >用C#实现压缩和解压缩的方法，支持Zip压缩解压缩和Gzip压缩解压缩（后缀gz）  
 
 {{< admonition info >}}
-使用ICSharpCode.SharpZipLib.dll来压缩/解压（压缩效率比GZip要高一点）
+使用`ICSharpCode.SharpZipLib.dll`来压缩/解压（压缩效率比GZip要高一点）  
+`ICSharpCode.SharpZipLib.dll`下载： <https://github.com/codingriver/tools/tree/master/thirdPlugins>
 {{< /admonition >}}
 
 
