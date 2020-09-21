@@ -14,7 +14,7 @@ categories: ["IOS"]
 > 关于怎么配置开发者证书和添加AppID 参考 http://www.jianshu.com/writer#/notebooks/6185424/notes/23554406/preview
 
 ## 01 在ItunesConnect中添加新的应用
-1.打开https://itunesconnect.apple.com/login 并且登录
+1.打开 https://itunesconnect.apple.com/login 并且登录
 
 
 ![配置iTunesConnect-1.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-6f9f6fdd2e8dc9bd.png)  
@@ -34,12 +34,12 @@ categories: ["IOS"]
 
 ![配置iTunesConnect-4.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-f094b3b461c9ef2b.png)  
 
-*平台：根据需求选择，这里选择iOS*
-*应用名字*
-*语言*
-*套装ID：通过开发者账户配置添加的AppID,参考引用的连接*
-*SKU ：这里我写的bundleID,随意*
-点击创建,这样就创建完成
+*平台：根据需求选择，这里选择iOS*  
+*应用名字*  
+*语言*  
+*套装ID：通过开发者账户配置添加的AppID,参考引用的连接*  
+*SKU ：这里我写的bundleID,随意*  
+点击创建,这样就创建完成  
 ## 02 在ItunesConnect中配置应用的付费信息
 1.配置应用收费是否收费下载，这里配置是免费
 
@@ -79,7 +79,9 @@ categories: ["IOS"]
 ![配置iTunesConnect-11.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-17931def5529fd78.png)  
 
 在提审前打开提审的版本1.0配置界面，向下拉，找到App内购项目，点击+号，然后勾选自己的商品（可以选多个），这里是一小袋钻石，点击完成
+
 **提审的时候商品也需要审核的！提审的时候商品也需要审核的！提审的时候商品也需要审核的！重要的事情说三遍**
+
 到这里完成了
 
 
