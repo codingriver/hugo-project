@@ -9,7 +9,7 @@ categories: ["IOS"]
 ---
 
 <!--more-->
-
+>原文： [**ios配置开发者证书及添加AppID**](https://www.jianshu.com/p/ee83dc090b20)
 
 **一. 有两种配置开发者证书的方法**
 ## 第一种，通用的并且复杂的一种

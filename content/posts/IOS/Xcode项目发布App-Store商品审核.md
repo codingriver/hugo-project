@@ -9,7 +9,7 @@ categories: ["IOS"]
 ---
 
 <!--more-->
-
+>原文：[**Xcode项目发布App Store商品审核**](https://www.jianshu.com/p/9551fd719b82)
 
 > ios配置开发者证书及添加AppID 参考https://www.jianshu.com/p/ee83dc090b20
 > ios 配置ItunesConnect添加应用 参考https://www.jianshu.com/p/12ccfa566ae2
