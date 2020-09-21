@@ -11,7 +11,7 @@ categories: ["IOS"]
 <!--more-->
 
 
-##0X01导出Xcode工程
+##  0X01导出Xcode工程
 #####1.检查热更新配置
 project_base.json等所有以project_开头的文件的配置信息；
 这里的url最后的版本文件要和ios在线的版本一致，不一致则先修改

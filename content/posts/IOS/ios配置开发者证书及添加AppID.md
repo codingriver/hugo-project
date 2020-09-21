@@ -13,7 +13,7 @@ categories: ["IOS"]
 
 **一. 有两种配置开发者证书的方法**
 ## 第一种，通用的并且复杂的一种
-##0X01 创建请求证书的请求文件
+##  0X01 创建请求证书的请求文件
   1.打开钥匙串
 
 
@@ -50,7 +50,7 @@ categories: ["IOS"]
 ![开发者证书请求文件6.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-4f7c1d6eb8791e83.png)  
 
 存储请求文件
-##0X02 创建开发证书
+##  0X02 创建开发证书
 1.打开https://developer.apple.com 点击Account 登录
 
 ![[图片上传中...(创建开发者证书2.png-c69c56-1517639491122-0)]
