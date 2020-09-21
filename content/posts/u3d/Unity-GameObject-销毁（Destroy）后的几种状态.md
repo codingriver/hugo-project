@@ -19,7 +19,7 @@ categories: ["Unity"]
 场景内未运行截图
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-a00bbae7f1473952.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-a00bbae7f1473952.png)  
 
 Test.cs代码
 ```cs
@@ -80,14 +80,14 @@ public class Test : MonoBehaviour {
 
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-d32dc1f6884f558e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-d32dc1f6884f558e.png)  
 
 
 
 将go=null这行代码注释放开后的运行结果：
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-f0dbd41b641893c3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-f0dbd41b641893c3.png)  
 
 
 

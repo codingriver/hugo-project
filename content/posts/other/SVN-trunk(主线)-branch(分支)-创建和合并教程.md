@@ -18,40 +18,40 @@ categories: ["随笔"]
 在svn上创建branchs目录
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-54041b4316358c6a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-54041b4316358c6a.png)  
 
 在trunk上的Majiang上右键
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-db5f9008e1c6dea7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-db5f9008e1c6dea7.png)  
 
 **To path填写分支的名字在branchs下**
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-04c551778ab30a74.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-04c551778ab30a74.png)  
 
 点击ok就创建分支完成，Tag版本也是这么操作，把branchs换成Tag就可以了
 #####2.从trunk合并到branch
 **从分支Cache上右键**
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-a9781a60f3b4bfb1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-a9781a60f3b4bfb1.png)  
 
 
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-268788118fb4c7df.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-268788118fb4c7df.png)  
 
 
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-ed796045925cc388.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-ed796045925cc388.png)  
 
 *这里选择all revisions 是将从分支建立的时候到主干现在所有的修改都合并到分支上*
 *这里选择specific range 是将选择指定的Revision号的提交合并到分支上*
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-a3d6d96e628c2f28.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-a3d6d96e628c2f28.png)  
 
 ***Test Merge** 选项表示测试Merge合并，可以提前测试检查合并中是否有冲突*
 ****

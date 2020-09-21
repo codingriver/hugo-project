@@ -14,7 +14,7 @@ categories: ["Unity"]
 发布android包时 armeabi文件夹下的so静态库打包不进去（unity版本：unity5.6.0f3）
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-9bf9d1be22a42b47.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-9bf9d1be22a42b47.png)  
 
 
 检查so文件对应的meta文件
@@ -96,7 +96,7 @@ PluginImporter:
 在CPU选项选择ARMv7后我的meta文件的CPU对应数据是空的(上面的数据是对的，可以和自己的对比下)，但是界面显示
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-c4f7b9db6f1c7ca4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-c4f7b9db6f1c7ca4.png)  
 
 所以有时候unity 的meta文件和unity工程打开的显示不一样，打包的时候以meta信息为主。
 应该是unity的bug

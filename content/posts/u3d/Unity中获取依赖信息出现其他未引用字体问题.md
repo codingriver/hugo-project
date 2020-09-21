@@ -24,40 +24,40 @@ categories: ["Unity"]
 PKCommonFont2.ttf。
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-8d60cf8e526de178.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-8d60cf8e526de178.png)  
 
 
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-e8f7de0f54de6df9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-e8f7de0f54de6df9.png)  
 
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-3dfabd7b44ec4465.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-3dfabd7b44ec4465.png)  
 
 
 **如果是替换字体文件则需要将meta文件中的【fontName】和【fontNames】都修改掉**
 
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-a072f97d708eea39.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-a072f97d708eea39.png)  
 
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-25eb612e71192edd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-25eb612e71192edd.png)  
 
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-62e35b49fa558e56.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-62e35b49fa558e56.png)  
 
 
 
 **这里是将字体文件对应的meta文件中的  fallbackFontReferences对应的数据改为空（这种方法有时候无效）**
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-0f980b43130df74c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-0f980b43130df74c.png)  
 
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-99812059bd3a1e84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-99812059bd3a1e84.png)  
 

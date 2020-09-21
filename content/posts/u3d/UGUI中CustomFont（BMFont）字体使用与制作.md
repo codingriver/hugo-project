@@ -196,26 +196,26 @@ public class BMFontEditor : EditorWindow {
 点击Tools-->BMFontTools按钮
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-1b68b159a9ce96db.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-1b68b159a9ce96db.png)  
 
 打开界面
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-a2b4ae4c6782d559.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-a2b4ae4c6782d559.png)  
 
 托入资源，.fnt文件必须是Text文本结构的，不能是Xml和Binary(Bitmap Font Generator在这里面配置)
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-a696c476f39af3de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-a696c476f39af3de.png)  
 
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-152767c03dbd3825.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-152767c03dbd3825.png)  
 
 点击生成
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-7125bcc6b47e88a0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-7125bcc6b47e88a0.png)  
 
 生成后必须重启unity才能生效，否则字体文件不能正确加载（unity bug或者我没找到方法刷新unity）
 **
@@ -224,6 +224,6 @@ public class BMFontEditor : EditorWindow {
 设置字体的LineSpacing属性，为文字的高度，这里设置应该是128，一般不用
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-ec08815ffba3990b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-ec08815ffba3990b.png)  
 
 

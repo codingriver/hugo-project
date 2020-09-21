@@ -87,7 +87,7 @@ public class TestCallSequence : MonoBehaviour
 
 
 
-![执行结果](http://upload-images.jianshu.io/upload_images/1095643-fedff950d9562364.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![执行结果](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-fedff950d9562364.png)  
 
 *先运行脚本然后将将脚本组件改为非激活状态（active=false），然后停止运行。*
 **上面的执行结果说明方法的调用顺序一部分是不固定的（FixedUpdate）。**
@@ -110,7 +110,7 @@ unity的生命周期;unity中画线;[unity3d](http://www.manew.com/)使用ondest
 >引用文章:
 > http://www.manew.com/thread-14461-1-1.html
 
-![脚本的生命周期流程图](http://upload-images.jianshu.io/upload_images/85844-f30df6032371595b.png?imageView2/2/w/1240/q/100);
+![脚本的生命周期流程图](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/85844-f30df6032371595b.png);
 >引用文章: http://www.jianshu.com/p/1d93ece664e2
 
 #####如果在其他脚本里面实例化物体，且物体上挂有该脚本：

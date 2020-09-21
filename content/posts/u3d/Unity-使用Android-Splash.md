@@ -48,7 +48,7 @@ java代码
 ```
 splash.png文件放在unity工程中的目录为：
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-786f1cf1a75de54d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-786f1cf1a75de54d.png)  
 
 该文件不用放到android的插件工程中，直接放在unity中就可以了
 

@@ -46,7 +46,7 @@ public class #SCRIPTNAME# : MonoBehaviour {
 - ####2.添加脚本Copyright.cs
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-a2e70c2103fe460d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-a2e70c2103fe460d.png)  
 
 
 在工程中的Editor目录下添加脚本Copyright.cs
@@ -89,7 +89,7 @@ public class Copyright: UnityEditor.AssetModificationProcessor
 **效果如下**
 
 
-![image.png](http://upload-images.jianshu.io/upload_images/1095643-5ebb622277023064.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+![image.png](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/1095643-5ebb622277023064.png)  
 
 
 >参考文章：<http://blog.csdn.net/u013108312/article/details/54174757>
