@@ -19,3 +19,6 @@ categories: ["个人记录"]
 
 清理未托管资源:  
 <https://docs.microsoft.com/zh-cn/dotnet/standard/garbage-collection/unmanaged>
+
+.NET documentation 中文版：  
+<https://docs.microsoft.com/zh-cn/dotnet/fundamentals/>
