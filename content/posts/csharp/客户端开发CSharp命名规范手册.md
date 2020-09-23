@@ -3,8 +3,8 @@ title: "客户端开发C#命名规范手册"
 date: 2019-12-01T21:57:40+08:00
 author: "codingriver"
 authorLink: "https://codingriver.github.io"
-tags: ["C#"]
-categories: ["C#"]
+tags: ["CSharp"]
+categories: ["CSharp"]
 ---
 
 <!--more-->
