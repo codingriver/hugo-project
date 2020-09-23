@@ -4,7 +4,7 @@ date: 2020-09-01T21:08:09+08:00
 author: "codingriver"
 authorLink: "https://codingriver.github.io"
 tags: ['hugo']
-categories: ['markdown']
+categories: ['hugo']
 toc: false
 ---
 
