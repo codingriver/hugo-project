@@ -10,5 +10,6 @@ categories: ["个人记录"]
 
 <!--more-->
 
-## Shader记录
-## Shader记录
+[如何开始用 C++ 写一个光栅化渲染器？](https://www.zhihu.com/question/24786878/answer/1483055155)
+
+bilibili的 [GAMES101-现代计算机图形学入门-闫令琪](https://www.bilibili.com/video/BV1X7411F744?from=search&seid=13728008737010812958)
