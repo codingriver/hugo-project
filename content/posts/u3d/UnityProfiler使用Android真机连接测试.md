@@ -27,8 +27,9 @@ categories: ["Unity"]
 -  打开Profiler (menu: **Window > Analysis > Profiler**).
 - 点击**Attach to Player** ，选择**AndroidProfiler(ADB@127.0.0.1:34999)**
 - 勾选**Enable Internal Profiler** (menu: **File > Build Settings>Player Settings >Other Settings**).
-win系统打开cmd命令行，执行命令`adb forward tcp:34999 localabstract:Unity-{在此处插入 Bundle ID}`.
-例如 `adb forward tcp:34999 localabstract:Unity-com.test.aoc`
+  
+win系统打开cmd命令行，执行命令  `adb forward tcp:34999 localabstract:Unity-{在此处插入 Bundle ID}`    
+例如  `adb forward tcp:34999 localabstract:Unity-com.test.aoc` （将`com.test.aoc`替换成自己的`Bundle ID`，**不是将冒号后面的替换**）
 
 *执行该命令时必须打开unity且电脑连接android手机，手机处于调试模式*
   
