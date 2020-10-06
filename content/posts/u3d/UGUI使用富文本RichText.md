@@ -1,9 +1,10 @@
 ﻿
 ---
-title: "UGUI使用富文本Rich-Text"
+title: "UGUI使用富文本RichText"
 date: 2019-12-01T21:57:40+08:00
 author: "codingriver"
 authorLink: "https://codingriver.github.io"
+toc: false
 tags: ["UGUI"]
 categories: ["Unity"]
 ---
@@ -11,17 +12,17 @@ categories: ["Unity"]
 <!--more-->
 
 
-> + 参考文章：https://www.cnblogs.com/slysky/p/4301676.html
-> + 参考文章：https://docs.unity3d.com/Manual/StyledText.html
-> + [Unity Text 插入超链接](https://blog.csdn.net/akof1314/article/details/49077983)
-> +   [Unity Text 插入图片](https://blog.csdn.net/akof1314/article/details/49028279)
+>  参考文章：<https://www.cnblogs.com/slysky/p/4301676.html>  
+>  参考文章：<https://docs.unity3d.com/Manual/StyledText.html>  
+>    [Unity Text 插入超链接](https://blog.csdn.net/akof1314/article/details/49077983)  
+>    [Unity Text 插入图片](https://blog.csdn.net/akof1314/article/details/49028279)  
 
 
 
 |名字|标签|例子|
 |:-:|:-:|:-:|
-|加粗|**b**|<b>TestTest</b>|
-|倾斜|**i**|<i>TestTest</i>|
+|加粗|**b**|\<b>TestTest\</b>|
+|倾斜|**i**|\<i>TestTest\</i>|
 |大小|**size**|<size=40>TestTest</size>|
 |颜色|**color**| <color=#00ffffff>TestTest</color>|
 |材质|**material**| <material=1>TestTest</material>|
@@ -41,3 +42,5 @@ categories: ["Unity"]
 ```
 
 这选择材料在renderer’s material数组中的位置，并将图像的高度设置为 20 像素。矩形区域的图像开始得到的 x、 y、宽度和高度值，都被赋予了作为未缩放宽度的一小部分和纹理的高度。
+
+> UGUI Text换行问题可以参考 [UGUI Text换行问题]({{<ref "UGUI-Text换行问题.md">}})
