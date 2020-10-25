@@ -28,6 +28,10 @@ script:
 - hugo --baseURL https://codingriver.github.io/ -d public_github
 - hugo --baseURL https://codingriver.gitee.io/ -d public_gitee
 deploy:
+- pwd
+- ls
+- mv CNAME public_github/CNAME
+- mv CNAME-gitee public_gitee/CNAME
 - provider: pages
   skip-cleanup: true
   github-token: "$GITHUB_TOKEN" # Set in travis-ci.org dashboard, marked secure
