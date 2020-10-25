@@ -30,7 +30,7 @@ script:
 deploy:
 - pwd
 - ls
-- mv CNAME public_github/CNAME
+- mv CNAME-github public_github/CNAME
 - mv CNAME-gitee public_gitee/CNAME
 - provider: pages
   skip-cleanup: true
