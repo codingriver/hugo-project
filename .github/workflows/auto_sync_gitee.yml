@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest # 镜像市场
     steps:
       - name: Single repo mirror
-        uses: Yikun/hub-mirror-action@master
+        uses: Yikun/hub-mirror-action@v0.09
         with: # 参数
           src: gitee/codingriver
           dst: github/codingriver
