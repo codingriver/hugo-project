@@ -1,8 +1,10 @@
 ---
-title: "【算法】 AVL树详解（可视化工具）"
+title: "【数据结构】 AVL树详解（可视化工具）"
 date: 2020-09-03T21:09:12+08:00
-tags: ["AVL树","AVL",]
-categories: ["算法"]
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
+tags: ["数据结构"]
+categories: ["数据结构"]
 ---
 
 >转自：[AVL树(一)之 图文解析 和 C语言的实现](https://www.cnblogs.com/skywang12345/p/3576969.html)（本文图片及文字描述部分转自该文）
@@ -13,7 +15,12 @@ categories: ["算法"]
 
 >AVL树是根据它的发明者G.M. Adelson-Velsky和E.M. Landis命名的。
 它是最先发明的自平衡二叉查找树，也被称为高度平衡树。相比于"二叉查找树"，它的特点是：AVL树中任何节点的两个子树的高度最大差别为1。(树的高度：树中结点的最大层次)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200727160557787.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200727160557787.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
+
 上面的两张图片，左边的是AVL树，它的任何节点的两个子树的高度差别都<=1；而右边的不是AVL树，因为7的两颗子树的高度相差为2(以2为根节点的树的高度是3，而节点8的高度是1)。
 
 **AVL树的查找、插入和删除在平均和最坏情况下都是O(logn)。**
@@ -21,7 +28,12 @@ categories: ["算法"]
 
 首先要明确的是，== 平衡二叉树是一棵二叉排序树，它的出现是为了解决普通二叉排序树（普通二叉排序树）不平衡的问题。如图，在插入结点之前首先要查找插入位置，假如要在5结点后插入，普通二叉排序树需要比较五次，而平衡二叉树只需要比较三次。假如结点规模进一步加大，效率提升也会更明显。
 *(图片来自`https://blog.csdn.net/m0_38036210/article/details/100517125`)*
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200801201633833.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200801201633833.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
+
 
 ## 0X01 节点和树的定义
 #### 1. 节点的定义
@@ -106,7 +118,12 @@ categories: ["算法"]
 
 ### 2.1 zag单旋（左旋）
 如果说节点g失去平衡，g的右孩子p高度比左孩子高，且右孩子p的右孩子v高度比右孩子p的左孩子高度高，那么进行逆时针旋转进行调整高度
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200801193845436.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200801193845436.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
+
 假设在子树v中插入某个节点x（虚线连接部分，其中一个节点对应x，另一个为空节点），这时候v节点是平衡的，p节点也是平衡，但是g节点不平衡，g的右孩子高度减去g的做孩子高度等于2，需要对g节点进行调整，这时候以g为轴进行逆时针旋转（左旋），调整后从a子树变为b子树；从而达到子树的平衡， 而且高度未变化，所以该子树平衡后，父节点及除子树的其他树的部分都是平衡的。
 
 旋转代码
@@ -148,7 +165,12 @@ categories: ["算法"]
         }
 ```
 ### 2.2 zig单旋（右旋）
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200801195232158.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200801195232158.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
+
 假设在子树v中插入某个节点x（虚线连接部分，其中一个节点对应x，另一个为空节点），这时候v节点是平衡的，p节点也是平衡，但是g节点不平衡，g的右孩子高度减去g的做孩子高度等于-2，需要对g节点进行调整，这时候以g为轴进行顺时针旋转（右旋），调整后从a子树变为b子树；从而达到子树的平衡， 而且高度未变化，所以该子树平衡后，父节点及除子树的其他树的部分都是平衡的。
 
 旋转代码
@@ -193,7 +215,12 @@ categories: ["算法"]
 ### 2.3 zagzig双旋
 （先逆时针旋转p(zag)，后顺时针旋转g(zig)）
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200801195157375.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200801195157375.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
+
 
 
 旋转代码
@@ -239,7 +266,12 @@ categories: ["算法"]
 ```
 ### 2.4 zigzag双旋
 先顺时针旋转p(zig)，后逆时针旋转g(zag)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200801195041528.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)
+
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200801195041528.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+
+
 旋转代码
 ```csharp
 
@@ -516,7 +548,11 @@ categories: ["算法"]
 
 打印结果：
 *打印数值最大3位数*
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200801200743711.png)
+
+  
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200801200743711.png)  
+
 
 
 

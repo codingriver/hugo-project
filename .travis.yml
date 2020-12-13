@@ -27,6 +27,10 @@ before_script:
 script:
 - hugo --baseURL https://codingriver.github.io/ -d public_github
 - hugo --baseURL https://codingriver.gitee.io/ -d public_gitee
+- pwd
+- ls
+- mv CNAME-github public_github/CNAME
+- mv CNAME-gitee public_gitee/CNAME
 deploy:
 - provider: pages
   skip-cleanup: true
