@@ -28,6 +28,7 @@ categories: [“Shader”]
 
 
 > 增加一个pass提取深度值，怎么确定哪个pass先执行？
+>  uv动画，模型的阴影不能跟随变化
 
 >Unity Shader说明链接：  
 >[Unity Shader基础示例](https://docs.unity3d.com/cn/current/Manual/SL-VertexFragmentShaderExamples.html)  
