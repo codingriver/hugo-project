@@ -17,7 +17,7 @@ windows如何创建以点开头的文件或者文件夹，则会提示“必须�
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181026140020998.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_27,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181026140020998.png)  
 
 
 
@@ -26,4 +26,4 @@ windows如何创建以点开头的文件或者文件夹，则会提示“必须�
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181026140055323.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_27,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181026140055323.png)  

@@ -19,19 +19,19 @@ ugui源码版本2018.2（这里在这个版本基础上修改的）
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211202506494.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181211202506494.png)  
 
 **左边1/2图片**
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211202538148.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181211202538148.png)  
 
 **左下1/4图片**
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211202555451.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181211202555451.png)  
 
 
 **这里新建类`MirrorImage`继承Image，对Image功能进行扩展**
@@ -89,7 +89,7 @@ ugui源码版本2018.2（这里在这个版本基础上修改的）
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2018121210365169.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/2018121210365169.png)  
 
 这个地方需要修改editor，下面有整个工程，可以看下
 2.重写`SetNativeSize`方法，实现自动扩展MirrorImage镜像的大小,根据素材的大小和镜像类型来自动配置image大小
@@ -237,7 +237,7 @@ ugui源码版本2018.2（这里在这个版本基础上修改的）
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211210600513.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181211210600513.png)  
 
 ####  0X02 Sliced类型
 修改上面的步骤
@@ -274,7 +274,7 @@ ugui源码版本2018.2（这里在这个版本基础上修改的）
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211210110143.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181211210110143.png)  
 
 ```c
     private void GenerateSlicedSprite(VertexHelper toFill)
@@ -387,7 +387,7 @@ ugui源码版本2018.2（这里在这个版本基础上修改的）
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211210349466.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181211210349466.png)  
 
 
 ####  0X03 Tiled类型
@@ -429,7 +429,7 @@ ugui源码版本2018.2（这里在这个版本基础上修改的）
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2018121121110096.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/2018121121110096.png)  
 
 
 
@@ -772,25 +772,25 @@ ugui源码版本2018.2（这里在这个版本基础上修改的）
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211211241904.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181211211241904.png)  
 
 
 如果是左下1/4图片
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211211319238.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181211211319238.png)  
 
 则4个tile组成一个完整的图
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211211407233.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181211211407233.png)  
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181211211509926.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181211211509926.png)  
 
 
 

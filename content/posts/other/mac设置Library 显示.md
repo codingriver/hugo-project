@@ -15,12 +15,12 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181219130222103.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181219130222103.png)  
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181219130252354.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181219130252354.png)  
 
 
 设置完成后，打开finder 在边栏看到用户目录,我的用户名为codingriver，这个文件夹是用户名的文件夹
@@ -28,11 +28,11 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181219133933507.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181219133933507.png)  
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181219133734900.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181219133734900.png)  
 
 

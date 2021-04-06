@@ -89,14 +89,14 @@ namespace NewTest
 
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181102170340640.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181102170340640.png)  
 
 
 b断点调试结果：
 
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181102170532964.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181102170532964.png)  
 
 
 这里说明下，重写父类的变量其实是重新定义了一个新的变量，变量名相同是把父类的变量隐藏了，会增加内存

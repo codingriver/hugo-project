@@ -45,7 +45,7 @@ categories: ["Unity编辑器"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181203185654802.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181203185654802.png)  
 
 ### 特殊用法
 **在project右键使用**
@@ -58,7 +58,7 @@ categories: ["Unity编辑器"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181203185621295.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181203185621295.png)  
 
 **在Hierarchy右键使用**
 ```c
@@ -74,7 +74,7 @@ categories: ["Unity编辑器"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181203185637406.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181203185637406.png)  
 
 **在Scene右键使用**
 
@@ -105,7 +105,7 @@ categories: ["Unity编辑器"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181203185725973.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181203185725973.png)  
 
 
 >参考文章：

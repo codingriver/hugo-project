@@ -22,7 +22,7 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731180653107.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200731180653107.png)  
 
 出现版本号，配置完成
 ### 2. 创建站点项目
@@ -32,7 +32,7 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731181020763.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200731181020763.png)  
 
 创建完成
 ### 3.添加主题
@@ -40,26 +40,26 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020073118165314.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/2020073118165314.png)  
 
 
  添加主题 [maupassant](https://github.com/flysnow-org/maupassant-hugo)执行`git clone https://github.com/JokerQyou/maupassant-hugo.git themes/maupassant`
    
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731181707703.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200731181707703.png)  
 
  这样主题下载完成然后，在当前项目目录内打开`config.toml`配置文件，在最后添加一行`theme = "maupassant"`
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731181855310.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200731181855310.png)  
 
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731181842321.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200731181842321.png)  
 
 这样主题配置完成
 ### 4. 运行站点项目
@@ -67,13 +67,13 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731181955198.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200731181955198.png)  
 
 这里表示执行成功，打开网页`http://localhost:1313/`
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200731182103643.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200731182103643.png)  
 
 安装配置完成
 

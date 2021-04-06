@@ -18,7 +18,7 @@ categories: ["随笔"]
 **1.点击Clone**  
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120134715905.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120134715905.png)  
 
 
 **2.配置克隆项目的信息**
@@ -31,7 +31,7 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120134833835.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120134833835.png)  
 
 
 
@@ -39,14 +39,14 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2018112013500386.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/2018112013500386.png)  
 
 检出分支处，根据项目情况选择
 *我们这里策划和美术项目不需要修改，用默认的master分支；程序项目选择develop分支*
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120135038867.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120135038867.png)  
 
 然后点击克隆
 **3.下载项目中**
@@ -54,14 +54,14 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120135244470.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120135244470.png)  
 
 **4.提示框配置邮件信息**
 这里邮件只是为了显示日志用，不会真的给你发邮件
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120135259583.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120135259583.png)  
 
 **5.完成**
 
@@ -71,7 +71,7 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120135727283.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120135727283.png)  
 
 
 **2.提交修改**
@@ -79,14 +79,14 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120135917141.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120135917141.png)  
 
 
 第二步提交暂存的内容，备注提交日志，需要先勾选推送，然后点击提交，就完成了
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120140006727.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120140006727.png)  
 
 ==注意每次提交前尽量先更新下==
 ###  0X03 解决冲突	
@@ -98,14 +98,14 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120141517606.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120141517606.png)  
 
 
 **2.将冲突的文件先提交上去，会提示推送失败，不管它**
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120144831429.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120144831429.png)  
 
 
 **3.再次拉取**
@@ -113,7 +113,7 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120144859667.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120144859667.png)  
 
 
 **4.拉取后有冲突**
@@ -121,26 +121,26 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120144922880.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120144922880.png)  
 
 **5.解决冲突**
 根据自己情况选择解决方案，选中冲突文件右键
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120145013854.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120145013854.png)  
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120145040867.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120145040867.png)  
 
 
 解决冲突后，感叹号没有了
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120145049813.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120145049813.png)  
 
 
 然后提交，不要做其他操作，先提交，日志是默认冲突日志，不用管（如果有其它文件需要提交，也不要管，先把冲突文件提交上去，再重新提交需要提交的文件）
@@ -150,7 +150,7 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120150515699.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120150515699.png)  
 
 
 
@@ -159,19 +159,19 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181121142304428.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181121142304428.png)  
 
 **2.解决方案**
 将自己修改的文件备份，然后黄色或者灰色图标的丢弃修改，问号图标的移除
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2018112114250917.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/2018112114250917.png)  
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181121142533218.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181121142533218.png)  
 
 更新完成后再覆盖，然后提交
 
@@ -187,7 +187,7 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181121120056273.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181121120056273.png)  
 
 
 **2.文件图标说明**
@@ -195,51 +195,51 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181121120704641.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181121120704641.png)  
 
 如果删除这个文件选移除
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181121120731434.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181121120731434.png)  
 
 
 修改的文件
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181121120902108.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181121120902108.png)  
 
 放弃本地修改选择丢弃
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181121120931941.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181121120931941.png)  
 
 删除的文件
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181121124036453.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181121124036453.png)  
 
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181121124054319.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181121124054319.png)  
 
 放弃删除，选择丢弃，就恢复了
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181121124120719.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181121124120719.png)  
 
 
 还有一种图标是更换目录
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181121130121168.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181121130121168.png)  
 
 
 

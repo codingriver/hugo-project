@@ -19,13 +19,13 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120113208417.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120113208417.png)  
 
 **2.点击运行**
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120113255325.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120113255325.png)  
 
 
 **3.点击Next**
@@ -33,62 +33,62 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120113314436.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120113314436.png)  
 
 
 **4.点击Next，其他选项是默认就行**
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120113330903.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120113330903.png)  
 
 **5.点击Next，其他选项是默认就行**
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120113404854.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120113404854.png)  
 
 **6.点击Next，其他选项是默认就行**
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120113415146.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120113415146.png)  
 
 **7.点击Next，其他选项是默认就行**
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120113427980.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120113427980.png)  
 
 **8.点击Next，其他选项是默认就行**
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120113441432.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120113441432.png)  
 
 **9.点击Next，其他选项是默认就行**
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120113500909.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120113500909.png)  
 
 **10.点击Next，其他选项是默认就行**
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120113510982.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120113510982.png)  
 
 **11.点击Next，其他选项是默认就行**
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120113532762.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120113532762.png)  
 
 **12.点击Finish，其他选项是默认就行**
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120113547862.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120113547862.png)  
 
 
 到这里git软件安装完成。
@@ -99,20 +99,20 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120113719121.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120113719121.png)  
 
 
 **2.点击运行**
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120113830948.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120113830948.png)  
 
 
 **3.勾选我同意，点击下一步**  
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120113851327.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120113851327.png)  
 
 
 **4.点击关闭**
@@ -120,7 +120,7 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120113920758.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120113920758.png)  
 
 **5.破解账户登陆**
 ==复制accounts.json文件到`%LocalAppData%\Atlassian\SourceTree\` 目录下,没有则新建==
@@ -128,20 +128,20 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120114346673.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120114346673.png)  
 
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120114025954.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120114025954.png)  
 
 
 将accounts.json文件拷贝到该目录下
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2018112011410246.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/2018112011410246.png)  
 
 
 在文章结尾附上acccounts.json文件
@@ -150,20 +150,20 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120114709754.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120114709754.png)  
 
 
 **7.选择我不想使用**
 
   
 
-![Sourcet](https://img-blog.csdnimg.cn/20181120114737411.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![Sourcet](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120114737411.png)  
 
 8.安装Sourcetree完成
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181120114804270.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181120114804270.png)  
 
 后面补充使用教程
 

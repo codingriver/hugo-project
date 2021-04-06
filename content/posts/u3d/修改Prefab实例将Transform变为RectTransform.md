@@ -78,12 +78,12 @@ AddComponentFromPrefab<RectTransform>(gameObject);
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200729203806952.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200729203806952.png)  
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200729204241328.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200729204241328.png)  
 
 
 
@@ -91,19 +91,19 @@ AddComponentFromPrefab<RectTransform>(gameObject);
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200729203912335.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200729203912335.png)  
 
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200729204139969.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200729204139969.png)  
 
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200729204118121.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200729204118121.png)  
 
 
 **执行代码后Model引用变为prefab内的普通物体，切换修改成功RectTransform，并且prefab也已经修改成功**
@@ -174,12 +174,12 @@ Unity 2018.4中送了一个新的功能: Prefab Variant
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200729205632565.png)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200729205632565.png)  
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200729210005580.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200729210005580.png)  
 
 
 

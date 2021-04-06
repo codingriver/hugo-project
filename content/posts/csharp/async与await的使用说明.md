@@ -252,7 +252,7 @@ namespace AsyncAwaitTest
 
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181026233027235.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_27,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181026233027235.png)  
 
 
 **异步的异常捕获需要注意的是要将异步await放在try catch块中，且返回Task泛型，大概是这个意思**
@@ -321,7 +321,7 @@ namespace AsyncAwaitTest
 
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181026234605830.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_27,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181026234605830.png)  
 
 
 >参考文章

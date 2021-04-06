@@ -27,7 +27,7 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181029192705205.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181029192705205.png)  
 
 
 #### 2.在JsonMapper.cs脚本里面增加如下代码
@@ -45,7 +45,7 @@ categories: ["随笔"]
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181029192739748.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181029192739748.png)  
 
 
 

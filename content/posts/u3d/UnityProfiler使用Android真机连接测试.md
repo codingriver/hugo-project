@@ -35,17 +35,17 @@ win系统打开cmd命令行，执行命令  `adb forward tcp:34999 localabstract
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200817213544990.png#pic_center)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200817213544990.png#pic_center)  
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200817214702727.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70#pic_center)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200817214702727.png)  
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020081721473018.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70#pic_center)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/2020081721473018.png)  
 
 
 ### 使用wifi连接
@@ -63,13 +63,13 @@ Build Settings 里，将 Development Build、Autoconnect Profiler、Script Debug
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200817213907858.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70#pic_center)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200817213907858.png)  
 
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200817214356745.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy,size_16,color_FFFFFF,t_70#pic_center)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20200817214356745.png)  
 
 
 
