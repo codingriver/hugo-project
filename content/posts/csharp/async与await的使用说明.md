@@ -77,7 +77,7 @@ namespace AsyncAndAwait_Test
 
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181024123829263?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181024123829263.png)  
 
 
 这里的结果红框这个地方线程id变了，按照我的理解是异步调用await前面代码的线程和await后面代码的线程可能不一样
@@ -154,7 +154,7 @@ namespace AsyncAndAwait_Test
 
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181024130744619?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181024130744619.png)  
 
 *代码里面await用法，这里异步返回的是一个`Task<int>`类型，通过await等待Task执行完成后返回的是int，或者返回的是T模板*
 

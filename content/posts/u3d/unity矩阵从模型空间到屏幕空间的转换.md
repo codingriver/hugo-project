@@ -84,7 +84,7 @@ $$
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181012092900338?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181012092900338.png)  
 
 参考这篇文章[旋转变换（一）旋转矩阵](https://blog.csdn.net/csxiaoshui/article/details/65446125)
 
@@ -239,18 +239,18 @@ public class TestMatrix : MonoBehaviour {
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181013095156321?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181013095156321.png)  
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181013095307949?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181013095307949.png)  
 
 测试代码的结果：说明变换后的坐标和物体本身世界坐标相同
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181013104313560?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181013104313560.png)  
 
 **来看世界空间到模型空间**
 继续增加测试代码
@@ -276,7 +276,7 @@ public class TestMatrix : MonoBehaviour {
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181013100821727?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181013100821727.png)  
 
 
 ## **模型空间到观察空间**
@@ -304,7 +304,7 @@ public class TestMatrix : MonoBehaviour {
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181013101819939?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181013101819939.png)  
 
 
 ## **观察空间到裁剪空间**
@@ -324,7 +324,7 @@ public class TestMatrix : MonoBehaviour {
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181013102306526?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181013102306526.png)  
 
 ## **模型空间到屏幕空间**
 这里直接测试从模型空间到世界空间到观察空间到屏幕空间变换
@@ -357,7 +357,7 @@ public class TestMatrix : MonoBehaviour {
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181013103949544?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181013103949544.png)  
 
 
 

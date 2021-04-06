@@ -134,7 +134,7 @@ categories: ["数据结构"]
 ```
 根据上面的工程得到这个图：
   
-{{< image src ="https://img-blog.csdn.net/20181019163900234?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" >}}
+{{< image src ="https://cdn.jsdelivr.net/gh/codingriver/cdn/20181019163900234.png" >}}
 
   
 圆点说明：黑色是障碍物体，红色是起点，绿色是终点，浅紫色是寻路路径
@@ -146,47 +146,47 @@ categories: ["数据结构"]
 + 选择open列表中花费最小的点M（3，6）,将M从open中移除，添加到closed列表中，后面检查时不再检查该点。
 + 计算（3，6）相邻的点，一共8个点，并且分别计算花费F（红色数字），都添加到open中
   
- {{< image src ="https://img-blog.csdn.net/20181019172657745?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" >}}  
+ {{< image src ="https://cdn.jsdelivr.net/gh/codingriver/cdn/20181019172657745.png" >}}  
 + 选择open列表中花费最小的点M（4，6）,将M从open中移除，添加到closed列表中，后面检查时不再检查该点。
 + 计算（4，6）相邻的点，一共8个点，右侧是障碍物，其它5个点都在open中，分别计算当前路径花费和原来对比，都大，所以没有更新花费和父节点
 + 选择open列表中花费最小的点M（4，5）,将M从open中移除，添加到closed列表中，后面检查时不再检查该点。
 + 计算M相邻的点，在下面有三个新节点添加open中，其它五个点要么是障碍要么是已经在open中且花费比原来大，
   
- {{< image src ="https://img-blog.csdn.net/20181019173445990?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" >}}  
+ {{< image src ="https://cdn.jsdelivr.net/gh/codingriver/cdn/20181019173445990.png" >}}  
 
 + 选择open列表中花费最小的点M（4，7）,将M从open中移除，添加到closed列表中，后面检查时不再检查该点。
 + 计算M相邻的点，在上面有三个新节点添加open中，其它五个点要么是障碍要么是已经在open中且花费比原来大，
   
- {{< image src ="https://img-blog.csdn.net/20181019173546409?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" >}}  
+ {{< image src ="https://cdn.jsdelivr.net/gh/codingriver/cdn/20181019173546409.png" >}}  
 + 选择open列表中花费最小的点M（3，5）,将M从open中移除，添加到closed列表中，后面检查时不再检查该点。
 + 计算M相邻的点，在左下有一个新节点添加open中，在正下面有一个点（3，4）的花费比原来小，更新该节点信息，其它的点已经在open中且花费比原来大，
   
- {{< image src ="https://img-blog.csdn.net/20181019173902618?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" >}}  
+ {{< image src ="https://cdn.jsdelivr.net/gh/codingriver/cdn/20181019173902618.png" >}}  
 + 选择open列表中花费最小的点M（3，7）,将M从open中移除，添加到closed列表中，后面检查时不再检查该点。
 + 计算M相邻的点，在左下有一个新节点添加open中，在正下面有一个点（3，8）的花费比原来小，更新该节点信息，其它的点已经在open中且花费比原来大，
   
- {{< image src ="https://img-blog.csdn.net/20181019174002852?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" >}}  
+ {{< image src ="https://cdn.jsdelivr.net/gh/codingriver/cdn/20181019174002852.png" >}}  
 
 + 选择open列表中花费最小的点M（5，4）,将M从open中移除，添加到closed列表中，后面检查时不再检查该点。
 + 计算M相邻的点，有五个新节点添加open中，其它三个点要么是障碍要么是已经在open中且花费比原来大，
   
- {{< image src ="https://img-blog.csdn.net/20181019174210851?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" >}}  
+ {{< image src ="https://cdn.jsdelivr.net/gh/codingriver/cdn/20181019174210851.png" >}}  
 + 选择open列表中花费最小的点M（5，8）,将M从open中移除，添加到closed列表中，后面检查时不再检查该点。
 + 计算M相邻的点，有五个新节点添加open中，其它三个点要么是障碍要么是已经在open中且花费比原来大，
   
- {{< image src ="https://img-blog.csdn.net/2018101917430594?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" >}}  
+ {{< image src ="https://cdn.jsdelivr.net/gh/codingriver/cdn/2018101917430594.png" >}}  
 + 选择open列表中花费最小的点M（6，5）,将M从open中移除，添加到closed列表中，后面检查时不再检查该点。
 + 计算M相邻的点，有四个新节点添加open中，其它四个点要么是障碍要么是已经在open中且花费比原来大或者相等，
   
- {{< image src ="https://img-blog.csdn.net/20181019174416470?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" >}}  
+ {{< image src ="https://cdn.jsdelivr.net/gh/codingriver/cdn/20181019174416470.png" >}}  
 + 选择open列表中花费最小的点M（6，7）,将M从open中移除，添加到closed列表中，后面检查时不再检查该点。
 + 计算M相邻的点，有两个新节点添加open中，其它六个点要么是障碍要么是已经在open中且花费比原来大或者相等，
   
- {{< image src ="https://img-blog.csdn.net/20181019174606521?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" >}}  
+ {{< image src ="https://cdn.jsdelivr.net/gh/codingriver/cdn/20181019174606521.png" >}}  
 
 + 选择open列表中花费最小的点M（7，6）,将M从open中移除，添加到closed列表中，和终点对比相等，寻路结束。
   
- {{< image src ="https://img-blog.csdn.net/20181019174750658?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" >}}  
+ {{< image src ="https://cdn.jsdelivr.net/gh/codingriver/cdn/20181019174750658.png" >}}  
 
 **根据当前代码寻路有个情况就是寻路到终点前临近终点时，可以提前一步结束，这里没有结束，是为了方便演示**
 

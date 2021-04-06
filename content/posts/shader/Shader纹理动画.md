@@ -124,13 +124,13 @@ Shader "Book/11.ImageSequenceAnimation"
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181014110354872?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181014110354872.png)  
 
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/201810141104025?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/201810141104025.png)  
 
 
 ### 滚动背景
@@ -221,17 +221,17 @@ Shader "Book/11.ScrollingBackground"
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181014110847634?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181014110847634.png)  
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181014110918886?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181014110918886.png)  
 
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181014110538846?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181014110538846.png)  
 
 
 ###  0X02 顶点动画	

@@ -225,7 +225,7 @@ print("b::"..log(b))
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181011230250419?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181011230250419.png)  
 
 
 
@@ -290,4 +290,4 @@ end
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181011231837306?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181011231837306.png)  

@@ -77,7 +77,7 @@ void main()
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181013114611972?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181013114611972.png)  
 
 
 **A**
@@ -129,7 +129,7 @@ void main()
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181013121547845?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181013121547845.png)  
 
 **A**
 A 三个变量占用字节最大的值是a,7个字节，A的对齐值是4，所以A的大小是7+1=8（（7+1）%4=0）

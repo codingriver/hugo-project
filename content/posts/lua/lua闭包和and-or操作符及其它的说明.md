@@ -48,7 +48,7 @@ print("a:"..a.." b:"..b.." c:"..c.." d:"..d.." e:"..e)
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181011195056786?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181011195056786.png)  
 
 
 ~~关于闭包的应用场景，这里没有过多的去注意，很尴尬，至今为止可能用过没有注意，~~ 
@@ -150,7 +150,7 @@ end
 结果：
   
 
-![结果](https://img-blog.csdn.net/20181011202238228?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![结果](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181011202238228.png)  
 
 >参考文章：
 >[Lua中and、or的一些特殊用法](https://blog.csdn.net/gzy252050968/article/details/50513100/)
@@ -170,7 +170,7 @@ print(text)
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181011203321427?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181011203321427.png)  
 
 
 ####  0X04 lua递归函数
@@ -206,6 +206,6 @@ print(fact1(5))
   
   
 
-![在这里插入图片描述](https://img-blog.csdn.net/20181011203830657?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NvZGluZ3JpdmVy/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/20181011203830657.png)  
 
 
