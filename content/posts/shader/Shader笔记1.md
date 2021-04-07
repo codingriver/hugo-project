@@ -98,6 +98,7 @@ finalCol = lerp(luminanceCol,finalCol,_Saturation);
 ```
 
 对比度
+
 ```
     fixed3 avgColor=fixed3(0.5,0.5,0.5);
     finalCol=lerp(avgColor,finalCol,_Constrast);
@@ -106,11 +107,13 @@ finalCol = lerp(luminanceCol,finalCol,_Saturation);
 #### Bloom效果
 
 #### 边缘检测
+
 #### 高斯模糊
 
 #### 运动模糊
 
 ### 深度纹理和法线纹理
+
 设置 `camera.depthTextureMode=DepthTextureMode.DepthNormals;`
 
 _CameraDepthTexture
@@ -120,6 +123,9 @@ _CameraDepthTexture
 ### 卡通风格渲染
 
 ### 素描风格渲染
+
+
+### BRDF,PBR,PBS
 
 > 第4章最后说明部分，不理解，裁剪空间变换后z分量和w分量
 > 切线空间下的法线贴图：？？rgb怎么对应xyz轴
