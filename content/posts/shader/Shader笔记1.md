@@ -63,6 +63,34 @@ CPU端调用DrawCall后 在GPU端启动顶点shader执行顶点处理
 ![20210410190724](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410190724.png)
 裁剪操作是在长方体或者正方体范围内进行的，不是视锥体，这里图中只是表达要进行三角形剔除
 ![20210410193348](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410193348.png)
+##### 颜色混合
+常用颜色混合类型
+    - 正常（Alpha Blend），即透明度混合
+            `Blend SrcAlpha OneMinusSrcAlpha`
+    - Particle Additive 
+            `Blend  SrcAlpha One`
+    - 柔和叠加(Soft Additive) 
+            `Blend OneMinusDstColor One`
+    - 正片叠底（Multiply），即相乘
+            `Blend DstColor Zero`
+    - 两倍相乘（2x Multiply）
+            `Blend DstColor SrcColor`
+    - 变暗（Darken）
+            ```  
+            BlendOp Min  
+            Blend One One  
+            ```
+    - 变亮（Lighten）
+            ```
+            BlendOp Max  
+            Blend One One
+            ```
+    - 滤色（Screen）
+            `Blend OneMinusDstColor One`
+            `Blend One OneMinusSrcColor`
+    - 线性减淡（Additive,Linear Dodge）
+            `Blend One One`
+
 ### 空间变换
 模型空间（M）（左手坐标系）-->世界空间（W）（左手坐标系）-->观察空间（V）（右手坐标系）-->裁剪空间（P）（左手坐标系）-->屏幕空间（左手坐标系）
 裁剪空间是正方形或者长方形，下一步ndc归一化是除以w就到正负1范围内，（z轴在opengl 范围是正负1，在dx中范围是从0到1）
@@ -113,6 +141,7 @@ NDC归一化后进行背面剔剔除（Back Face Culling）根据三角形的索
            fresnel=max(0,min(1,pow(1-dot(n,v),fresnelPower)*fresnelScale))
     环境光(ambient): color,lightmap ,reflection probe,light probe
     自发光
+    Matcap: `float2 uv_mapcap=(vNormal*0.5+0.5).xy;`使用观察空间下的法线代表uv坐标
 ```
 ![20210410192004](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410192004.png)
 **Phong 光照模型：** `max(dot(n,l),0)+pow(max(dot(v,r),0)),smoothness+ambient=Phong`
