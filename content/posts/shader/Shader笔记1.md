@@ -108,9 +108,16 @@ NDC归一化后进行背面剔剔除（Back Face Culling）根据三角形的索
 ### 法线 
 法线一般用切线空间存储，优点：自由度高，uv动画扰动，可以重用，可以压缩（只存储两个方向的数据）
 
-切线空间（右手坐标系）： 法线方向（Z轴），切线方向（X轴）（和uv的u方向相同），次法线方向（Y轴）
+切线空间（右手坐标系）： 切线方向（X轴）（和uv的u方向相同,有的是和v方向相同），次法线方向（Y轴）,法线方向（Z轴）
 
-切线空间下的法线贴图：？？rgb怎么对应xyz轴
+```
+    half3 normal_data=UnpackNormal(normalmap);
+    float3x3 TBN=float3x3(tangent_dir,binormal_dir,normal_dir);
+    normal_dir=normalize(mul(normal_data.xyz,TBN));
+    // 和上面矩阵相乘结果一样
+    //normal_dir=normalize(tangent_dir*normal_data.x+binormal_dir*normal_data.y+normal_dir*normal_data.z);
+```
+
 
 ### 纹理
 1. 漫反射纹理
@@ -126,23 +133,23 @@ NDC归一化后进行背面剔剔除（Back Face Culling）根据三角形的索
 5. 立方体纹理(天空盒)
 6. 渲染纹理（渲染目标纹理，RT）
 7. 程序纹理
+8. AOMap
 
 
 ### 光照
-```
-    漫反射：
+漫反射：
         lambert:(max(0,dot(n,l)))，
         halflambert:(dot(n,l)*0.5+0.5)
-    高光反射：
+高光反射：
         phong:（pow(max(dot(v,r),0)),smoothness）
         blinn-phong:（pow(max(dot(n,h),0)),smoothness）
-    边缘光 ：rim=pow(1-abs(dot(n,v)),rimPower)*rimScale
-    菲涅尔：fresnel=pow(1-,dot(n,v),fresnelPower)*fresnelScale
+边缘光 ：rim=pow(1-abs(dot(n,v)),rimPower)*rimScale
+菲涅尔：fresnel=pow(1-,dot(n,v),fresnelPower)*fresnelScale
            fresnel=max(0,min(1,pow(1-dot(n,v),fresnelPower)*fresnelScale))
-    环境光(ambient): color,lightmap ,reflection probe,light probe
-    自发光
-    Matcap: `float2 uv_mapcap=(vNormal*0.5+0.5).xy;`使用观察空间下的法线代表uv坐标
-```
+环境光(ambient): color,lightmap ,reflection probe,light probe
+自发光
+Matcap: `float2 uv_mapcap=(vNormal*0.5+0.5).xy;`使用观察空间下的法线代表uv坐标
+![20210410205528](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410205528.png)
 ![20210410192004](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410192004.png)
 **Phong 光照模型：** `max(dot(n,l),0)+pow(max(dot(v,r),0)),smoothness+ambient=Phong`
 **基础光照模型=直接光漫反射(Direct Diffuse)+直接光镜面反射(Direct Specular)+间接光漫反射(Indirect Diffuse)+间接光镜面反射(Indirect Specular)**
@@ -161,6 +168,18 @@ NDC归一化后进行背面剔剔除（Back Face Culling）根据三角形的索
         fixed atten=tex2D(_LightTexture0,dot(lightcoord,lightcoord).rr).UNITY_ATTEN_CHANNEL;
     #endif
 
+```
+一种简单的做法 点光源
+```
+    # ifdef USING_DIRECTIONAL_LIGHT
+        half3 light_dir=normalize(_WorldSpaceLightPos0.xyz);
+        fixed atten=1.0;
+    #else
+        half3 light_dir=normalize(_WorldSpaceLightPos0.xyz-i.pos_world);
+        half distance=length(_WorldSpaceLightPos0.xyz-i.pos_world);
+        half range=1.0/untiy_WorldToLight[0][0]; //光源范围
+        fixed atten=saturate((range-distance)/range);
+    #endif
 ```
 #### 阴影
 阴影映射纹理（深度纹理）存储距离光源的深度信息
@@ -215,14 +234,29 @@ _CameraDepthTexture
 ### 卡通风格渲染
 
 ### 素描风格渲染
+### Tone-Mapping(色调映射)
+用Tone-Mapping压缩范围
+```
+// Tone-Mapping 需要将x从Gamma空间转到Lear线性空间使用，结果再转到Gamma空间下
+inline float3 ACESFilm(float3 x)
+{
+    float a=2.51f;
+    float b= 0.03f;
+    float c=2.43f;
+    float d=0.59f;
+    float e=0.14f;
+    return saturate((x*(a*x+b))/(x*(c*x+d)+e))
+}
 
-
+// Gamma空间 转Lear空间 color_lear=pow(color_gamma,2.2);
+// Lear空间转Gamma空间 color_gamma=pow(color_lear,1.0/2.2);
+```
+![20210410220805](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410220805.png)
 ### BRDF,PBR,PBS
 
-> 第4章最后说明部分，不理解，裁剪空间变换后z分量和w分量
-> 切线空间下的法线贴图：？？rgb怎么对应xyz轴
+
+
+
 > 7.4.2 遮罩纹理的使用 data2
-> 9.4阴影未看完
-> 13章未看
 > 着色器替换技术（Shader Replacement）
 > 
