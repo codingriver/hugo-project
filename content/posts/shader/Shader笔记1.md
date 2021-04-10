@@ -134,11 +134,13 @@ NDC归一化后进行背面剔剔除（Back Face Culling）根据三角形的索
 6. 渲染纹理（渲染目标纹理，RT）
 7. 程序纹理
 8. AOMap
+9.  高度图，视差贴图
+10. 粗糙度贴图
 
 
 ### 光照
 漫反射：
-        lambert:(max(0,dot(n,l)))，
+        lambert:(max(0,dot(n,l)))
         halflambert:(dot(n,l)*0.5+0.5)
 高光反射：
         phong:（pow(max(dot(v,r),0)),smoothness）
@@ -146,17 +148,114 @@ NDC归一化后进行背面剔剔除（Back Face Culling）根据三角形的索
 边缘光 ：rim=pow(1-abs(dot(n,v)),rimPower)*rimScale
 菲涅尔：fresnel=pow(1-,dot(n,v),fresnelPower)*fresnelScale
            fresnel=max(0,min(1,pow(1-dot(n,v),fresnelPower)*fresnelScale))
-环境光(ambient): color,lightmap ,reflection probe,light probe
+环境光(ambient): color,lightmap ,反射探针（reflection probe）,光照探针（light probe）
 自发光
 Matcap: `float2 uv_mapcap=(vNormal*0.5+0.5).xy;`使用观察空间下的法线代表uv坐标
 ![20210410205528](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410205528.png)
 ![20210410192004](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410192004.png)
 **Phong 光照模型：** `max(dot(n,l),0)+pow(max(dot(v,r),0)),smoothness+ambient=Phong`
 **基础光照模型=直接光漫反射(Direct Diffuse)+直接光镜面反射(Direct Specular)+间接光漫反射(Indirect Diffuse)+间接光镜面反射(Indirect Specular)**
+环境光可以理解为间接光的一部分
 直接光镜面反射: PBR中的GGX光照模型
-间接光漫反射：球谐光照SH
-间接光镜面反射：反射球结合IBL技术
+间接光漫反射：BL基于图像的照明，SH球谐光照（简单的一种IBL技术），
+间接光镜面反射：IBL基于图像的照明，
 
+环境光漫反射探针（Light Probe）（可以使用球谐光照读取和代替）
+环境光镜面反射探针（Reflection Probe）（可以使用IBL）
+环境贴图 （Cube map）（存储环境光的漫反射和经镜面反射的图像载体）转成立方体贴图使用
+直接采样环境贴图会造成贴图空间的浪费及采样会出现失真情况，所以先转成立方体贴图
+![20210410225349](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410225349.png)
+
+![20210410230114](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410230114.png)
+
+CubeMap
+```
+			samplerCUBE _CubeMap;
+			float4 _CubeMap_HDR;  
+			    half3 view_dir = normalize(_WorldSpaceCameraPos.xyz - i.pos_world);
+				half3 reflect_dir = reflect(-view_dir, normal_dir);
+				half4 color_cubemap = texCUBE(_CubeMap, reflect_dir);
+				half3 env_color = DecodeHDR(color_cubemap, _CubeMap_HDR);//确保在移动端能拿到HDR信息
+```
+
+IBL_Specular
+```
+samplerCUBE _CubeMap;
+float4 _CubeMap_HDR;
+
+				half3 reflect_view_dir = reflect(-view_dir, normal_dir);
+
+				float roughness = tex2D(_RoughnessMap, i.uv);
+				roughness = saturate(pow(roughness, _RoughnessContrast) * _RoughnessBrightness);
+				roughness = lerp(_RoughnessMin, _RoughnessMax, roughness);
+				roughness = roughness * (1.7 - 0.7 * roughness);
+				float mip_level = roughness * 6.0;
+
+				half4 color_cubemap = texCUBElod(_CubeMap, float4(reflect_view_dir, mip_level));
+				half3 env_color = DecodeHDR(color_cubemap, _CubeMap_HDR);//确保在移动端能拿到HDR信息
+```
+IBL_Diffuse
+```
+			samplerCUBE _CubeMap;
+			float4 _CubeMap_HDR;
+
+    			float roughness = tex2D(_RoughnessMap, i.uv);
+				roughness = saturate(pow(roughness, _RoughnessContrast) * _RoughnessBrightness);
+				roughness = lerp(_RoughnessMin, _RoughnessMax, roughness);
+				roughness = roughness * (1.7 - 0.7 * roughness);
+				float mip_level = roughness * 6.0;
+				float4 uv_ibl = float4(normal_dir, mip_level);
+				half4 color_cubemap = texCUBElod(_CubeMap, uv_ibl);
+				half3 env_color = DecodeHDR(color_cubemap, _CubeMap_HDR);//确保在移动端能拿到HDR信息
+				half3 final_color = env_color * ao * _Tint.rgb * _Tint.rgb * _Expose;
+```
+
+IBL_Reflection-Probe(环境光镜面反射)（unity捕捉生成的,unity最多支持两个反射探针）
+```
+    			half3 view_dir = normalize(_WorldSpaceCameraPos.xyz - i.pos_world);
+				half3 reflect_view_dir = reflect(-view_dir, normal_dir);
+
+				reflect_view_dir = RotateAround(_Rotate, reflect_view_dir);
+				
+				float roughness = tex2D(_RoughnessMap, i.uv);
+				roughness = saturate(pow(roughness, _RoughnessContrast) * _RoughnessBrightness);
+				roughness = lerp(_RoughnessMin, _RoughnessMax, roughness);
+				roughness = roughness * (1.7 - 0.7 * roughness);
+				float mip_level = roughness * 6.0;
+
+				
+				half4 color_cubemap = UNITY_SAMPLE_TEXCUBE_LOD(unity_SpecCube0, reflect_view_dir, mip_level);
+				half3 env_color = DecodeHDR(color_cubemap, unity_SpecCube0_HDR);//确保在移动端能拿到HDR信息
+```
+IBL_Light-Probe（环境光漫反射，内部使用SH读取）
+```
+    half3 env_color = ShadeSH9(float4(normal_dir,1.0)); //unity 内置函数
+```
+
+SH球谐光照（环境光漫反射可以使用SH）（可以替代IBL_Diffuse，节省性能，不用读取cube贴图）
+```
+    			float4 normalForSH = float4(normal_dir, 1.0);
+				//SHEvalLinearL0L1
+				half3 x;
+				x.r = dot(custom_SHAr, normalForSH);
+				x.g = dot(custom_SHAg, normalForSH);
+				x.b = dot(custom_SHAb, normalForSH);
+
+				//SHEvalLinearL2
+				half3 x1, x2;
+				// 4 of the quadratic (L2) polynomials
+				half4 vB = normalForSH.xyzz * normalForSH.yzzx;
+				x1.r = dot(custom_SHBr, vB);
+				x1.g = dot(custom_SHBg, vB);
+				x1.b = dot(custom_SHBb, vB);
+
+				// Final (5th) quadratic (L2) polynomial
+				half vC = normalForSH.x*normalForSH.x - normalForSH.y*normalForSH.y;
+				x2 = custom_SHC.rgb * vC;
+
+				float3 sh = max(float3(0.0, 0.0, 0.0), (x + x1 + x2));
+```
+![20210410233734](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410233734.png)
 #### 光照衰减
 > 光照衰减计算量太大，unity使用查找表（LUT，lookup table）纹理存储衰减数据（_LightTexture0），如果光源使用了cookie，则使用衰减查找纹理_LightTextureB0。
 
@@ -188,8 +287,14 @@ Matcap: `float2 uv_mapcap=(vNormal*0.5+0.5).xy;`使用观察空间下的法线�
 
 新版本部分平台是在屏幕空间中计算深度数据，显卡必须支持MRT才行
 
+![20210410222024](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410222024.png)
+![20210410223031](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410223031.png)
+![20210410223113](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410223113.png)
+![20210410223441](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410223441.png)
 
-
+### 角色渲染
+![20210411011821](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210411011821.png)
+![20210411012026](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210411012026.png)
 ### 动画
 1. uv动画
 2. 顶点动画
@@ -252,10 +357,66 @@ inline float3 ACESFilm(float3 x)
 // Lear空间转Gamma空间 color_gamma=pow(color_lear,1.0/2.2);
 ```
 ![20210410220805](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410220805.png)
-### BRDF,PBR,PBS
+### PBR 
+>PBR(Physically based Rendering)：基于物理渲染
+>PBS(Physically Based Shading)：基于物理着色
+>BRDF（Bidirectional Reflectance Distribution Function): 双向反射分布函数
+> BRDF是实现PBR的一种方法
+> 高光、几何阴影、菲涅尔反射共同构成了一个BRDF渲染
+>PBS也可以理解为PBR
 
+**怎么实现BRDF**
+- 高光 NDF(Normal Distribution Function)
+  - 物体的高光反射，有很多高光公式，可以选用blinn-phong，也可以用其它的
+- 几何阴影 GSF(Geometric Shadowing Function)
+  - 细小表面互相产生阴影，反射，光能量衰减，最终影响到显示，公式有很多
+- 菲涅尔反射 Fresnel Function
+  - 物体表面反射和漫反射同时发生，以一定比率混合
+  - 可以使用fresnel系数公式计算比率
 
-
+### 渲染优化
+#### 开销成因
+1. CPU
+   1. 过多的drawcall
+   2. 复杂的脚本或者物理模拟
+2. GPU
+   1. 顶点处理
+      1. 过多的顶点
+      2. 过多的逐顶点计算
+   2. 片元处理
+      1. 过多的片元（可能分辨率高或者overdraw）
+      2. 过多的逐片元计算
+3. 带宽
+   1. 使用尺寸很大且未压缩的纹理
+   2. 分辨率过高的帧缓存
+#### 优化方案
+1. CPU 
+   1. 静态批处理（static batching）降低drawcall
+   2. 动态批处理（顶点属性小于900（如果使用顶点坐标，法线和纹理坐标则顶点数量小于300），lightmap必须参数相同指向同一位置，多pass打断合并）降低drawcall
+   3. 使用图集
+   4. 共享材质
+2. GPU
+   1. 减少顶点数量
+      1. 优化几何体
+      2. 使用模型lod（Level of Detail）技术（unity中使用LOD Group组件）
+      3. 使用遮挡剔除（Occlusion Culling）技术
+      4. 使用mesh压缩
+   2. 减少片元数量（核心降低overdraw）
+      1. 控制绘制顺序
+      2. 警惕透明物体
+      3. 减少实时光照和阴影
+   3. 减少计算复杂度
+      1. 使用Shader的LOD技术
+         1. 设置Shader.maximumLDO或者Shader.globalMaximumLOD来允许最大的LOD
+      2. Shader代码优化
+         1. 把高斯模糊和边缘计算计算放到顶点shader中
+         2. float存储顶点坐标等变量，half存储一些标量和纹理坐标等信息，fixed适用于大多数颜色变量和归一化的方向矢量
+3. 节省内存带宽
+   1. 减少纹理大小
+   2. mipmap
+   3. 关闭readwrite
+   4. 纹理压缩（ETC2 8bit，ASTC 4x4 block，PVRTC）
+   5. 降低屏幕分辨率
 
 > 7.4.2 遮罩纹理的使用 data2
 > 着色器替换技术（Shader Replacement）
