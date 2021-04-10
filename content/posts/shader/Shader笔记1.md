@@ -13,9 +13,61 @@ draft: true
     片元处理   ： 光照着色，纹理着色
     输出合并   ： Alpha测试，模版测试，深度测试，颜色混合
     最后输出到帧缓冲区
+
+ #### CPU应用程序渲染逻辑
+    a. 剔除：
+        - 视锥体剔除（Frustum Culling）
+        - 层级剔除（Layer Culling Mask），遮挡剔除（Occlusion Culling）等规则
+    
+    b. 渲染排序：
+        - 渲染队列 RenderQueue
+        - 不透明队列（RenderQueue < 2500）
+           按摄像机 **从前往后** 排序
+        - 半透明队列（RenderQueue >2500）
+           按摄像机 **从后往前** 排序（为了保证效果的正确性）
+ 
+    c. 打包数据（Batch）：大量数据，参数发送到gpu
+        模型信息：
+          - 顶点坐标
+          - 法线
+          - UV
+          - 切线
+          - 顶点颜色
+          - 索引列表
+        变换矩阵
+          - 世界变换矩阵
+          - VP矩阵：根据射线机位置和fov等参数构建VP矩阵
+        灯光，材质参数：
+          - Shader
+          - 材质参数
+          - 灯光信息
+![20210410175934](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410175934.png)
+![20210410181112](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410181112.png)
+![20210410182007](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410182007.png)
+![半透明渲染顺序效果对比](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410181803.png)
+![20210410182547](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410182547.png)
+
+    d. 调用Shader：SetPassCall（Shader，背面剔除等参数，设置渲染数据），DrawCall
+#### GPU渲染管线
+CPU端调用DrawCall后 在GPU端启动顶点shader执行顶点处理
+顶点Shader：最主要的处理是将模型空间的顶点变换到裁剪空间
+    - 顶点处理   ： 顶点MVP空间变换，自定义参数
+    - 光栅化操作 ： 裁剪，NDC归一化，背面剔除，屏幕坐标，图元装配，光栅化
+    - 片元处理   ： 光照着色，纹理着色
+    - 输出合并   ： Alpha测试，模版测试，深度测试，颜色混合
+![20210410183133](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410183133.png)
+![20210410184548](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410184548.png)
+![20210410190909](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410190909.png)
+![20210410190836](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410190836.png)
+![20210410190749](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410190749.png)
+![20210410190724](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410190724.png)
+裁剪操作是在长方体或者正方体范围内进行的，不是视锥体，这里图中只是表达要进行三角形剔除
+![20210410193348](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410193348.png)
 ### 空间变换
 模型空间（M）（左手坐标系）-->世界空间（W）（左手坐标系）-->观察空间（V）（右手坐标系）-->裁剪空间（P）（左手坐标系）-->屏幕空间（左手坐标系）
-
+裁剪空间是正方形或者长方形，下一步ndc归一化是除以w就到正负1范围内，（z轴在opengl 范围是正负1，在dx中范围是从0到1）
+NDC归一化后进行背面剔剔除（Back Face Culling）根据三角形的索引顺序进行判定背面（三角形索引顺序是顺时针）或者正面（三角形索引顺序是逆时针），然后剔除对应三角形
+![20210410184101](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410184101.png)
 
 ### 类型长度
 - float：32位
@@ -50,14 +102,25 @@ draft: true
 
 ### 光照
 ```
-    漫反射：lambert(dot(n,l))，halflambert(dot(n,l)*0.5+0.5)
-    高光反射：phong（dot(v,r)），blinn-phong(dot(n,h))
+    漫反射：
+        lambert:(max(0,dot(n,l)))，
+        halflambert:(dot(n,l)*0.5+0.5)
+    高光反射：
+        phong:（pow(max(dot(v,r),0)),smoothness）
+        blinn-phong:（pow(max(dot(n,h),0)),smoothness）
     边缘光 ：rim=pow(1-abs(dot(n,v)),rimPower)*rimScale
     菲涅尔：fresnel=pow(1-,dot(n,v),fresnelPower)*fresnelScale
            fresnel=max(0,min(1,pow(1-dot(n,v),fresnelPower)*fresnelScale))
-    环境光
+    环境光(ambient): color,lightmap ,reflection probe,light probe
     自发光
 ```
+![20210410192004](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410192004.png)
+**Phong 光照模型：** `max(dot(n,l),0)+pow(max(dot(v,r),0)),smoothness+ambient=Phong`
+**基础光照模型=直接光漫反射(Direct Diffuse)+直接光镜面反射(Direct Specular)+间接光漫反射(Indirect Diffuse)+间接光镜面反射(Indirect Specular)**
+直接光镜面反射: PBR中的GGX光照模型
+间接光漫反射：球谐光照SH
+间接光镜面反射：反射球结合IBL技术
+
 #### 光照衰减
 > 光照衰减计算量太大，unity使用查找表（LUT，lookup table）纹理存储衰减数据（_LightTexture0），如果光源使用了cookie，则使用衰减查找纹理_LightTextureB0。
 
