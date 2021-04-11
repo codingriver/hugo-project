@@ -1,9 +1,13 @@
 ---
 title: "Shader笔记1"
 date: 2021-04-07T21:39:06+08:00
+author: "codingriver"
+authorLink: "https://codingriver.github.io"
 draft: true
+tags: []
+categories: []
 ---
-
+<!--more-->
 
 ### 渲染管线流程
 
