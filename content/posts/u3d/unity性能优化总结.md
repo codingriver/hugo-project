@@ -217,13 +217,6 @@ categories: [""]
 
 23、使用遮挡剔除（Occlusion Culling）处理大场景，一种较原生的类LOD技术，并且能够“分割”作为整体的一个模型。
 
-
-
-> - 加载类型(Load Type)： 运行时Unity加载音频的方法。
->    - 加载时解压缩(Decompress on load): 加载后解压缩声音。使用于较小的压缩声音，以避免运行时解压缩的性能开销。(将使用比在它们在内存中压缩的多10倍或更多内存，因此大文件不要使用这个。)
->    - 在内存中压缩(Compressed in memory): 保持声音在内存中（压缩的）在播放时解压缩。这有轻微的性能开销（尤其是OGG / Vorbis格式的压缩文件），因此大文件使用这个。
->    - 从磁盘流(Stream from disc): 直接从磁盘流读取音频数据。这只使用了原始声音占内存大小的很小一部分。使用这个用于很长的音乐。取决于硬件，一般建议1-2线程同时流。
-> - Ui动画：帧动画、Animation、脚本动画
 ### Unity优化工具
 - MAT（Memory Analyzer Tool） 需要导入HPROF文件再分析 只能查看java层的内存情况，看不到native堆的详情
 - Xcode Instrument工具 只能用于Mac,iOS 只能查看C++ 或 object C 的情况，看不到mono堆的详情
@@ -234,3 +227,11 @@ categories: [""]
 - 构建时开启Development Build
 - UWA
 - WeTest PerfDog性能狗
+
+
+
+> - 加载类型(Load Type)： 运行时Unity加载音频的方法。
+>    - 加载时解压缩(Decompress on load): 加载后解压缩声音。使用于较小的压缩声音，以避免运行时解压缩的性能开销。(将使用比在它们在内存中压缩的多10倍或更多内存，因此大文件不要使用这个。)
+>    - 在内存中压缩(Compressed in memory): 保持声音在内存中（压缩的）在播放时解压缩。这有轻微的性能开销（尤其是OGG / Vorbis格式的压缩文件），因此大文件使用这个。
+>    - 从磁盘流(Stream from disc): 直接从磁盘流读取音频数据。这只使用了原始声音占内存大小的很小一部分。使用这个用于很长的音乐。取决于硬件，一般建议1-2线程同时流。
+> - Ui动画：帧动画、Animation、脚本动画
