@@ -86,7 +86,7 @@ categories: [""]
 - 6）对于投射物不要使用真实物理碰撞和刚体，自己模拟
 - 7）设置较大的FixedTimeStep（物理帧率）值，减少cpu计算
 
-### 三、GPU的优化：
+### 三、GPU的优化
 
 
 #### 顶点优化（减少顶点数量）
@@ -135,19 +135,28 @@ categories: [""]
 
 
 ### 程序优化
-删除空的脚本和不需要的默认方法（例如Update，Start）
-避免使用OnGUI
-同一脚本中频繁使用的变量建议声明全局变量
-数组，集合类元素优先使用Array，其次是List
-脚本在不使用时禁用，使用时启用
-减少除法运算，例如a/5f,可以写成a*0.2f；
-尽量直接声明脚本变量，而不是用Getcomponent来获取脚本组件
-使用各种类的对象池和物体实例化池
-减少使用sin，cos，pow等三角函数，如果使用量大则建议使用查表法来优化三角函数的计算量
-尽量不要在Update中做复杂的计算，如果有需要在隔几帧计算一次
-不要动态的生产字符串，例如使用Debug.Log（“a”+“b”），尽量预先创建好字符串资源，还有一个打印变量时不要用+号去链接也不要用$符去格式化，而是用Debug.logFormat去输出，这样关闭Debug时就能关闭和Debug输出相关的动态字符串
-使用gameObject.name比较相等时尽量使用Equals
-String拼接时尽量使用System.Text.StringBuilder代替
+- 删除空的脚本和不需要的默认方法（例如Update，Start）
+- 避免使用OnGUI
+- 同一脚本中频繁使用的变量建议声明全局变量
+- 数组，集合类元素优先使用Array，其次是Queue/Stack,再次是List
+- 合理的设置容器的初始化Capacity
+- 应尽量为类或函数声明为sealed，变虚函数为直接函数调用
+- 尽量减少闭包的使用
+- 减少装箱和拆箱操作
+- 减少Dictionary冗余操作
+- 脚本在不使用时禁用，使用时启用
+- 应减少不必要的Transform.position/rotation等访问
+- 减少除法运算，例如a/5f,可以写成a*0.2f；
+- 尽量直接声明脚本变量，而不是用Getcomponent来获取脚本组件
+- 使用各种类的对象池和物体实例化池
+- 减少使用sin，cos，pow等三角函数，如果使用量大则建议使用查表法来优化三角函数的计算量
+- 尽量不要在Update中做复杂的计算，如果有需要在隔几帧计算一次
+- 不要动态的生产字符串，例如使用Debug.Log（“a”+“b”），尽量预先创建好字符串资源，还有一个打印变量时不要用+号去链接也不要用$符去格式化，而是用Debug.logFormat去输出，这样关闭Debug时就能关闭和Debug输出相关的动态字符串
+- 应使用支持Conditional的日志输出机制，支持log关闭
+- 使用gameObject.name比较相等时尽量使用Equals
+- String拼接时尽量使用System.Text.StringBuilder代替
+- 避免频繁调用GameObject.SetActive
+- 减少material频繁的set参数，如果量大，则使用字符串key获取唯一id
 
 ### 资源规范：
 
@@ -215,3 +224,13 @@ String拼接时尽量使用System.Text.StringBuilder代替
 >    - 在内存中压缩(Compressed in memory): 保持声音在内存中（压缩的）在播放时解压缩。这有轻微的性能开销（尤其是OGG / Vorbis格式的压缩文件），因此大文件使用这个。
 >    - 从磁盘流(Stream from disc): 直接从磁盘流读取音频数据。这只使用了原始声音占内存大小的很小一部分。使用这个用于很长的音乐。取决于硬件，一般建议1-2线程同时流。
 > - Ui动画：帧动画、Animation、脚本动画
+### Unity优化工具
+- MAT（Memory Analyzer Tool） 需要导入HPROF文件再分析 只能查看java层的内存情况，看不到native堆的详情
+- Xcode Instrument工具 只能用于Mac,iOS 只能查看C++ 或 object C 的情况，看不到mono堆的详情
+- Unity自带Profiler 需要单独编译develop版本 在PC上执行，没法捕获真机数据 内存数据跟实际真机的数据差异很大、多的时候有几十M差距 只能看到最近一段时间的数据，看不到总体的详情
+- 官方开源Memory Profiler
+- Unity5.3及其以上
+- 使用IL2CPP
+- 构建时开启Development Build
+- UWA
+- WeTest PerfDog性能狗
