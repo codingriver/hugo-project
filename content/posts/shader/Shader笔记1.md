@@ -363,8 +363,15 @@ inline float3 ACESFilm(float3 x)
 >BRDF（Bidirectional Reflectance Distribution Function): 双向反射分布函数
 > BRDF是实现PBR的一种方法
 > 高光、几何阴影、菲涅尔反射共同构成了一个BRDF渲染
->PBS也可以理解为PBR
+>PBR可理解为是一套渲染标准，其核心是PBS（Physically Based Shading）着色模型，具体实现由各大渲染引擎自己负责。
+>Unity的PBS实现封装为Standard，UE4中实现封装为Default Lit。
 
+**什么是BRDF**
+- 物体表面粗糙，很多细小表面产生反射，使用BRDF渲染粗糙表面
+- BRDF（双向反射分布函数）光照模型是PBS的重要组成部分，用于描述光在物体表面的反射情况。该模型基于微表面理论，认为光在物体表面反射的光量是物体表面的所有微小表面漫反射和镜面反射光量的总和，符合能量守恒：
+  - 1.反射的光总量不大于入射的光总量，且漫反射和镜面反射是互斥关系；
+  - 2.粗糙的表面反射的光线分散且暗，光滑的表面反射集中且亮。
+  
 **怎么实现BRDF**
 - 高光 NDF(Normal Distribution Function)
   - 物体的高光反射，有很多高光公式，可以选用blinn-phong，也可以用其它的
