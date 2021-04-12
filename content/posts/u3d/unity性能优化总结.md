@@ -164,6 +164,15 @@ categories: [""]
 - 每个模型只使用一个skinned mesh renderer
 - 每个mesh不要超过2个material
 - 骨骼数量不要超过30
+### 打包和资源加载
+
+> BuildPipeline.BuildPlayer(BuildConfig.scenes, outputPath, target, buildOptions);
+> BuildPipeline.BuildAssetBundles(rABPath, rOptions, (BuildTarget)CurBuildPlatform); (BuildAssetBundleOptions.DeterministicAssetBundle | BuildAssetBundleOptions.ChunkBasedCompression)
+>UnityEditor.U2D.SpriteAtlasUtility.PackAllAtlases(EditorUserBuildSettings.activeBuildTarget); 
+- 打包使用LZ4格式压缩，压缩比1:3
+
+
+
 
 ### 模型方面
 

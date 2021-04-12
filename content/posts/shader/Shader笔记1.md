@@ -157,11 +157,11 @@ NDC归一化后进行背面剔剔除（Back Face Culling）根据三角形的索
 Matcap: `float2 uv_mapcap=(vNormal*0.5+0.5).xy;`使用观察空间下的法线代表uv坐标
 ![20210410205528](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410205528.png)
 ![20210410192004](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410192004.png)
-**Phong 光照模型：** `max(dot(n,l),0)+pow(max(dot(v,r),0)),smoothness+ambient=Phong`
+**Phong 光照模型：** `max(dot(n,l),0)+pow(max(dot(v,r),0),smoothness)+ambient=Phong`
 **基础光照模型=直接光漫反射(Direct Diffuse)+直接光镜面反射(Direct Specular)+间接光漫反射(Indirect Diffuse)+间接光镜面反射(Indirect Specular)**
 环境光可以理解为间接光的一部分
 直接光镜面反射: PBR中的GGX光照模型
-间接光漫反射：BL基于图像的照明，SH球谐光照（简单的一种IBL技术），
+间接光漫反射：IBL基于图像的照明，SH球谐光照（简单的一种IBL技术），
 间接光镜面反射：IBL基于图像的照明，
 
 环境光漫反射探针（Light Probe）（可以使用球谐光照读取和代替）
