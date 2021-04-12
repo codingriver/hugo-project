@@ -20,12 +20,7 @@ categories: [""]
 - 2剥离级别选择剥离字符集（示从build的库中剥离的力度，每一个剥离选项都将从打包好的库中去掉一部分）
  
 #### 托管堆优化
-
-1. 建立缓存池
-1. 在卸载场景时调用System.GC.Collect()（调用System.GC.Collect() 会卡顿）
-1. 尽量不要用foreach（带来24字节）
-1. 不要直接访问gameobject的tag属性(可以用if (go.CompareTag (“human”))， 因为访问物体的tag属性会在堆上额外的分配空间)
-1. Debug.Log 游戏发布关闭 Log 减少性能消耗
+> 参照程序代码优化
  
 #### 本机堆的优化
 
@@ -33,7 +28,7 @@ categories: [""]
 - 1.1使用png格式
 - 1.2关闭纹理资源的read/write功能（增加1倍） ui不适用mipmap（增加1/3）
 - 1.3非二次幂的纹理（不压缩 ，ui图集，可以是非正方形）
-- 1.4Ui的背景可以适当的压缩，其他ui资源不压缩（防止糊了）
+- 1.4Ui的背景可以适当选用1024
 - 1.5Android平台贴图压缩用etc2 8bit，占用原来的1/4内存（etc 8bit注意下）
 - 1.6Ios平台贴图压缩用pvrtc 4bit 占用原来的1/8内存（必须是正方形）
 - 1.7压缩贴图的话贴图本身必须是二次幂的
@@ -134,7 +129,7 @@ categories: [""]
 
 
 
-### 程序优化
+### 程序代码优化
 - 删除空的脚本和不需要的默认方法（例如Update，Start）
 - 避免使用OnGUI
 - 同一脚本中频繁使用的变量建议声明全局变量
@@ -153,7 +148,7 @@ categories: [""]
 - 尽量不要在Update中做复杂的计算，如果有需要在隔几帧计算一次
 - 不要动态的生产字符串，例如使用Debug.Log（“a”+“b”），尽量预先创建好字符串资源，还有一个打印变量时不要用+号去链接也不要用$符去格式化，而是用Debug.logFormat去输出，这样关闭Debug时就能关闭和Debug输出相关的动态字符串
 - 应使用支持Conditional的日志输出机制，支持log关闭
-- 使用gameObject.name比较相等时尽量使用Equals
+- 不要直接访问gameobject的tag属性(可以用if (go.CompareTag (“human”))， 因为访问物体的tag属性会在堆上额外的分配空间)
 - String拼接时尽量使用System.Text.StringBuilder代替
 - 避免频繁调用GameObject.SetActive
 - 减少material频繁的set参数，如果量大，则使用字符串key获取唯一id
