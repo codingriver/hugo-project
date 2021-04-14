@@ -2,3 +2,4 @@ resources/_gen/
 .vscode/
 public/
 node_modules/
+/resources
