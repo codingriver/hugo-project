@@ -19,46 +19,53 @@ categories: []
     最后输出到帧缓冲区
 
  #### CPU应用程序渲染逻辑
-    a. 剔除：
-        - 视锥体剔除（Frustum Culling）
-        - 层级剔除（Layer Culling Mask），遮挡剔除（Occlusion Culling）等规则
-    
-    b. 渲染排序：
-        - 渲染队列 RenderQueue
-        - 不透明队列（RenderQueue < 2500）
-           按摄像机 **从前往后** 排序
-        - 半透明队列（RenderQueue >2500）
-           按摄像机 **从后往前** 排序（为了保证效果的正确性）
- 
-    c. 打包数据（Batch）：大量数据，参数发送到gpu
-        模型信息：
-          - 顶点坐标
-          - 法线
-          - UV
-          - 切线
-          - 顶点颜色
-          - 索引列表
-        变换矩阵
-          - 世界变换矩阵
-          - VP矩阵：根据射线机位置和fov等参数构建VP矩阵
-        灯光，材质参数：
-          - Shader
-          - 材质参数
-          - 灯光信息
+a. 剔除：
+- 视锥体剔除（Frustum Culling）
+- 层级剔除（Layer Culling Mask），遮挡剔除（Occlusion Culling）等规则
+
+b. 渲染排序：
+- 渲染队列 RenderQueue
+- 不透明队列（RenderQueue < 2500）
+   按摄像机 **从前往后** 排序
+- 半透明队列（RenderQueue >2500）
+   按摄像机 **从后往前** 排序（为了保证效果的正确性）
+
+c. 打包数据（Batch）：大量数据，参数发送到gpu
+
+**模型信息**
+  - 顶点坐标
+  - 法线
+  - UV
+  - 切线
+  - 顶点颜色
+  - 索引列表
+
+**变换矩阵**
+  - 世界变换矩阵
+  - VP矩阵：根据射线机位置和fov等参数构建VP矩阵
+
+**灯光，材质参数**
+  - Shader
+  - 材质参数
+  - 灯光信息
+
+d. 调用Shader
+  - SetPassCall（Shader，背面剔除等参数，设置渲染数据），DrawCall
+
 ![20210410175934](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410175934.png)
 ![20210410181112](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410181112.png)
 ![20210410182007](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410182007.png)
 ![半透明渲染顺序效果对比](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410181803.png)
 ![20210410182547](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410182547.png)
 
-    d. 调用Shader：SetPassCall（Shader，背面剔除等参数，设置渲染数据），DrawCall
+
 #### GPU渲染管线
-CPU端调用DrawCall后 在GPU端启动顶点shader执行顶点处理
-顶点Shader：最主要的处理是将模型空间的顶点变换到裁剪空间
-    - 顶点处理   ： 顶点MVP空间变换，自定义参数
-    - 光栅化操作 ： 裁剪，NDC归一化，背面剔除，屏幕坐标，图元装配，光栅化
-    - 片元处理   ： 光照着色，纹理着色
-    - 输出合并   ： Alpha测试，模版测试，深度测试，颜色混合
+>CPU端调用DrawCall后 在GPU端启动顶点shader执行顶点处理
+>顶点Shader：最主要的处理是将模型空间的顶点变换到裁剪空间
+- 顶点处理   ： 顶点MVP空间变换，自定义参数
+- 光栅化操作 ： 裁剪，NDC归一化，背面剔除，屏幕坐标，图元装配，光栅化
+- 片元处理   ： 光照着色，纹理着色
+- 输出合并   ： Alpha测试，模版测试，深度测试，颜色混合
 ![20210410183133](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410183133.png)
 ![20210410184548](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410184548.png)
 ![20210410190909](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410190909.png)
@@ -69,36 +76,38 @@ CPU端调用DrawCall后 在GPU端启动顶点shader执行顶点处理
 ![20210410193348](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410193348.png)
 ##### 颜色混合
 常用颜色混合类型
-    - 正常（Alpha Blend），即透明度混合
-            `Blend SrcAlpha OneMinusSrcAlpha`
-    - Particle Additive 
-            `Blend  SrcAlpha One`
-    - 柔和叠加(Soft Additive) 
-            `Blend OneMinusDstColor One`
-    - 正片叠底（Multiply），即相乘
-            `Blend DstColor Zero`
-    - 两倍相乘（2x Multiply）
-            `Blend DstColor SrcColor`
-    - 变暗（Darken）
-            ```  
-            BlendOp Min  
-            Blend One One  
-            ```
-    - 变亮（Lighten）
-            ```
-            BlendOp Max  
-            Blend One One
-            ```
-    - 滤色（Screen）
-            `Blend OneMinusDstColor One`
-            `Blend One OneMinusSrcColor`
-    - 线性减淡（Additive,Linear Dodge）
-            `Blend One One`
+- 正常（Alpha Blend），即透明度混合  
+    `Blend SrcAlpha OneMinusSrcAlpha`
+- Particle Additive  
+     `Blend  SrcAlpha One`
+- 柔和叠加(Soft Additive)   
+    `Blend OneMinusDstColor One`
+- 正片叠底（Multiply），即相乘  
+    `Blend DstColor Zero`
+- 两倍相乘（2x Multiply）  
+    `Blend DstColor SrcColor`
+- 变暗（Darken）   
+    `BlendOp Min  `  
+    `Blend One One  `  
+- 变亮（Lighten）  
+    `BlendOp Max`  
+    `Blend One One`  
+- 滤色（Screen）  
+    `Blend OneMinusDstColor One`  
+    `Blend One OneMinusSrcColor`  
+- 线性减淡（Additive,Linear Dodge）  
+  `Blend One One`
 
 ### 空间变换
-模型空间（M）（左手坐标系）-->世界空间（W）（左手坐标系）-->观察空间（V）（右手坐标系）-->裁剪空间（P）（左手坐标系）-->屏幕空间（左手坐标系）
-裁剪空间是正方形或者长方形，下一步ndc归一化是除以w就到正负1范围内，（z轴在opengl 范围是正负1，在dx中范围是从0到1）
-NDC归一化后进行背面剔剔除（Back Face Culling）根据三角形的索引顺序进行判定背面（三角形索引顺序是顺时针）或者正面（三角形索引顺序是逆时针），然后剔除对应三角形
+1. 模型空间（M）（左手坐标系）
+1. 世界空间（W）（左手坐标系）
+1. 观察空间（V）（右手坐标系）
+1. 裁剪空间（P）（左手坐标系）
+1. 屏幕空间（左手坐标系）
+
+>裁剪空间是正方形或者长方形，下一步ndc归一化是除以w就到正负1范围内，（z轴在opengl 范围是正负1，在dx中范围是从0到1）
+>NDC归一化后进行背面剔剔除（Back Face Culling）根据三角形的索引顺序进行判定背面（三角形索引顺序是顺时针）或者正面（三角形索引顺序是逆时针），然后剔除对应三角形  
+
 ![20210410184101](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410184101.png)
 
 ### 类型长度
@@ -110,9 +119,8 @@ NDC归一化后进行背面剔剔除（Back Face Culling）根据三角形的索
 
 
 ### 法线 
-法线一般用切线空间存储，优点：自由度高，uv动画扰动，可以重用，可以压缩（只存储两个方向的数据）
-
-切线空间（右手坐标系）： 切线方向（X轴）（和uv的u方向相同,有的是和v方向相同），次法线方向（Y轴）,法线方向（Z轴）
+>法线一般用切线空间存储，优点：自由度高，uv动画扰动，可以重用，可以压缩（只存储两个方向的数据）  
+>切线空间（右手坐标系）： 切线方向（X轴）（和uv的u方向相同,有的是和v方向相同），次法线方向（Y轴）,法线方向（Z轴）
 
 ```
     half3 normal_data=UnpackNormal(normalmap);
@@ -143,36 +151,36 @@ NDC归一化后进行背面剔剔除（Back Face Culling）根据三角形的索
 
 
 ### 光照
-漫反射：
-        lambert:(max(0,dot(n,l)))
-        halflambert:(dot(n,l)*0.5+0.5)
-高光反射：
-        phong:（pow(max(dot(v,r),0)),smoothness）
-        blinn-phong:（pow(max(dot(n,h),0)),smoothness）
-边缘光 ：rim=pow(1-abs(dot(n,v)),rimPower)*rimScale
-菲涅尔：fresnel=pow(1-,dot(n,v),fresnelPower)*fresnelScale
-           fresnel=max(0,min(1,pow(1-dot(n,v),fresnelPower)*fresnelScale))
-环境光(ambient): color,lightmap ,反射探针（reflection probe）,光照探针（light probe）
-自发光
-Matcap: `float2 uv_mapcap=(vNormal*0.5+0.5).xy;`使用观察空间下的法线代表uv坐标
+- 漫反射：
+    - lambert:`max(0,dot(n,l))`
+    - halflambert:`dot(n,l)*0.5+0.5`
+- 高光反射：
+    - phong:`pow(max(dot(v,r),0)),smoothness`
+    - blinn-phong:`pow(max(dot(n,h),0)),smoothness`
+- 边缘光 ：`rim=pow(1-abs(dot(n,v)),rimPower)*rimScale`
+- 菲涅尔：
+    - `fresnel=pow(1-,dot(n,v),fresnelPower)*fresnelScale`
+    - `fresnel=max(0,min(1,pow(1-dot(n,v),fresnelPower)*fresnelScale))`
+- 环境光(ambient): color,lightmap ,反射探针（reflection probe）,光照探针（light probe）
+- 自发光
+- Matcap: `float2 uv_mapcap=(vNormal*0.5+0.5).xy;`使用观察空间下的法线代表uv坐标
 ![20210410205528](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410205528.png)
 ![20210410192004](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410192004.png)
-**Phong 光照模型：** `max(dot(n,l),0)+pow(max(dot(v,r),0),smoothness)+ambient=Phong`
-**基础光照模型=直接光漫反射(Direct Diffuse)+直接光镜面反射(Direct Specular)+间接光漫反射(Indirect Diffuse)+间接光镜面反射(Indirect Specular)**
-环境光可以理解为间接光的一部分
-直接光镜面反射: PBR中的GGX光照模型
-间接光漫反射：IBL基于图像的照明，SH球谐光照（简单的一种IBL技术），
-间接光镜面反射：IBL基于图像的照明，
-
-环境光漫反射探针（Light Probe）（可以使用球谐光照读取和代替）
-环境光镜面反射探针（Reflection Probe）（可以使用IBL）
-环境贴图 （Cube map）（存储环境光的漫反射和经镜面反射的图像载体）转成立方体贴图使用
-直接采样环境贴图会造成贴图空间的浪费及采样会出现失真情况，所以先转成立方体贴图
+> **Phong 光照模型：** `max(dot(n,l),0)+pow(max(dot(v,r),0),smoothness)+ambient=Phong`  
+> **基础光照模型=直接光漫反射(Direct Diffuse)+直接光镜面反射(Direct Specular)+间接光漫反射(Indirect Diffuse)+间接光镜面反射(Indirect Specular)**  
+> 环境光可以理解为间接光的一部分  
+> 直接光镜面反射: PBR中的GGX光照模型  
+> 间接光漫反射：IBL基于图像的照明，SH球谐光照（简单的一种IBL技术），  
+> 间接光镜面反射：IBL基于图像的照明  
+> 环境光漫反射探针（Light Probe）（可以使用球谐光照读取和代替）  
+> 环境光镜面反射探针（Reflection Probe）（可以使用IBL）  
+> 环境贴图 （Cube map）（存储环境光的漫反射和经镜面反射的图像载体）转成立方体贴图使用  
+> 直接采样环境贴图会造成贴图空间的浪费及采样会出现失真情况，所以先转成立方体贴图  
 ![20210410225349](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410225349.png)
 
 ![20210410230114](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410230114.png)
 
-CubeMap
+- CubeMap
 ```
 			samplerCUBE _CubeMap;
 			float4 _CubeMap_HDR;  
@@ -182,7 +190,7 @@ CubeMap
 				half3 env_color = DecodeHDR(color_cubemap, _CubeMap_HDR);//确保在移动端能拿到HDR信息
 ```
 
-IBL_Specular
+- IBL_Specular
 ```
 samplerCUBE _CubeMap;
 float4 _CubeMap_HDR;
@@ -198,7 +206,7 @@ float4 _CubeMap_HDR;
 				half4 color_cubemap = texCUBElod(_CubeMap, float4(reflect_view_dir, mip_level));
 				half3 env_color = DecodeHDR(color_cubemap, _CubeMap_HDR);//确保在移动端能拿到HDR信息
 ```
-IBL_Diffuse
+- IBL_Diffuse
 ```
 			samplerCUBE _CubeMap;
 			float4 _CubeMap_HDR;
@@ -214,7 +222,7 @@ IBL_Diffuse
 				half3 final_color = env_color * ao * _Tint.rgb * _Tint.rgb * _Expose;
 ```
 
-IBL_Reflection-Probe(环境光镜面反射)（unity捕捉生成的,unity最多支持两个反射探针）
+- IBL_Reflection-Probe(环境光镜面反射)（unity捕捉生成的,unity最多支持两个反射探针）
 ```
     			half3 view_dir = normalize(_WorldSpaceCameraPos.xyz - i.pos_world);
 				half3 reflect_view_dir = reflect(-view_dir, normal_dir);
@@ -231,12 +239,12 @@ IBL_Reflection-Probe(环境光镜面反射)（unity捕捉生成的,unity最多�
 				half4 color_cubemap = UNITY_SAMPLE_TEXCUBE_LOD(unity_SpecCube0, reflect_view_dir, mip_level);
 				half3 env_color = DecodeHDR(color_cubemap, unity_SpecCube0_HDR);//确保在移动端能拿到HDR信息
 ```
-IBL_Light-Probe（环境光漫反射，内部使用SH读取）
+- IBL_Light-Probe（环境光漫反射，内部使用SH读取）
 ```
     half3 env_color = ShadeSH9(float4(normal_dir,1.0)); //unity 内置函数
 ```
 
-SH球谐光照（环境光漫反射可以使用SH）（可以替代IBL_Diffuse，节省性能，不用读取cube贴图）
+- SH球谐光照（环境光漫反射可以使用SH）（可以替代IBL_Diffuse，节省性能，不用读取cube贴图）
 ```
     			float4 normalForSH = float4(normal_dir, 1.0);
 				//SHEvalLinearL0L1
@@ -272,7 +280,7 @@ SH球谐光照（环境光漫反射可以使用SH）（可以替代IBL_Diffuse�
     #endif
 
 ```
-一种简单的做法 点光源
+**一种简单的做法 点光源**
 ```
     # ifdef USING_DIRECTIONAL_LIGHT
         half3 light_dir=normalize(_WorldSpaceLightPos0.xyz);
@@ -285,11 +293,9 @@ SH球谐光照（环境光漫反射可以使用SH）（可以替代IBL_Diffuse�
     #endif
 ```
 #### 阴影
-阴影映射纹理（深度纹理）存储距离光源的深度信息
-
-老版本是在光源空间中计算深度数据
-
-新版本部分平台是在屏幕空间中计算深度数据，显卡必须支持MRT才行
+> 阴影映射纹理（深度纹理）存储距离光源的深度信息  
+> 老版本是在光源空间中计算深度数据  
+> 新版本部分平台是在屏幕空间中计算深度数据，显卡必须支持MRT才行  
 
 ![20210410222024](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410222024.png)
 ![20210410223031](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410223031.png)
@@ -307,17 +313,17 @@ SH球谐光照（环境光漫反射可以使用SH）（可以替代IBL_Diffuse�
 
 ### 屏幕后处理
 
-亮度 
+- 亮度  
 `fixed3 finalColor=baseCol.rgb*_Brightness`
 
-饱和度 
+- 饱和度 
 ```
-fixed luminance=0.2125*baseCol.r+0.7154*baseCol.g+0.0721*baseCol.b;
-fixed3 luminanceCol=fixed(luminance,luminance,luminance);
-finalCol = lerp(luminanceCol,finalCol,_Saturation); 
+    fixed luminance=0.2125*baseCol.r+0.7154*baseCol.g+0.0721*baseCol.b;
+    fixed3 luminanceCol=fixed(luminance,luminance,luminance);
+    finalCol = lerp(luminanceCol,finalCol,_Saturation); 
 ```
 
-对比度
+- 对比度
 
 ```
     fixed3 avgColor=fixed3(0.5,0.5,0.5);
@@ -334,9 +340,8 @@ finalCol = lerp(luminanceCol,finalCol,_Saturation);
 
 ### 深度纹理和法线纹理
 
-设置 `camera.depthTextureMode=DepthTextureMode.DepthNormals;`
-
-_CameraDepthTexture
+> 设置 `camera.depthTextureMode=DepthTextureMode.DepthNormals;`  
+> `_CameraDepthTexture`  
 
 ### 全局雾效
 
@@ -344,31 +349,33 @@ _CameraDepthTexture
 
 ### 素描风格渲染
 ### Tone-Mapping(色调映射)
-用Tone-Mapping压缩范围
-```
-// Tone-Mapping 需要将x从Gamma空间转到Lear线性空间使用，结果再转到Gamma空间下
-inline float3 ACESFilm(float3 x)
-{
-    float a=2.51f;
-    float b= 0.03f;
-    float c=2.43f;
-    float d=0.59f;
-    float e=0.14f;
-    return saturate((x*(a*x+b))/(x*(c*x+d)+e))
-}
 
-// Gamma空间 转Lear空间 color_lear=pow(color_gamma,2.2);
-// Lear空间转Gamma空间 color_gamma=pow(color_lear,1.0/2.2);
+**用Tone-Mapping压缩范围**
+
+```
+    // Tone-Mapping 需要将x从Gamma空间转到Lear线性空间使用，结果再转到Gamma空间下
+    inline float3 ACESFilm(float3 x)
+    {
+        float a=2.51f;
+        float b= 0.03f;
+        float c=2.43f;
+        float d=0.59f;
+        float e=0.14f;
+        return saturate((x*(a*x+b))/(x*(c*x+d)+e))
+    }
+
+    // Gamma空间 转Lear空间 color_lear=pow(color_gamma,2.2);
+    // Lear空间转Gamma空间 color_gamma=pow(color_lear,1.0/2.2);
 ```
 ![20210410220805](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410220805.png)
 ### PBR 
->PBR(Physically based Rendering)：基于物理渲染
->PBS(Physically Based Shading)：基于物理着色
->BRDF（Bidirectional Reflectance Distribution Function): 双向反射分布函数
-> BRDF是实现PBR的一种方法
-> 高光、几何阴影、菲涅尔反射共同构成了一个BRDF渲染
->PBR可理解为是一套渲染标准，其核心是PBS（Physically Based Shading）着色模型，具体实现由各大渲染引擎自己负责。
->Unity的PBS实现封装为Standard，UE4中实现封装为Default Lit。
+>PBR(Physically based Rendering)：基于物理渲染  
+>PBS(Physically Based Shading)：基于物理着色  
+>BRDF（Bidirectional Reflectance Distribution Function): 双向反射分布函数  
+> BRDF是实现PBR的一种方法  
+> 高光、几何阴影、菲涅尔反射共同构成了一个BRDF渲染  
+>PBR可理解为是一套渲染标准，其核心是PBS（Physically Based Shading）着色模型，具体实现由各大渲染引擎自己负责。  
+>Unity的PBS实现封装为Standard，UE4中实现封装为Default Lit。  
 
 **什么是BRDF**
 - 物体表面粗糙，很多细小表面产生反射，使用BRDF渲染粗糙表面
@@ -429,6 +436,7 @@ inline float3 ACESFilm(float3 x)
    4. 纹理压缩（ETC2 8bit，ASTC 4x4 block，PVRTC）
    5. 降低屏幕分辨率
 
+>待处理
 > 7.4.2 遮罩纹理的使用 data2
 > 着色器替换技术（Shader Replacement）
 > 
