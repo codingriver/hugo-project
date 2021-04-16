@@ -1,6 +1,6 @@
 ---
-title: "【Shader学习】1.3边缘光和流光特效"
-subtitle: "【Shader学习】1.3边缘光和流光特效"
+title: "【Shader学习】边缘光和流光特效(六十二)"
+subtitle: "边缘光和流光特效(六十二)"
 date: 2021-02-09T19:31:05+08:00
 author: "codingriver"
 authorLink: "https://codingriver.github.io"
