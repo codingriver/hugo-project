@@ -21,6 +21,7 @@ categories: []
 **非development下如果要用则增加编译符号 `UNITY_ASSERTIONS`(Edit -> Project Settings -> Player的 Script Define Symbolsxx下增加),断言不中断执行,资产将只打印错误和会继续执行**
 **如果你想要它只是作为exceptions(中断执行)，请确保从您的代码将 Assert.raiseExceptions 设置为 true.**
 
+`Assert.cs`
 ```
 using System;
 using UnityEngine;
