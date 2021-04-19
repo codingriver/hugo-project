@@ -1,6 +1,6 @@
 ---
 title: "【Shader学习】边缘光特效(六十一)"
-subtitle: "边缘光特效(六十一)"
+subtitle: "边缘光特效"
 date: 2021-02-09T18:29:01+08:00
 author: "codingriver"
 authorLink: "https://codingriver.github.io"

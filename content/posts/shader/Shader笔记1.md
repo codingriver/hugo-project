@@ -154,8 +154,8 @@ d. 调用Shader
     - lambert:`max(0,dot(n,l))`
     - halflambert:`dot(n,l)*0.5+0.5`
 - 高光反射：
-    - phong:`pow(max(dot(v,r),0)),smoothness`
-    - blinn-phong:`pow(max(dot(n,h),0)),smoothness`
+    - phong:`pow(max(dot(v,r),0),_Gloss)`
+    - blinn-phong:`pow(max(dot(n,h),0),_Gloss)`
 - 边缘光 ：`rim=pow(1-abs(dot(n,v)),rimPower)*rimScale`
 - 菲涅尔：
     - `fresnel=pow(1-,dot(n,v),fresnelPower)*fresnelScale`
