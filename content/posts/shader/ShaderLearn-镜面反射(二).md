@@ -158,3 +158,5 @@ Shader "SL/Phong-Blinn"
 }
 
 ```
+
+>详细参考[Shader光照模型-高光反射](Shader光照模型-高光反射.md)

@@ -150,3 +150,5 @@ Shader "SL/Lambert-Half"
 
 
 ```
+
+>详细可参考[【Shader】 光照模型-漫反射](Shader光照模型-漫反射.md)
