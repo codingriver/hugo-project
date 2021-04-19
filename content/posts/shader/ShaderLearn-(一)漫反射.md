@@ -4,7 +4,6 @@ subtitle: "兰伯特(Lambert)和半兰伯特(Half Lambert)"
 date: 2021-04-16T20:37:25+08:00
 author: "codingriver"
 authorLink: "https://codingriver.github.io"
-draft: true
 tags: [“Shader学习”]
 categories: [“Shader”]
 ---
@@ -153,4 +152,6 @@ Shader "SL/Lambert-Half"
 
 ```
 
->详细可参考[【Shader】 光照模型-漫反射](Shader光照模型-漫反射.md)
+>详细可参考[【Shader】 光照模型-漫反射](Shader光照模型-漫反射.md)  
+> 参考及资源来源：[庄懂-BoyanTata](https://space.bilibili.com/6373917)  
+> [庄懂公开课资源](https://github.com/BoyanTata/AP01)

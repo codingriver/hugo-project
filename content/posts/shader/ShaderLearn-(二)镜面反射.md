@@ -4,7 +4,6 @@ subtitle: "镜面反射 Phong和Blinn Phong"
 date: 2021-04-16T20:42:28+08:00
 author: "codingriver"
 authorLink: "https://codingriver.github.io"
-draft: true
 tags: []
 categories: []
 ---
@@ -159,4 +158,6 @@ Shader "SL/Phong-Blinn"
 
 ```
 
->详细参考[Shader光照模型-高光反射](Shader光照模型-高光反射.md)
+>详细参考[Shader光照模型-高光反射](Shader光照模型-高光反射.md)  
+> 参考及资源来源：[庄懂-BoyanTata](https://space.bilibili.com/6373917)  
+> [庄懂公开课资源](https://github.com/BoyanTata/AP01)

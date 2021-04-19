@@ -4,7 +4,6 @@ subtitle: "RampTex"
 date: 2021-04-19T18:33:30+08:00
 author: "codingriver"
 authorLink: "https://codingriver.github.io"
-draft: true
 tags: []
 categories: []
 ---
@@ -88,3 +87,6 @@ Shader "SL/RampTex"
 }
 
 ```
+
+> 参考及资源来源：[庄懂-BoyanTata](https://space.bilibili.com/6373917)  
+> [庄懂公开课资源](https://github.com/BoyanTata/AP01)
