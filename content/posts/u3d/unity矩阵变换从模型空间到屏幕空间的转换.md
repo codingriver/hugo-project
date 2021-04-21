@@ -1,5 +1,5 @@
 ---
-title: "unity 矩阵从模型空间到屏幕空间的转换"
+title: "unity 矩阵变换从模型空间到屏幕空间的转换"
 date: 2019-12-01T21:57:40+08:00
 author: "codingriver"
 authorLink: "https://codingriver.github.io"
@@ -10,8 +10,9 @@ categories: ["Math"]
 <!--more-->
 
 >这里参考 《unity shader 入门精要》冯乐乐的这本书
->[深入探索透视投影变换](https://blog.csdn.net/cbbbc/article/details/51296804)
->
+>[深入探索透视投影变换](https://blog.csdn.net/cbbbc/article/details/51296804)  
+><https://github.com/candycat1992/Unity_Shaders_Book>  
+><https://blog.csdn.net/lzhq1982/article/details/73612170>  
 
 ##  0X01 变换
 
@@ -147,7 +148,7 @@ x<sub>c</sub>设为(x<sub>cx</sub>,x<sub>cy</sub>,x<sub>cz</sub>),y<sub>c</sub>�
 空间变换经历这几个过程：**模型空间(model  space)**--->**世界空间(world space)**-->**观察空间(view space)**`（右手坐标系）`-->**裁剪空间(clip space)**-->**屏幕空间(screen space)** 
 
 *除了观察空间是右手坐标系外其他的全是左手坐标系*
-
+![20210421202015](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/unity矩阵变换从模型空间到屏幕空间的转换/20210421202015.png)
 
 **屏幕空间** 的转换需要经过NDC变换 然后视口坐标变换（只关注x,y；z不关注）再到屏幕坐标
 

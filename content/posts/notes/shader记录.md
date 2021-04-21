@@ -19,3 +19,6 @@ bilibili的 [GAMES101-现代计算机图形学入门-闫令琪](https://www.bili
 
 
 [庄懂公开课资源](https://github.com/BoyanTata/AP01)
+
+
+- [ ] z缓冲消隐算法 (投影矩阵提到)
