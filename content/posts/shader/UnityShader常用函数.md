@@ -77,7 +77,7 @@ categories: ["shader"]
 | clamp(x,a,b) | clamp(x,a,b) | 如果x值小于a，则返回a； <br>如果x值大于b，返回b；<br>否则，返回x。|
 | lerp(a, b, f) | mix(a, b, f) | 计算或者的值。即在下限a和上限b之间进行插值，f表示权值。注意，如果a和b是向量，则权值f必须是标量或者等长的向量。 |
 | saturate(x) |  | 把x限制到[0,1]之间 |
-| smoothstep(min, max, x) | smoothstep(min, max, x) | 值x位于min、max区间中。 <br>如果x=min，返回0；如果x=max，返回1；<br>如果x在两者之间，按照下列公式返回数据：<br>– 2 ∗ ( ( x – m i n ) / ( m a x – m i n ) ) <sup>3</sup> + 3 ∗ ( ( x – m i n ) / ( m a x – m i n ) ) <sup>2</sup>|
+| smoothstep(min, max, x) | smoothstep(min, max, x) | 值x位于min、max区间中。 <br>如果x=min，返回0；如果x=max，返回1；<br>如果x在两者之间，按照下列公式返回数据：<br>**– 2 ∗ ( ( x – m i n ) / ( m a x – m i n ) ) <sup>3</sup> + 3 ∗ ( ( x – m i n ) / ( m a x – m i n ) ) <sup>2</sup>**|
 
 smoothstep(min, max, x)对于参数全是float的重载
 
