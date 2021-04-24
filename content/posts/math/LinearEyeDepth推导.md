@@ -88,3 +88,32 @@ z 分量从ndc [-1,1]到屏幕坐标[0,1]的映射方法：
 - `LinearEyeDepth` 负责把深度纹理的采样结果转换到视角空间下的深度值，也 就是我们上面得到的Z<sub>visw</sub>。
 -  `Linear01Depth` 则会返回一个范围在[0, 1]的线性深度值，也就是我们上面得到的Z<sub>01</sub>，这两个函数内部使用了内置的 `_ZBufferParams` 变量来得到远近裁剪平面的距离。
 
+`LinearEyeDepth` 方法和 `Linear01Depth` 方法：
+```shader
+
+// Z buffer to linear depth
+inline float LinearEyeDepth( float z )
+{
+return 1.0 / (_ZBufferParams.z * z + _ZBufferParams.w);
+}
+
+
+// Z buffer to linear 0..1 depth (0 at eye, 1 at far plane)
+inline float Linear01Depth( float z )
+{
+return 1.0 / (_ZBufferParams.x * z + _ZBufferParams.y);
+}
+
+
+//其中_ZBufferParams的定义如下：
+//double zc0, zc1;
+// OpenGL would be this:
+// zc0 = (1.0 - m_FarClip / m_NearClip) / 2.0;
+// zc1 = (1.0 + m_FarClip / m_NearClip) / 2.0;
+// D3D is this:
+//zc0 = 1.0 - m_FarClip / m_NearClip;
+//zc1 = m_FarClip / m_NearClip;
+// now set _ZBufferParams with (zc0, zc1, zc0/m_FarClip, zc1/m_FarClip);
+
+```
+- `_ZBufferParams` 参数：`(1-Far/Near, Far/Near, x/Far, y/Far)`
