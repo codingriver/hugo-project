@@ -81,6 +81,8 @@ d. 调用Shader
      `Blend  SrcAlpha One`
 - 柔和叠加(Soft Additive)   
     `Blend OneMinusDstColor One`
+- 线性减淡（Additive,Linear Dodge）  
+  `Blend One One`    
 - 正片叠底（Multiply），即相乘  
     `Blend DstColor Zero`
 - 两倍相乘（2x Multiply）  
@@ -94,8 +96,7 @@ d. 调用Shader
 - 滤色（Screen）  
     `Blend OneMinusDstColor One`  
     `Blend One OneMinusSrcColor`  
-- 线性减淡（Additive,Linear Dodge）  
-  `Blend One One`
+
 
 ### 空间变换
 1. 模型空间（M）（左手坐标系）
@@ -112,7 +113,7 @@ d. 调用Shader
 ### 类型长度
 - float：32位
 - half ：16位 精度范围-60000～+60000
-- fixed：11位 精度范围-2.0～+2.0
+- fixed：11位 精度范围-2.0～+2.0;也可能是8位
 
 **一般使用fixed存储颜色和单位矢量**
 
@@ -145,7 +146,7 @@ d. 调用Shader
 6. 渲染纹理（渲染目标纹理，RT）
 7. 程序纹理
 8. AOMap
-9.  高度图，视差贴图
+9.  高度图，视差贴图（视差偏移，视差映射）
 10. 粗糙度贴图
 
 
@@ -351,10 +352,11 @@ float4 _CubeMap_HDR;
 ### 卡通风格渲染
 
 ### 素描风格渲染
-### Tone-Mapping(色调映射)
+### 色调映射(Tone-Mapping)
 
-**用Tone-Mapping压缩范围**
-
+**用Tone-Mapping压缩高光范围**
+*HDR颜色通过色调映射转到（0-1）范围内*
+**一般用于屏幕后处理**
 ```
     // Tone-Mapping 需要将x从Gamma空间转到Lear线性空间使用，结果再转到Gamma空间下
     inline float3 ACESFilm(float3 x)
