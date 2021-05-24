@@ -275,24 +275,25 @@ float4 _CubeMap_HDR;
     # ifdef USING_DIRECTIONAL_LIGHT
         fixed atten=1.0;
     #else
-        float3 lightcoord = mul(_LightMatrix0,float4(i.worldPosition,1)).xyz;
-        fixed atten=tex2D(_LightTexture0,dot(lightcoord,lightcoord).rr).UNITY_ATTEN_CHANNEL;
+        float3 lightcoord = mul(unity_WorldToLight,float4(i.worldPosition,1)).xyz;
+        fixed atten=tex2D(_LightTexture0,dot(lightcoord,lightcoord).rr).r; //r equal UNITY_ATTEN_CHANNEL not cookie
     #endif
 
 ```
 **一种简单的做法 点光源**
 ```
     # ifdef USING_DIRECTIONAL_LIGHT
-        half3 light_dir=normalize(_WorldSpaceLightPos0.xyz);
+        //half3 light_dir=normalize(_WorldSpaceLightPos0.xyz);
         fixed atten=1.0;
     #else
-        half3 light_dir=normalize(_WorldSpaceLightPos0.xyz-i.pos_world);
+        //half3 light_dir=normalize(_WorldSpaceLightPos0.xyz-i.pos_world);
         half distance=length(_WorldSpaceLightPos0.xyz-i.pos_world);
         half range=1.0/untiy_WorldToLight[0][0]; //光源范围
         fixed atten=saturate((range-distance)/range);
     #endif
+    half3 light_dir=normalize( lerp(_WorldSpaceLightPos0.xyz,_WorldSpaceLightPos0.xyz-i.pos_world,_WorldSpaceLightPos0.w));
 ```
-#### 阴影
+#### 阴影（Shadow）
 > 阴影映射纹理（深度纹理）存储距离光源的深度信息  
 > 老版本是在光源空间中计算深度数据  
 > 新版本部分平台是在屏幕空间中计算深度数据，显卡必须支持MRT才行  
