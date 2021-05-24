@@ -154,14 +154,17 @@ d. 调用Shader
 - 漫反射：
     - lambert:`max(0,dot(n,l))`
     - halflambert:`dot(n,l)*0.5+0.5`
+    - diffuse=basecolor*lightcolor*lambert ( or halflambert )
 - 高光反射：
     - phong:`pow(max(dot(v,r),0),_Gloss)`
-    - blinn-phong:`pow(max(dot(n,h),0),_Gloss)`
+    - blinn-phong:`pow(max(dot(n,h),0),_Gloss) //性能比phong要好`
+    - speccolor=lightcolor*_SpecIntensity*lambert*blinn-phong  ( or phong )
 - 边缘光 ：`rim=pow(1-abs(dot(n,v)),rimPower)*rimScale`
 - 菲涅尔：
     - `fresnel=pow(1-,dot(n,v),fresnelPower)*fresnelScale`
     - `fresnel=max(0,min(1,pow(1-dot(n,v),fresnelPower)*fresnelScale))`
 - 环境光(ambient): color,lightmap ,反射探针（reflection probe）,光照探针（light probe）
+  - `half3 ambient_color = UNITY_LIGHTMODEL_AMBIENT.rgb * base_color.xyz;`
 - 自发光
 - Matcap: `float2 uv_mapcap=(vNormal*0.5+0.5).xy;`使用观察空间下的法线代表uv坐标
 ![20210410205528](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410205528.png)
