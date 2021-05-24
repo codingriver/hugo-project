@@ -82,7 +82,7 @@ d. 调用Shader
 - 柔和叠加(Soft Additive)   
     `Blend OneMinusDstColor One`
 - 线性减淡（Additive,Linear Dodge）  
-  `Blend One One`    
+  `Blend One One`    ("LightMode" = "ForwardAdd" 光源叠加Pass使用的混合模式)
 - 正片叠底（Multiply），即相乘  
     `Blend DstColor Zero`
 - 两倍相乘（2x Multiply）  
