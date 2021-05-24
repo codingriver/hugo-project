@@ -155,15 +155,17 @@ d. 调用Shader
     - lambert:`max(0,dot(n,l))`
     - halflambert:`dot(n,l)*0.5+0.5`
     - diffuse=basecolor*lightcolor*lambert ( or halflambert )
-- 高光反射：
+- 镜面反射（高光）：
     - phong:`pow(max(dot(v,r),0),_Gloss)`
     - blinn-phong:`pow(max(dot(n,h),0),_Gloss) //性能比phong要好`
     - speccolor=lightcolor*_SpecIntensity*lambert*blinn-phong  ( or phong )
+- 间接光漫反射：可以用 **光照探针（light Probe）** ，使用SH球谐光照模拟
+- 间接光镜面反射:可以用 **反射探针（reflection Probe）**，使用IBL模拟
 - 边缘光 ：`rim=pow(1-abs(dot(n,v)),rimPower)*rimScale`
 - 菲涅尔：
     - `fresnel=pow(1-,dot(n,v),fresnelPower)*fresnelScale`
     - `fresnel=max(0,min(1,pow(1-dot(n,v),fresnelPower)*fresnelScale))`
-- 环境光(ambient): color,lightmap ,反射探针（reflection probe）,光照探针（light probe）
+- 环境光(ambient): 可以认为是间接光用 **间接光漫反射**和 **间接光镜面反射**代替
   - `half3 ambient_color = UNITY_LIGHTMODEL_AMBIENT.rgb * base_color.xyz;`
 - 自发光
 - Matcap: `float2 uv_mapcap=(vNormal*0.5+0.5).xy;`使用观察空间下的法线代表uv坐标
