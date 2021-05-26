@@ -159,13 +159,13 @@ d. 调用Shader
     - phong:`pow(max(dot(v,r),0),_Gloss)`
     - blinn-phong:`pow(max(dot(n,h),0),_Gloss) //性能比phong要好`
     - speccolor=lightcolor*_SpecIntensity*lambert*blinn-phong  ( or phong )
-- 间接光漫反射：可以用 **光照探针（light Probe）** ，使用SH球谐光照模拟
-- 间接光镜面反射:可以用 **反射探针（reflection Probe）**，使用IBL模拟
+- 间接光漫反射：可以用 **光照探针（light Probe）** ，使用 SH 球谐光照模拟
+- 间接光镜面反射:可以用 **反射探针（reflection Probe）**，使用 IBL （基于图像的照明）模拟
 - 边缘光 ：`rim=pow(1-abs(dot(n,v)),rimPower)*rimScale`
 - 菲涅尔：
     - `fresnel=pow(1-,dot(n,v),fresnelPower)*fresnelScale`
     - `fresnel=max(0,min(1,pow(1-dot(n,v),fresnelPower)*fresnelScale))`
-- 环境光(ambient): 可以认为是间接光用 **间接光漫反射**和 **间接光镜面反射**代替
+- 环境光(ambient): 环境光可以理解为间接光的一部分(可以用 **间接光漫反射**和 **间接光镜面反射**代替)
   - `half3 ambient_color = UNITY_LIGHTMODEL_AMBIENT.rgb * base_color.xyz;`
 - 自发光
 - Matcap: `float2 uv_mapcap=(vNormal*0.5+0.5).xy;`使用观察空间下的法线代表uv坐标
@@ -173,16 +173,20 @@ d. 调用Shader
 ![20210410192004](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410192004.png)
 > **Phong 光照模型：** `max(dot(n,l),0)+pow(max(dot(v,r),0),smoothness)+ambient=Phong`  
 > **基础光照模型=直接光漫反射(Direct Diffuse)+直接光镜面反射(Direct Specular)+间接光漫反射(Indirect Diffuse)+间接光镜面反射(Indirect Specular)**  
-> 环境光可以理解为间接光的一部分  
 > 直接光镜面反射: PBR中的GGX光照模型  
-> 间接光漫反射：IBL基于图像的照明，SH球谐光照（简单的一种IBL技术），  
-> 间接光镜面反射：IBL基于图像的照明  
-> 环境光漫反射探针（Light Probe）（可以使用球谐光照读取和代替）  
-> 环境光镜面反射探针（Reflection Probe）（可以使用IBL）  
-> 环境贴图 （Cube map）（存储环境光的漫反射和经镜面反射的图像载体）转成立方体贴图使用  
-> 直接采样环境贴图会造成贴图空间的浪费及采样会出现失真情况，所以先转成立方体贴图  
-![20210410225349](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410225349.png)
 
+#### 环境贴图
+ 环境贴图 （存储环境光或者间接光的漫反射和镜面反射的图像载体），*环境光可以理解为间接光的一部分*。
+
+环境贴图一般转成立方体贴图（Cubemap）使用，原因：**直接采样环境贴图会造成贴图空间的浪费及采样会出现失真情况，所以先转成立方体贴图**
+
+Cubemap立方体贴图的局限性： **只根据方向来采样 Cubemap 会造成采样点错误，这也是为什么Cubemap技术不适合用于平面模型作反射的原因**
+
+立方体贴图（Cubemap）采样：`texCUBE(_CubeMap, reflect_dir)`
+
+![20210410225349](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410225349.png)
+![20210525192856](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210525192856.png)
+![20210525192804](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210525192804.png)
 ![20210410230114](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210410230114.png)
 
 - CubeMap
