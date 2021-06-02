@@ -155,7 +155,7 @@ d. 调用Shader
     - lambert:`max(0,dot(n,l))`
     - halflambert:`dot(n,l)*0.5+0.5`
     - diffuse=basecolor*lightcolor*lambert ( or halflambert )
-- 镜面反射（高光）：
+- 镜面反射（高光，各向异性高光，kk高光）：
     - phong:`pow(max(dot(v,r),0),_Gloss)`
     - blinn-phong:`pow(max(dot(n,h),0),_Gloss) //性能比phong要好`
     - speccolor=lightcolor*_SpecIntensity*lambert*blinn-phong  ( or phong )
@@ -322,6 +322,7 @@ float4 _CubeMap_HDR;
 4. 骨骼动画
 
 ### 屏幕后处理
+![20210531181339](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/Shader笔记1/20210531181339.png)
 
 - 亮度  
 `fixed3 finalColor=baseCol.rgb*_Brightness`
@@ -340,15 +341,31 @@ float4 _CubeMap_HDR;
     finalCol=lerp(avgColor,finalCol,_Constrast);
 ```
 
+- 晕影/暗角
+
+```
+    //暗角/晕影
+    float2 d=abs(i.uv-half2(0.5,0.5))*_VignetteIntensity;
+    d=pow(saturate(d),_VignetteRoundness);
+    float dist=length(d);
+    float vfactor=pow(saturate(1.0-dist*dist),_VignetteSmoothness);
+```  
+
 #### Bloom效果
 
 #### 边缘检测
 
-#### 均值模糊
+#### 方框模糊/均值模糊（Box Blur）
+> 参考：[高品质后处理：十种图像模糊算法的总结与实现](https://blog.csdn.net/poem_qianmo/article/details/105350519)
 
-#### 中值模糊
+#### 高斯模糊（Gaussian Blur）
 
-#### 高斯模糊
+#### 双重模糊（Dual Blur）
+
+#### Kawase模糊（DualKawaseBlur）
+
+#### 光晕
+
 
 #### 运动模糊
 
@@ -356,6 +373,7 @@ float4 _CubeMap_HDR;
 
 > 设置 `camera.depthTextureMode=DepthTextureMode.DepthNormals;`  
 > `_CameraDepthTexture`  
+
 
 ### 全局雾效
 
