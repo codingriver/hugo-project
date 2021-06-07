@@ -344,7 +344,7 @@ float4 _CubeMap_HDR;
     finalCol=lerp(avgColor,finalCol,_Constrast);
 ```
 
-- 晕影/暗角
+- 晕影/暗角（Vignette）
 
 ```
     //暗角/晕影
