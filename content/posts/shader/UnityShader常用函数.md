@@ -1,5 +1,5 @@
 ---
-title: "【Shader】 常用函数（UnityShader内置函数、CG和GLSL内置函数等）"
+title: "【Shader】 常用函数（UnityShader内置函数、CG和GLSL内置函数等）和内置变量"
 date: 2020-09-14T13:15:46+08:00
 author: "codingriver"
 authorLink: "https://codingriver.github.io"
@@ -256,6 +256,40 @@ struct v2f_img
 | float4x4 unity_CameraInvProjection | 该摄像机的投影矩阵的逆矩阵 |
 | float4 unity_CameraWorldClipPlanes[6] | 该摄像机的6个裁剪平面在世界空间下的等式，按左、右、下、上、近、远裁剪平面 |
 
+
+#### E、时间变量
+
+---
+|名称	|类型	|值|
+|:-:|:-:|:-:|
+_Time|	float4|	自关卡加载以来的时间 (t/20, t, t*2, t*3)，用于将着色器中的内容动画化。
+_SinTime|	float4|	时间正弦：(t/8, t/4, t/2, t)。
+_CosTime|	float4|	时间余弦：(t/8, t/4, t/2, t)。
+unity_DeltaTime|	float4|	增量时间：(dt, 1/dt, smoothDt, 1/smoothDt)。
+---
+#### F、光照变量
+---
+>参考unity官方文档：[内置着色器变量](https://docs.unity.cn/cn/current/Manual/SL-UnityShaderVariables.html)
+
+#### G、雾效和环境光
+---
+名称|	类型|	值
+|:-:|:-:|:-:|
+unity_AmbientSky|	fixed4|	梯度环境光照情况下的天空环境光照颜色。
+unity_AmbientEquator|	fixed4	|梯度环境光照情况下的赤道环境光照颜色。
+unity_AmbientGround	|fixed4	|梯度环境光照情况下的地面环境光照颜色。
+UNITY_LIGHTMODEL_AMBIENT|	fixed4|	环境光照颜色（梯度环境情况下的天空颜色）。旧版变量。
+unity_FogColor|	fixed4|	雾效颜色。
+unity_FogParams	|float4	|用于雾效计算的参数：`(density / sqrt(ln(2))、density / ln(2)、–1/(end-start) `和 `end/(end-start))`。x 对于 Exp2 雾模式很有用；_y_ 对于 Exp 模式很有用，_z_ 和 w 对于 Linear 模式很有用。
+
+
+#### H、其他
+---
+名称|	类型|	值
+|-|-|-|
+unity_LODFade|	float4|	使用 LODGroup 时的细节级别淡入淡出。x 为淡入淡出（0 到 1），_y_ 为量化为 16 级的淡入淡出，_z_ 和 w 未使用。
+_TextureSampleAdd|	float4	|根据所使用的纹理是 Alpha8 格式（值设置为 (1,1,1,0)）还是不是该格式（值设置为 (0,0,0,0)）由 Unity 仅针对 UI 自动设置。
+
 ### 3、数学常数
 
 ``` glsl
@@ -284,4 +318,5 @@ struct v2f_img
 | float LinearToGammaSpaceExact (float value) | 把一个颜色值精确地从线性空间变换到伽马颜色空间。 |
 | half3 LinearToGammaSpace (half3 linRGB) | 用一个近似模拟的函数把颜色值近似地从线性空间变换到伽马颜色空间。 |
 
->引用：[UnityShader常用函数（UnityShader内置函数、CG和GLSL内置函数等）](https://blog.csdn.net/u012722551/article/details/103926660)
+>引用：[UnityShader常用函数（UnityShader内置函数、CG和GLSL内置函数等）](https://blog.csdn.net/u012722551/article/details/103926660)  
+>unity官方文档：[内置着色器变量](https://docs.unity.cn/cn/current/Manual/SL-UnityShaderVariables.html)
