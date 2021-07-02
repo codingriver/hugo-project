@@ -444,6 +444,7 @@ float4 _CubeMap_HDR;
    1. 使用尺寸很大且未压缩的纹理
    2. 分辨率过高的帧缓存
 #### 优化方案
+> [【Unity技巧】Unity中的优化技术](https://blog.csdn.net/candycat1992/article/details/42127811)
 1. CPU 
    1. 静态批处理（static batching）降低drawcall
    2. 动态批处理（顶点属性小于900（如果使用顶点坐标，法线和纹理坐标则顶点数量小于300），lightmap必须参数相同指向同一位置，多pass打断合并）降低drawcall

@@ -13,7 +13,7 @@ categories: ["Unity"]
 
 
 
-### 使用usb连接
+# 使用usb连接
 >官网说明：
 > - Attach your device to your computer via cable and make sure that it shows in the **adb**
  devices list.
@@ -48,16 +48,16 @@ win系统打开cmd命令行，执行命令  `adb forward tcp:34999 localabstract
 ![在这里插入图片描述](https://cdn.jsdelivr.net/gh/codingriver/cdn/2020081721473018.png)  
 
 
-### 使用wifi连接
+# 使用wifi连接
 > - Disable mobile data on your Android device.
 > - Connect your Android device to your WiFi network. The Profiler uses a local WiFi network to send profiling data from your device to the Unity Editor.
 > - Attach your device to your computer via cable. Go to the Build Settings (menu: File > Build Settings), enable the Development Build and Autoconnect Profiler checkboxes, then select Build & Run.
 > - When the application launches on the device, open the Profiler window in the Unity Editor (menu: Window > Analysis > Profiler).
 Build Settings 里，将 Development Build、Autoconnect Profiler、Script Debugging 打开。
 
-### 查看端口占用
--   `netstat -ano|findstr “5037”`   去查找5037对应的端口号的进程id 也就是pid。
--   `tasklist |findstr “20120"`  查看进程名字。
+# 查看端口占用
+-   `netstat -ano|findstr 5037`   去查找5037对应的端口号的进程id 也就是pid。
+-   `tasklist |findstr 20120`  查看进程名字。
 - 用任务管理器 查看进程pid对应的进程，然后结束进程（打开任务管理器后右键勾选PID显示pid）
 
   

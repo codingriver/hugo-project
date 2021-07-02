@@ -26,7 +26,7 @@ M<sub>3\*3</sub>用于表示旋转和缩放，t<sub>3\*1</sub>用于表示平移
 
 ### 平移变换
 
-将点（x,y,z）在空间中平移（t~x~,t~y~,t~z~）,用矩阵表示为
+将点（x,y,z）在空间中平移（t<sub>x</sub> ,t<sub>y</sub> ,t<sub>z</sub>）,用矩阵表示为
  
 ![20210420204854](https://cdn.jsdelivr.net/gh/codingriver/cdn/texs/unity矩阵从模型空间到屏幕空间的转换/20210420204854.png)
 
@@ -112,7 +112,7 @@ M<sub>3\*3</sub>用于表示旋转和缩放，t<sub>3\*1</sub>用于表示平移
 
 在坐标系E1 下绕y轴旋转 θy后的 新坐标系E2 下的x轴旋转 θx
 
-**即 在旋转的死后，坐标系一起转动**
+**即 在旋转时，坐标系一起转动**
 
  
 
@@ -219,7 +219,7 @@ public class TestMatrix : MonoBehaviour {
 
 **来看世界空间到模型空间**
 继续增加测试代码
-```
+```csharp
     /// <summary>
     /// 世界空间到模型空间变换对比
     /// 这里直接对比变换矩阵是否相同
@@ -326,7 +326,7 @@ public class TestMatrix : MonoBehaviour {
 
 
 
-**脚本`TransformationMatrixUtil.cs`**
+**脚本 `TransformationMatrixUtil.cs`**
 ```csharp
 //=====================================================
 // - FileName:      TransformationMatrixUtil.cs
