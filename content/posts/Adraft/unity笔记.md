@@ -47,3 +47,7 @@ categories: []
 - 在 RenderDoc 的 Launch Application 页面里面。Executable Path 选择刚才找到的模拟器核心。然后在下面 Global Process Hook 里面点 Enable Global Hook，如果提示需要 Administrator 启动就确定以后再点 Enable Global Hook 按钮。
 - 退掉所有模拟器，（注意一定要退干净，有时候模拟器界面关掉了，核心还在后台运行。可以在任务管理器里面查看模拟器的核心是否还在运行，还在运行的话用任务管理器杀掉）然后重新启动模拟器，这时候应该能看到模拟器画面左上角已经显示 RenderDoc 的信息了，如果没有，请检查前面操作是否正确，没有RenderDoc的显示信息说明完全没有加载成功。
 - RenderDoc File 菜单 Attach to Running Instance , 在 localhost 下面可以看到模拟器核心程序，选中并点击 Connect to app ，之后就正常抓帧即可。
+
+
+# IOS 调试
+> [iOS调试和性能优化技巧](https://hello-david.github.io/archives/4569df37.html)
