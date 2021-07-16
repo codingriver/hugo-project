@@ -30,17 +30,18 @@ tex2Dproj和tex2D这两个功能几乎相同。
 
 ## 深度图基础及应用
 > ref [Unity Shader - 深度图基础及应用](https://www.jianshu.com/p/80a932d1f11e)  
-> ref [神奇的深度图：复杂的效果，不复杂的原理](https://zhuanlan.zhihu.com/p/27547127?refer=chenjiadong)
+> ref [神奇的深度图：复杂的效果，不复杂的原理](https://zhuanlan.zhihu.com/p/27547127?refer=chenjiadong)  
+>  章节：*ShaderLearn-CS61*
 
 
 - [x] 渲染深度图
 - [ ] 相交高亮  （shader`CS61/IntersectionLine` 错误）
 - 能量场
-- 全局雾效
-- 扫描线
+- [x] 全局雾效
+- [x] 扫描线
 - 水淹
-- 垂直雾效
+- [x] 垂直雾效
 - 边缘检测
 - 运动模糊
 - 景深
-- 透过墙壁绘制背后的“人影”
+- [x] 透过墙壁绘制背后的“人影”
