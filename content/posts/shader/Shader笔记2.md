@@ -35,7 +35,7 @@ tex2Dproj和tex2D这两个功能几乎相同。
 
 
 - [x] 渲染深度图
-- [ ] 相交高亮  （shader`CS61/IntersectionLine` 错误）
+- [x] 相交高亮  
 - 能量场
 - [x] 全局雾效
 - [x] 扫描线
