@@ -235,6 +235,7 @@ struct v2f_img
 | UNITY_MATRIX_MVP | 当前的模型观察投影矩阵，用于将顶点/方向矢量从模型空间转换到裁剪空间 |
 | UNITY_MATRIX_MV | 当前的模型*观察矩阵，用于将顶点/方向矢量从模型空间转换到观察空间 |
 | UNITY_MATRIX_V | 当前的观察矩阵，用于将顶点/方向矢量从世界空间转换到观察空间 |
+| UNITY_MATRIX_I_V | 当前的观察矩阵的逆矩阵，用于从观察空间转换到世界空间|
 | UNITY_MATRIX_P | 当前的投影矩阵，用于将顶点/方向矢量从观察空间转换到裁剪空间 |
 | UNITY_MATRIX_VP | 当前的观察*投影矩阵，用于将顶点/方向矢量从世界空间转换到裁剪空间 |
 | UNITY_MATRIX_T_MV | UNITY_MATRIX_MV的转置矩阵 |
