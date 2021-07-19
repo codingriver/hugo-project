@@ -48,7 +48,33 @@ tex2Dproj和tex2D这两个功能几乎相同。
 
 
 
-## 特效实现概览
+## Depth实现特效实现概览
+
+### DepthTextureMode.Depth
+ 深度会被保存在 `_CameraDepthTexture` 中，可以通过screenpos坐标来获取贴图中的值，然后使用 `UNITY_SAMPLE_DEPTH` 宏来提取深度（经常指向r通道）。
+
+需要注意的是，深度纹理使用了与阴影投射（shadow caster）相同的Shader pass，所以如果一个对象不支持阴影投射，那么它将不会出现在深度纹理当中，并且只有RenderQueue小于等于2500的对象才能被渲染到深度纹理当中去。
+
+```c
+    float2 uv = i.uv;
+    float depth = UNITY_SAMPLE_DEPTH(tex2D(_CameraDepthTexture, uv));
+```
+
+### DepthTextureMode.DepthNormals
+
+带有`Normals`和`depth` 的的32位贴图，`Normals`根据`Stereographic projection`编码到`R&G`通道，`Depth`通过映射编码到 `B&A` 通道。Unity ShaderLab也提供`DecodeDepthNormal` 方法进行解码，其中深度是0~1范围。
+
+`Normals & Depth Texture` 是通过 `Camera Shader replacement` 实现，可以将`RenderType`为：Opaque、TransparentCutout、TreeBark、TreeLeaf、TreeOpaque、TreeTransparentCutout、TreeBillboard、GrassBillboard、Grass类型才会进行深度渲染，对于`Transparent\AlphaTest`是不会渲染到这个纹理中。详情可参考：[浅析Unity shader中RenderType的作用及_CameraDepthNormalsTexture](https://blog.csdn.net/mobilebbki399/article/details/50512059)
+
+在使用中，需提前定义 `_CameraDepthNormalsTexture` ，使用`DecodeDepthNormal`解码，需要注意的是：深度是0~1范围，和`_CameraDepthTexture` 有区别。
+
+```c
+	float2 uv = i.uv;
+    half depth;
+    half3 norm;
+    DecodeDepthNormal(tex2D(_CameraDepthNormalTexture, uv), depth, norm);
+
+```
 
 ### 入门版水面实现
 - 使用相机做一张反射图，使用屏幕坐标作为UV进行采样
